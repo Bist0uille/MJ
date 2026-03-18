@@ -1,57 +1,99 @@
 # Assistant MJ — Fallout: The RPG (Modiphius 2d20)
 
-## Comment utiliser Claude comme assistant en partie
-
-Pendant ta session, tu peux me demander directement :
-
-### Génération à la volée
-- "Génère un PNJ marchand hostile"
-- "Donne-moi une rencontre aléatoire dans une zone irradiée"
-- "Invente un nom pour un raider féminin"
-- "Quel butin dans un bunker militaire abandonné ?"
-
-### Aide aux règles 2d20
-- "Rappelle-moi comment fonctionne le stress en combat"
-- "Quelles compétences pour crocheter une serrure ?"
-- "Comment gérer les munitions AP ?"
-
-### Improvisation narrative
-- "Mes joueurs vont dans une direction que j'avais pas prévue, aide-moi"
-- "Invente un rebondissement pour cette quête"
-- "Décris l'ambiance d'une ville fantôme des années 2180"
+> Ce dossier est la base de données de ta campagne Fallout.
+> Claude lit ces fichiers pour t'assister en temps réel pendant les sessions.
 
 ---
 
-## Structure des fichiers
+## Utilisation rapide en session
+
+Envoie directement ta demande :
+- *"Génère un PNJ marchand à Portail-Sud"*
+- *"Quelle conséquence si les joueurs brûlent le blocus ?"*
+- *"Décris l'arrivée à Greyfall la nuit"*
+- *"Tire une rencontre dans le Wasteland ouvert"*
+- *"Résume l'état du monde actuel"*
+
+**Fichiers prioritaires :** `state/world_state.md` → `state/active_threads.md` → faction/lieu concerné
+
+---
+
+## Structure
 
 ```
 Fallout/
-├── lore/
-│   ├── monde.md         → Timeline, Grande Guerre, ambiance
-│   └── factions.md      → Factions majeures et mineures
-├── personnages/
-│   ├── PNJ_template.md  → Modèle pour créer un PNJ rapidement
-│   └── PJ_groupe.md     → Fiche du groupe de joueurs
-├── tables/
-│   ├── rencontres.md    → Tables de rencontres aléatoires
-│   ├── butin.md         → Tables de butin
-│   └── noms.md          → Générateur de noms
-└── session/
-    ├── notes_template.md   → Template notes de session
-    └── scenario_vierge.md  → Structure pour préparer un scénario
+│
+├── state/                   ← PRIORITÉ 1 — lire en premier
+│   ├── world_state.md       État actuel du monde, factions, conflits
+│   └── active_threads.md    Quêtes actives, décisions joueurs, menaces
+│
+├── rules/                   ← PRIORITÉ 2 — logique narrative
+│   ├── ai_prompt.md         Instructions pour Claude en session
+│   └── system_rules.md      Ton, causalité, comportement PNJ
+│
+├── factions/                ← Fiches détaillées par faction
+│   ├── fils_du_cendre.md
+│   └── ligue_marchands.md
+│
+├── characters/              ← PNJ nommés
+│   ├── hendrick_cole.md
+│   ├── silas_vorne.md
+│   └── nora_sept_fers.md
+│
+├── locations/               ← Lieux clés
+│   ├── portail_sud.md
+│   └── greyfall.md
+│
+├── events/                  ← Conflits et événements actifs
+│   └── blocus_route7.md
+│
+├── sessions/                ← Historique des sessions
+│   ├── session_01.md        Exemple rempli
+│   ├── notes_template.md
+│   └── scenario_vierge.md
+│
+├── lore/                    ← Référence univers Fallout
+│   ├── monde.md             Timeline, zones, créatures, économie
+│   └── factions.md          Vue d'ensemble des factions (lore général)
+│
+├── personnages/             ← Fiche groupe joueurs
+│   └── PJ_groupe.md
+│
+├── tables/                  ← Tables aléatoires
+│   ├── rencontres.md
+│   ├── butin.md
+│   └── noms.md
+│
+├── templates/               ← Modèles réutilisables
+│   ├── faction_template.md
+│   ├── location_template.md
+│   ├── character_template.md
+│   ├── event_template.md
+│   └── session_template.md
+│
+└── resources/               ← PDFs, scénarios, ressources externes
+    └── (ajouter ici tes fichiers)
 ```
 
 ---
 
-## Rappel rapide 2d20
+## Rappel règles 2d20 (Modiphius)
 
-| Action | Difficulté de base |
-|--------|-------------------|
-| Tâche simple | 1 succès (CD 1) |
-| Tâche complexe | 2 succès (CD 2) |
-| Tâche difficile | 3+ succès (CD 3+) |
+| Élément | Règle |
+|---------|-------|
+| Succès | dé ≤ Attribut + Compétence |
+| CD 1 / 2 / 3 | Simple / Difficile / Très difficile |
+| Momentum | Succès en excès → pool groupe |
+| Menace | Pool MJ → complications, effets spéciaux |
+| Stress | Dommage mental/social (séparé des PV) |
 
-**Succès** = dé ≤ Attribut + Compétence  
-**Complication** = résultat 20  
-**Momentum** = succès en excès, partagés dans le pool du groupe  
-**Menace** = pool du MJ, généré par complications ou actions des joueurs
+---
+
+## Ajouter du contenu
+
+- **Nouveau PNJ :** copier `templates/character_template.md` → `characters/nom.md`
+- **Nouveau lieu :** copier `templates/location_template.md` → `locations/nom.md`
+- **Nouvelle faction :** copier `templates/faction_template.md` → `factions/nom.md`
+- **Nouvel événement :** copier `templates/event_template.md` → `events/nom.md`
+- **Après chaque session :** mettre à jour `state/world_state.md` + `state/active_threads.md`
+- **Ressources externes :** déposer dans `resources/`
