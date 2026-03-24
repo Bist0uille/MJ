@@ -1,65 +1,71 @@
-# "With a Bang, or a Whimper" — Vue d'ensemble
+# "En Fanfare, ou en Catimini" — Vue d'ensemble
 
-> Scénario officiel — Chapitre 11 du Core Rulebook Modiphius (pages 403–438)
-> Traduit et structuré pour utilisation en session.
+> Adaptation du scénario officiel *"With a Bang, or a Whimper"* (Modiphius Fallout RPG, Core Rulebook pp. 403-438)
+> Adapté et développé pour la campagne New Eden.
 
 ---
 
 ## Synopsis (MJ uniquement)
 
-L'Institut a infiltré le settlement et piraté un dispositif Vault-Tec caché dans le générateur à fusion froide. Ce dispositif vole les souvenirs des habitants via un signal transmis à un compound proche, où l'Institut télécharge les mémoires pour créer des copies synthétiques parfaites.
+L'Institut a infiltré New Eden et piraté un dispositif caché dans le générateur à fusion froide. Ce dispositif calibrait des copies synthétiques Gen 3 des habitants en volant leurs souvenirs, transmis à un complexe souterrain proche.
 
-**Plan de l'Institut :** Remplacer toute la ville par des synths, puis utiliser le settlement comme appât pour attirer d'autres humains.
+**L'objectif du Dr. Vest :** Tester si un synthétique Gen 3, correctement intégré avec des souvenirs calibrés, devient fonctionnellement identique à un humain — dans ses liens, ses choix, sa capacité à souffrir.
+
+**Résultat de l'expérience :** Oui. Mais la Confrérie de l'Acier est arrivée.
 
 ---
 
-## Structure
+## Structure de la campagne
+
+| Session | Titre | Fichier | Statut |
+|---------|-------|---------|--------|
+| 1 | En Fanfare, ou en Catimini | `session/session_01.md` | Jouée |
+| 2 | Les Couleurs qu'on Arbore | `session/session_02_propositions.md` | À jouer |
+| 3+ | Propositions | `session/session_03_propositions.md` | Propositions |
+
+### Actes du scénario original
 
 | Acte | Titre | Fichier |
 |------|-------|---------|
-| 1 | Un Crime Goule | `acte1.md` |
-| 2 | L'Intrigue s'épaissit | `acte2.md` |
-| 3 | L'Institut | `acte3.md` |
+| 1 | Un Crime Goule (→ Fête des Fondateurs) | `acte1.md` |
+| 2 | L'Intrigue s'épaissit (→ L'enquête) | `acte2.md` |
+| 3 | L'Institut (→ Le complexe) | `acte3.md` |
 | — | Conclusions | `conclusions.md` |
 | — | Tous les stats PNJ | `PNJ_stats.md` |
 
 ---
 
-## Setup — Questions aux joueurs
+## Setup — New Eden (déjà défini)
 
-Avant de jouer, les joueurs définissent leur settlement en répondant ensemble :
+**Nom :** New Eden
 
-**Sur la ville :**
-1. Quel est le nom du settlement ?
-2. Quels sont ses principes fondateurs ?
-3. Que produit-il ?
-4. Quels groupes y vivent ?
-5. Comment fonctionne le gouvernement ?
-6. Trois défis de la première année ?
-7. En quoi travaillez-vous pour la milice ?
+**Principes fondateurs :** Communauté inclusive construite autour d'un G.E.C.K. Chacun apporte ses compétences. Personne ne demande d'où tu viens.
 
-**Sur les personnages :**
-1. Par quel nom vous connaît-on en ville ?
-2. Un moment où vous avez perdu quelque chose d'important ?
-3. Un moment où vous avez été poussé à bout ?
-4. Comment votre personnage réagit en voyant la scène du crime ?
+**Ce qu'elle produit :** Végétation, nourriture fraîche, air filtré (via le G.E.C.K.)
 
----
+**Groupes présents :** Humains, goules lucides, un super mutant, un robot Mister Handy, et maintenant des synthétiques Gen 3 libérés
 
-## Informations clés à retenir
-
-- **Settlement :** New Freeland (ou nom choisi par les joueurs)
-- **Déclencheur :** Founders' Day — un an de survie — fête annuelle
-- **Révélation centrale :** Jesse Pedigrue est déjà un synth depuis le début
-- **Vrai Jesse :** Prisonnier dans le compound de l'Institut
-- **Twist final :** Des synths des PJ eux-mêmes sont dans le compound
-- **Destruction du core d'info :** Arrête le signal et sauve la ville (explosion 5 CD)
+**Gouvernement :** Jesse Pedigrue, maire informel, élu par consensus
 
 ---
 
 ## Thèmes narratifs
 
-- Identité : qui est "réel" ?
-- Paranoïa : qui parmi mes voisins est encore lui-même ?
-- Moral : les synths méritent-ils de vivre ?
-- Sacrifice : sauver la ville ou accepter le marché de l'Institut ?
+- **Identité :** Qui est "réel" ? Un être avec des souvenirs calibrés est-il moins réel que son original ?
+- **Loyauté :** Qu'est-ce qu'on est prêt à faire pour protéger quelqu'un d'autre ?
+- **Systèmes :** Quand les procédures s'appliquent à des individus, qui en est responsable ?
+- **Paranoïa :** Qui parmi mes voisins est encore lui-même ?
+
+---
+
+## PNJ principaux
+
+| PNJ | Fichier | Rôle |
+|-----|---------|------|
+| Jesse Pedigrue | `/characters/jesse_pedigrue.md` | Maire — symbole de la réconciliation |
+| Dr. Rolan Vest | `/characters/dr_rolan_vest.md` | Scientifique — l'architecte de tout |
+| Paladin Cendra Voss | `/characters/paladin_voss.md` | Confrérie — la menace à l'aube |
+| Scribe Elias Kern | `/characters/scribe_kern.md` | Confrérie — danger sur le G.E.C.K. |
+| Joseph | `/characters/hendrick_cole.md` | Victime — premier cas d'amnésie |
+| Mimimati | `/characters/nora_sept_fers.md` | L'amante d'Hazel — l'originale |
+| Géraldine | `/characters/silas_vorne.md` | La caméra de Vest — synthétique |

@@ -1,40 +1,33 @@
-# Lieu — Greyfall (Ruines)
+# Lieu — Le Complexe de l'Institut (abandonné)
 
 ## Identité
-- **Type :** Ruines urbaines converties en forteresse
-- **Population :** ~200 Fils du Cendre + novices
-- **Contrôle :** Les Fils du Cendre
-- **État actuel :** Forteresse active, base d'expansion
+- **Type :** Complexe souterrain de recherche
+- **Population :** Désormais vide — prisonniers libérés en session 1
+- **Contrôle :** Personne
+- **État actuel :** Abandonné depuis la libération par les PJ
 
-## Description rapide (à lire en session)
-> Ce qui était autrefois une ville de taille moyenne est maintenant quelque chose d'autre. Les immeubles effondrés ont été transformés en remparts. Des feux brûlent en permanence aux quatre coins — pas pour la chaleur, pour le symbole. Des silhouettes en tenue sombre patrouillent les ruines en silence. Pas de bruit de commerce ici. Pas de rires. Juste le vent, le crépitement des flammes, et la sensation d'être observé depuis le premier pas que vous posez dans cette ville.
+## Description rapide
+Des couloirs blancs stériles, des portes de cellules ouvertes, des holographiques encore actifs qui clignotent dans le vide. Des équipements scientifiques laissés en place dans la précipitation de la fuite. Les lumières d'urgence fonctionnent encore — rouge pâle, intermittent.
 
-## Zones clés
+L'odeur de l'antiseptique et de la fusion froide. Et les bottes des PJ qui résonnent dans un endroit qui aurait dû rester secret.
 
-### La Cathédrale de Cendre
-Ancienne usine reconvertie. Lieu de rassemblement et de "conversion". Silas Vorne y prêche.
+## Ce qui s'est passé ici (session 1)
 
-### Les Cellules
-Sous-sols de la ville. Officiellement "quartiers des novices". En réalité : les habitants des villages disparus.
+Les PJ ont trouvé Jesse Pedigrue captif. Jesse a fait un discours devant tous les prisonniers et les répliques synthétiques pour les convaincre de rejoindre New Eden. Tous ont suivi.
 
-### Le Dépôt
-Stockage d'armes et de ressources. Mieux gardé que tout le reste.
+Le Dr. Vest s'est échappé avec le sonar et son ordinateur portable pendant l'extraction.
 
-### Le Poste de Commandement
-Tour de télécommunication pré-war encore partiellement fonctionnelle. Silas s'y isole.
+## Ce qu'on peut encore trouver ici
 
-## PNJ présents
-- Silas Vorne — `/characters/silas_vorne.md`
-- Les "Cellules" : ~120 villageois capturés (dont des enfants)
-- Cendriers (commandants) : 3 nommés, stats de boss intermédiaires
+| Élément | Intérêt | Difficulté d'accès |
+|---------|---------|-------------------|
+| Notes de recherche partielles | Contexte sur l'expérience | Facile (laissées sur place) |
+| Mention "Sujet 1179F" (Augusta) | Révélation potentielle | Dans le bureau de Vest |
+| Équipement de calibration | Technologie avancée | Pièces récupérables |
+| Journal fragmenté de Vest | Fragments — la liste complète est avec lui | Salle principale |
 
 ## Accès
-- **Frontalement :** Suicidaire sans armée
-- **Infiltration :** Possible (se faire passer pour un sympathisant ou novice)
-- **Négociation :** Silas reçoit s'il y voit un avantage
-- **Tunnels :** Un habitant survivant de Greyfall connaît des passages sous la ville
+2-3 km de New Eden, via des tunnels souterrains ou une entrée cachée dans les ruines industrielles à l'est.
 
-## Informations disponibles sur place
-- Les villageois disparus sont ici (découverte majeure)
-- Le passé de Silas Vorne (dans son bureau, terminal verrouillé CD 3)
-- La dissidence interne (un Cendrier veut parler si approché seul)
+## Note MJ
+Vest n'a pas eu le temps de tout effacer. Ce lieu peut être revisité si les PJ cherchent des preuves ou des informations que Vest n't a pas emportées. Mais les données importantes — la liste complète, le sonar — sont avec lui dans l'entrepôt agricole.

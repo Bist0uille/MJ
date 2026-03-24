@@ -1,59 +1,74 @@
-# Session 01 — "Bienvenue à Portail-Sud"
+# Session 01 — "En Fanfare, ou en Catimini"
 
-**Date :** [À remplir]  
-**Joueurs présents :** [À remplir]  
-**Durée :** [À remplir]
+**Scénario :** En Fanfare, ou en Catimini
+**Lieu :** New Eden
 
 ---
 
 ## Résumé
-Les joueurs arrivent à Portail-Sud au milieu du chaos provoqué par le blocus de la Route 7. Ils rencontrent Hendrick Cole qui leur propose une mission, et Nora "Sept Fers" qui leur vend des informations. Ils découvrent l'existence des villages disparus via un réfugié de Redstone.
+
+Les PJ découvrent que New Eden, communauté construite autour d'un G.E.C.K., est infiltrée par l'Institut. Des copies synthétiques des habitants vivent parmi eux depuis des mois. Les PJ libèrent les prisonniers de l'Institut — et déclenchent la crise en rentrant en ville avec les originaux et leurs copies.
 
 ---
 
-## Événements clés
+## Révélations clés
 
-1. **Arrivée à Portail-Sud** — Les gardes sont nerveux, les réfugiés encombrent les rues. L'atmosphère est tendue.
-2. **La Gâchette** — Rencontre avec Nora. Premières rumeurs sur le blocus, le Dr. Vale, les villages.
-3. **Convocation par Hendrick Cole** — Il propose 500 caps + équipement pour "résoudre" la Route 7. Pas de détails supplémentaires donnés.
-4. **Le témoignage** — Un réfugié de Redstone, ivre, raconte que son village a été "absorbé" — les habitants sont partis avec les Fils du Cendre, vivants, sans résistance. Comme s'ils voulaient partir.
+### Vieux Colosse — la vérité de son arrivée
+Vieux Colosse n'a pas "trouvé" la ville. Il vivait dans une grotte de la zone depuis 200 ans, plongé dans l'étude. Quand il en est ressorti, la ville avait poussé autour de lui.
 
----
+### La grange — la chasse aux radcafards
+Les joueurs ont chassé des radcafards à la ferme. Ils ont trouvé **Géraldine**, une brahmine attelée à une cariole. Ils l'ont détachée et ont attelé **Vieux Colosse** à sa place pour tirer la cariole jusqu'à l'Institut. Géraldine est repartie librement.
 
-## Décisions des joueurs
+*(Révélation potentielle session 2 : Géraldine est un synthétique Gen 2, caméra du Dr. Vest.)*
 
-- [Décision 1] : Ont accepté la mission de Cole
-- [Décision 2] : Ont aidé un Fils du Cendre blessé trouvé à l'extérieur des murs (sans le dénoncer)
-- [Décision 3] : Ont payé Nora pour des infos sur le blocus (obtenu : position du blocus Route 7, 2 gardes minimum)
+### La clinique — le terminal et la liste
+Les joueurs ont trouvé un terminal de l'Institut contenant la liste des habitants **non affectés** — confirmés humains. Ils ont **détruit le terminal** mais recopié la liste sur un bout de papier. Ce papier est en leur possession. C'est la seule copie physique existante.
 
----
+### La clinique — l'attaque des synthétiques
+Les joueurs ont capturé **Joseph** (vivant, ligoté). À la clinique, ils ont été attaqués par trois synthétiques :
+- **Jesse Pedigrue (synthétique)** — tué
+- **Johana (synthétique)** — tuée
+- **Mimimati (synthétique)** — tuée
 
-## Conséquences à jouer en session 02
+### L'Institut — la libération
+Les joueurs ont atteint le complexe souterrain. Ils ont retrouvé le **vrai Jesse Pedigrue**, captif depuis des mois. Jesse a fait un discours devant tous les prisonniers et toutes les répliques pour les convaincre de rejoindre la communauté. Tous ont suivi.
 
-- Le Fils du Cendre aidé va en parler — les joueurs ont une "dette" avec les Fils du Cendre
-- Cole a remarqué qu'ils posaient des questions sur Vale — il les fait surveiller
-- Nora les a notés comme "payeurs sérieux" — elle les approchera avec une info non sollicitée
+### La fuite de Vest
+Le **Dr. Rolan Vest**, responsable scientifique, s'est échappé avec le **sonar** (l'appareil qui calibrait les copies). Il n'a pas été arrêté. Le signal est coupé mais l'homme est libre.
 
----
-
-## Nouveaux hooks introduits
-
-- [ ] Qui est Dr. Mira Vale et où est-elle allée ?
-- [ ] Le témoignage du réfugié : les habitants des villages *voulaient* partir — pourquoi ?
-- [ ] Un garde de la Ligue a été trouvé mort ce matin
+### Le coup de fil de Hazel
+Pendant l'opération à l'Institut, **Hazel a contacté la Confrérie de l'Acier** et signalé la présence de l'Institut dans la zone. La Confrérie a répondu.
 
 ---
 
-## XP distribué
-*(Système 2d20 — Modiphius : XP narratif)*
-- Arrivée et intégration à Portail-Sud : 1 XP
-- Premier contact avec Cole : 1 XP
-- Information obtenue (blocus) : 1 XP
-- **Total session 01 : 3 XP**
+## État de la ville en fin de session
+
+| Élément | État |
+|---------|------|
+| G.E.C.K. | Intact |
+| Signal Institut | Coupé |
+| Émetteur | Parti avec Vest |
+| Joseph | Vivant, ligoté, clinique |
+| Terminal clinique | Détruit |
+| Bout de papier (liste humains) | En possession des PJ |
+| Jesse Pedigrue (vrai) | Vivant |
+| Synthétiques Institut | Libérés, rentrés en ville |
+| Dr. Rolan Vest | En fuite avec le sonar |
+| Confrérie de l'Acier | Vertibirds au-dessus de la ville |
+
+---
+
+## Hooks actifs pour session 02
+
+- [ ] La Confrérie va identifier et "traiter" les synthétiques — dès l'aube
+- [ ] Le test d'empathie de la Confrérie est cassé (ne détecte plus les synths de New Eden)
+- [ ] Hazel a trahi — le groupe le sait-il ?
+- [ ] Mimimati (originale) est rentrée en ville — elle va chercher Hazel
+- [ ] Vest observe depuis 2-3 km dans un entrepôt agricole
 
 ---
 
 ## Notes MJ
-- Le Fils du Cendre aidé s'appelle **Renn** — prévoir son retour
-- Les joueurs n'ont pas encore réalisé le lien entre les villages et Greyfall
-- Ambiance bien reçue — continuer le rythme lent puis brutal
+- Le secret de Géraldine peut rester intact toute la session 2 — ne pas forcer la révélation
+- Vest n'est pas un monstre — il croit sincèrement que son travail est scientifiquement nécessaire
+- Le bout de papier peut contredire le test de Voss — c'est l'atout des PJ

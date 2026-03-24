@@ -1,49 +1,78 @@
-# Événement — Le Blocus de la Route 7
+# Événement — L'Arrivée des Vertibirds
 
-## Statut : ACTIF
+## Statut : ACTIF — Crise en cours
 
 ## Résumé
-Les Fils du Cendre ont bloqué la Route 7 il y a 11 jours. C'est la principale voie commerciale du Wasteland nord-sud. Portail-Sud s'asphyxie économiquement et commence à manquer d'eau.
+La Confrérie de l'Acier atterrit sur la place centrale de New Eden. Trois vertibirds. Paladin Voss commande. Le premier vertibird se pose sur le pick-up rouillé de Jesse Pedigrue. L'aube approche. Les procédures commenceront au lever du soleil.
 
-## Causes
-- Les Fils du Cendre exigent que la Ligue des Marchands cesse d'acheminer de la technologie pre-war
-- Silas Vorne y voit une opportunité d'expansion — affaiblir la Ligue avant une offensive
-- La disparition des villages du nord est liée : il sécurise ses arrières avant d'attaquer
+---
 
-## Conséquences actuelles
-- Commerce arrêté : pénurie en cours à Portail-Sud
-- 5 jours de réserves d'eau restantes
-- Réfugiés de Redstone en surcharge à Portail-Sud
-- La Ligue est sous pression interne
+## Structure temporelle
 
-## Options possibles
+```
+JOUR    → Les vertibirds arrivent. Le test d'empathie. Les files d'attente.
+          Les joueurs subissent et observent.
+          Chaque scène émotionnelle pose un visage sur quelqu'un à sauver.
 
-### A — Négociation
-Convaincre Silas de lever le blocus contre des concessions.
-- **Faisable si :** Les joueurs trouvent quelque chose que Silas veut (la destruction d'un Vault ?)
-- **Risque :** La Ligue refuse les concessions / Silas utilise la trêve pour se renforcer
+NUIT    → La fenêtre. Les joueurs agissent.
+          Chaque heure qui passe est une heure de moins avant l'aube.
+          Chaque action réussie est une personne de plus qui passe la muraille.
 
-### B — Sabotage
-Détruire la position des Fils du Cendre sur la Route 7 sans confrontation frontale.
-- **Faisable si :** Les joueurs infiltrent Greyfall ou trouvent un autre passage
-- **Risque :** Représailles massives sur Portail-Sud
+AUBE    → Voss appelle les noms sur sa liste.
+          Certains répondent. D'autres ont disparu pendant la nuit.
+          Ce qui n'a pas été sauvé pendant la nuit ne sera pas sauvé.
+```
 
-### C — Force
-Coordonner une attaque combinée Ligue + joueurs sur le blocus.
-- **Faisable si :** La Ligue mobilise ses gardes + soutien externe
-- **Risque :** Guerre ouverte, lourdes pertes, victoire incertaine
+---
 
-### D — Contournement
-Trouver une route alternative pour l'eau.
-- **Faisable si :** Les joueurs découvrent la source d'eau au nord (Vault ?)
-- **Risque :** Le Vault pourrait être plus dangereux que le blocus
+## Les forces en présence
 
-## Évolution si les joueurs n'agissent pas
-- Jour 5 : Émeutes à Portail-Sud pour l'eau
-- Jour 7 : La Ligue commence des négociations directes avec Silas (positions défavorables)
-- Jour 10 : Silas propose un "accord" — la Ligue cède le contrôle du nord en échange de la paix
+**La Confrérie veut :**
+- Identifier et "traiter" tous les synthétiques Gen 3
+- Récupérer la technologie de l'Institut (sonar, fichiers)
+- Établir une tutelle sur le G.E.C.K.
 
-## Connexions
-- Lié à : villages disparus, Dr. Mira Vale, Vault rumeur
-- Factions : `/factions/fils_du_cendre.md`, `/factions/ligue_marchands.md`
-- Lieux : `/locations/portail_sud.md`, `/locations/greyfall.md`
+**New Eden veut :**
+- Survivre — le G.E.C.K., l'eau, les récoltes
+- Protéger ceux qui ont choisi de vivre ici
+
+---
+
+## Le test d'empathie — pourquoi il est cassé
+
+Le protocole Voss mesure les micro-réactions involontaires face à des questions chargées émotionnellement. Sur les synths Gen 1, ça fonctionnait — l'émotion était simulée, il y avait un délai mesurable.
+
+Sur les synths de New Eden : **le délai n'existe plus.** Ils ont eu des mois de vrais souvenirs, de vraies pertes. Le test donne des résultats incohérents dans les deux sens :
+
+- Des synthétiques qui *passent* — identifiés humains
+- Des humains qui *échouent* : Vieux Colosse (réponses atypiques), Bailey (goule), Tommy (trop bon contrôle émotionnel)
+
+**Voss le sait probablement.** Elle continue quand même.
+
+---
+
+## L'atout des PJ — le bout de papier
+
+Les PJ ont la liste des humains confirmés (copiée sur le terminal avant destruction). Elle ne dit pas qui est synthétique — seulement qui ne l'était pas. Partielle. Source : l'Institut lui-même.
+
+Combinée au journal de Vest → image quasi-complète.
+
+---
+
+## Options pour les PJ pendant la nuit
+
+| Option | Risque | Gain potentiel |
+|--------|--------|----------------|
+| Faire fuir des synthétiques | Les fuyards sont comptés par Voss | Sauver des vies |
+| Confronter Voss avec le bout de papier | Elle peut pas ignorer une source Institut | Contestation du test |
+| Trouver Vest et son journal | Accepter son marché (données contre données) | Liste exacte |
+| Démontrer que le test est cassé | Données statistiques (Augusta) | Ébranler la certitude de Voss |
+| Jesse parle au Paladin | Rien de garanti | Une fissure dans l'armure |
+
+---
+
+## Conséquences si les joueurs n'agissent pas
+
+- L'aube arrive. Voss lit les noms. "Traitement" des synthétiques identifiés.
+- Certains qui figuraient en "humains" (faux négatifs du test) sont aussi exécutés.
+- New Eden survit physiquement mais ne se relève pas moralement.

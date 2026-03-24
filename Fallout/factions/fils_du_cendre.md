@@ -1,44 +1,49 @@
-# Faction — Les Fils du Cendre
+# Faction — La Confrérie de l'Acier
 
 ## Identité
-- **Type :** Culte millénariste / ordre paramilitaire
-- **Territoire :** Nord du Wasteland, contrôle de la Route 7
-- **Effectifs :** ~200 membres actifs, 500 sympathisants
-- **Siège :** Forteresse dans les ruines de l'ancienne ville de Greyfall
+- **Type :** Organisation paramilitaire technophile
+- **Territoire :** Mobile — détachement sur New Eden
+- **Commandante locale :** Paladin Cendra Voss
+- **Effectif local :** Voss + 4 soldats en armure T-60 + Scribe Kern + 3 vertibirds
 
 ## Idéologie
-> "Le Wasteland est une punition. Seuls ceux qui l'embrassent méritent d'en hériter."
+> "La technologie avancée ne peut pas être laissée entre les mains de ceux qui ne peuvent pas la contrôler ou la comprendre."
 
-Ils croient que la Grande Guerre était nécessaire — une purification divine. Ils rejettent la technologie pre-war comme "le poison qui a tué le monde". Vivent simplement, combattent brutalement.
+La Confrérie récupère et contrôle la technologie. Elle voit les synthétiques Gen 3 non pas comme des êtres, mais comme des technologies potentiellement hostiles. Ce n'est pas de la haine. C'est de l'ordre. C'est pour ça que c'est impossible à débattre.
 
-## Structure
-| Rang | Titre | Rôle |
-|------|-------|------|
-| 1 | Le Prophète | Autorité absolue — **Silas Vorne** |
-| 2 | Cendriers | Commandants de terrain |
-| 3 | Brûlants | Soldats endoctrinés |
-| 4 | Novices | Recrues en probation |
+## Objectifs à New Eden
 
-## Motivations
-- **Veulent :** Contrôler la région, purger la technologie, recruter
-- **Craignent :** Un Vault ouvert (symbole de tout ce qu'ils détestent)
-- **Ligne rouge :** Ne négocient pas sur les principes, mais sur les territoires oui
+| Objectif | Priorité | Statut |
+|----------|----------|--------|
+| Identifier les synthétiques Gen 3 | Haute | En cours (test d'empathie) |
+| Récupérer la technologie de l'Institut | Haute | En attente |
+| Établir tutelle sur le G.E.C.K. | Moyenne | Kern documente |
+| "Traiter" les synthétiques identifiés | Haute | Prévu à l'aube |
 
-## Relations
-| Faction | Relation |
-|---------|----------|
-| Ligue des Marchands | Ennemis — guerre froide |
-| Villages du nord | Influence croissante, recrutement actif |
-| Joueurs | À définir selon actions |
+## Ce qu'ils ne savent pas
+- Que le test d'empathie ne fonctionne plus sur les synths de New Eden
+- Que le Dr. Vest est vivant à 2-3 km et observe
+- Que les PJ ont une liste partielle des humains confirmés
+
+## Structure locale
+
+| Personne | Rôle | Caractéristique |
+|----------|------|-----------------|
+| Paladin Voss | Commandante | Convaincue, pas fanatique — pire |
+| Scribe Kern | Technicien | Absorbé par les données, ne voit pas les gens |
+| 4 soldats | Exécution | Professionnels, procéduriers |
 
 ## Comment les jouer
-- Convaincus, pas sadiques par plaisir
-- Respectent la force et le courage
-- Offrent toujours une chance de rejoindre avant d'attaquer
-- Parlent avec un calme inquiétant
-- Phrase type : *"Tu pourrais être plus que ce que tu es. Rejoins-nous."*
+- Procéduriers, pas sadiques
+- La violence de l'Acte 1 est entièrement administrative
+- Voss écoute vraiment, prend des notes, tient ses promesses
+- Elle ne détourne pas les yeux devant les questions dures
+- Phrase type Voss : *"Les procédures existent pour une raison."*
 
-## Secrets (MJ only)
-- Les villages disparus : les Fils du Cendre les ont **forcé à rejoindre** — les habitants sont des novices capturés, pas morts
-- Silas Vorne est en réalité un ancien scientifique de l'Enclave — il sait exactement ce qu'il rejette
-- Une faction dissidente interne commence à questionner Silas
+## Relations
+| Faction/Personne | Relation |
+|-----------------|----------|
+| Hazel Johnson | A appelé la Confrérie — point d'entrée initial |
+| New Eden | Zone à sécuriser technologiquement |
+| Institut | Menace principale confirmée |
+| Synthétiques libérés | Technologie hostile à neutraliser |
