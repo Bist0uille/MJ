@@ -53,14 +53,11 @@ Fallout/
 ├── locations/                  ← Lieux clés
 │   └── new_eden.md             La communauté — G.E.C.K., place centrale, clinique
 │
-├── factions/                   ← Factions actives dans le scénario
-│   └── confrerie_acier.md      La Confrérie de l'Acier — détachement Voss
-│
 ├── events/                     ← Événements actifs
 │   └── arrivee_vertibirds.md   L'arrivée de la Confrérie — structure session 2
 │
 ├── lore/                       ← Référence univers Fallout
-│   ├── monde.md                Timeline, zones, créatures, économie + contexte New Eden
+│   ├── monde.md                Timeline, zones, créatures, économie (référence → new_eden.md pour le contexte)
 │   └── factions.md             Vue d'ensemble des factions (lore général)
 │
 ├── tables/                     ← Tables aléatoires
@@ -73,20 +70,14 @@ Fallout/
 │   ├── location_template.md
 │   ├── faction_template.md
 │   ├── event_template.md
-│   └── session_template.md
+│   └── session_template.md     (redirect → session/notes_template.md)
 │
 ├── rules/                      ← Règles et instructions
 │   ├── ai_prompt.md            Instructions pour Claude en session
 │   └── system_rules.md         Ton, causalité, comportement PNJ
 │
-└── resources/                  ← Scénario source + stats PNJ
-    └── scenario_bang/
-        ├── README.md           Vue d'ensemble du scénario adapté
-        ├── PNJ_stats.md        Stats 2d20 de tous les PNJ
-        ├── acte1.md
-        ├── acte2.md
-        ├── acte3.md
-        └── conclusions.md
+└── resources/                  ← Ressources générales
+    └── README.md
 ```
 
 ---
@@ -107,6 +98,5 @@ Fallout/
 
 - **Nouveau PNJ :** copier `templates/character_template.md` → `characters/nom.md`
 - **Nouveau lieu :** copier `templates/location_template.md` → `locations/nom.md`
-- **Nouvelle faction :** copier `templates/faction_template.md` → `factions/nom.md`
 - **Nouvel événement :** copier `templates/event_template.md` → `events/nom.md`
 - **Après chaque session :** mettre à jour `state/world_state.md` + `state/active_threads.md` + créer `session/session_0X.md`
