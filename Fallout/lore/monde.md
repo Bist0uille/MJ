@@ -27,11 +27,7 @@ Les États-Unis et la Chine s'anéantissent mutuellement en deux heures. Les bom
 
 ## Contexte spécifique — New Eden (En Fanfare, ou en Catimini)
 
-**New Eden** est une communauté fondée il y a ~10 mois autour d'un G.E.C.K. opérationnel — le seul documenté dans ce secteur. Végétation luxuriante impossible dans le Wasteland. Lanternes recyclées. Communauté d'une centaine d'habitants.
-
-Ce que tout le monde ignorait : **l'Institut y avait installé des copies synthétiques Gen 3** de certains habitants, calibrées en continu via un émetteur dans le générateur. New Eden était une expérience scientifique du Dr. Rolan Vest.
-
-Le signal est maintenant coupé. Les copies et leurs originaux coexistent en ville. La Confrérie de l'Acier est arrivée. L'expérience entre dans sa phase la plus intéressante pour Vest — qui observe depuis l'extérieur.
+> Voir `/locations/new_eden.md` pour le détail complet.
 
 ---
 
