@@ -39,6 +39,8 @@ Fallout/
 │
 ├── characters/                 ← PNJ nommés
 │   ├── jesse_pedigrue.md       Maire de New Eden — symbole de la réconciliation
+│   ├── joseph.md               Goule lucide — premier cas de dégradation, ligoté à la clinique
+│   ├── theresa.md              Goule lucide — morte session 01, membre fondatrice
 │   ├── paladin_voss.md         Confrérie de l'Acier — commandante locale
 │   ├── scribe_kern.md          Confrérie — technicien, danger sur le G.E.C.K.
 │   ├── dr_rolan_vest.md        Scientifique Institut — architecte de l'expérience
