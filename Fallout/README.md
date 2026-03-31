@@ -29,8 +29,10 @@ Fallout/
 │
 ├── session/                    ← Historique et préparation des sessions
 │   ├── session_01.md           Résumé session 1 — "En Fanfare, ou en Catimini"
+│   ├── resume_session_01.md   Résumé narratif complet de la session 1
 │   ├── session_02_propositions.md       Guide session 2 — "Les Couleurs qu'on Arbore" (Confrérie)
 │   ├── session_02_propositions_bis.md   Alternative session 2 — "Ce qu'on t'a pris" (crise interne)
+│   ├── session_02_guide_complet.md      Guide MJ complet session 2 — scènes, dialogues, mécanique
 │   ├── session_03_propositions.md   5 propositions post-crise Confrérie
 │   ├── notes_template.md       Modèle de notes de session
 │   └── scenario_vierge.md      Modèle de scénario vierge
@@ -82,7 +84,8 @@ Fallout/
 │   └── system_rules.md         Ton, causalité, comportement PNJ
 │
 └── resources/                  ← Ressources générales
-    └── README.md
+    ├── README.md
+    └── boite_a_outils_scenariste.md   Guide de conception de scénarios Fallout
 ```
 
 ---
