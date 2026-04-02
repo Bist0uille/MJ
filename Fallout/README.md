@@ -85,7 +85,8 @@ Fallout/
 │
 └── resources/                  ← Ressources générales
     ├── README.md
-    └── boite_a_outils_scenariste.md   Guide de conception de scénarios Fallout
+    ├── boite_a_outils_scenariste.md   Guide de conception de scénarios Fallout
+    └── prompt_storyboard.md           Système de prompts image — fiches visuelles, style, substitutions IP
 ```
 
 ---
