@@ -1,82 +1,49 @@
-# Notes de Session #[NUMÉRO] — [DATE]
+# Session [XX] — [TITRE]
+
+**Date :** YYYY-MM-DD
+**Joueurs présents :** [noms]
 
 ---
 
-## Résumé en une phrase
-> Ce que les joueurs ont accompli aujourd'hui.
+## Résumé (3 lignes max)
+
+Ce que les joueurs ont accompli. Ce qui a changé dans le monde. Le cliffhanger ou l'état final.
 
 ---
 
-## Présents
-- [ ] [Joueur 1] — [PJ]
-- [ ] [Joueur 2] — [PJ]
-- [ ] [Joueur 3] — [PJ]
+## Événements clés
+
+- **[Lieu] :** Ce qui s'est passé. Décision des joueurs. Conséquence immédiate.
+- **[Lieu] :** ...
 
 ---
 
-## Avant la session
-**Où en étaient-ils ?**  
-**Objectif prévu pour cette session :**  
-**Menace ou tension en cours :**  
+## Changements d'état (delta)
+
+> Mettre à jour `/state/npc_tracker.md` et `/state/world_state.md` après avoir rempli ce tableau.
+
+| Élément | Avant | Après |
+|---------|-------|-------|
+| [PNJ/Lieu/Objet] | [état précédent] | [nouvel état] |
 
 ---
 
-## Déroulé de la session
+## Secrets révélés aux joueurs
 
-### Moment 1 — [Titre court]
-**Lieu :**  
-**Ce qui s'est passé :**  
-**Décision des joueurs :**  
-**Conséquences :**  
+> Ce que les joueurs ont appris cette session. Aide à savoir ce qui n'est plus un secret.
 
-### Moment 2 — [Titre court]
-*(même structure)*
-
-### Moment 3 — [Titre court]
-*(même structure)*
+-
 
 ---
 
-## Combats
+## Hooks actifs pour la prochaine session
 
-| Combat | Adversaires | Résultat | PV perdus (groupe) | Butin |
-|--------|-------------|----------|-------------------|-------|
-| | | | | |
-
----
-
-## PNJ rencontrés cette session
-
-| PNJ | Attitude finale | Statut | Notes |
-|-----|----------------|--------|-------|
-| | | Vivant/Mort/Disparu | |
+- [ ]
+- [ ]
 
 ---
 
-## XP & Progression
+## Notes MJ
 
-**XP distribué :**  
-**Nouveaux perks ou avancées :**  
-**Changements d'équipement notables :**  
+> Observations sur la table, ce qui a bien/mal marché, idées pour la suite.
 
----
-
-## Lore révélé
-
-> Quelles infos sur le monde les joueurs ont-ils découvertes ?
-
----
-
-## Fils en suspens
-
-- [ ] Quête non terminée :
-- [ ] PNJ à retrouver :
-- [ ] Lieu à explorer :
-- [ ] Menace qui approche :
-
----
-
-## Note pour la prochaine session
-**Débuter par :**  
-**Tension à maintenir :**  
-**Préparation nécessaire :**  

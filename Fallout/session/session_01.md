@@ -1,74 +1,56 @@
 # Session 01 — "En Fanfare, ou en Catimini"
 
 **Scénario :** En Fanfare, ou en Catimini
-**Lieu :** New Eden
+**Lieu :** New Eden → Grange → Clinique → Institut
 
 ---
 
-## Résumé
+## Résumé (3 lignes)
 
-Les PJ découvrent que New Eden, communauté construite autour d'un G.E.C.K., est infiltrée par l'Institut. Des copies synthétiques des habitants vivent parmi eux depuis des mois. Les PJ libèrent les prisonniers de l'Institut — et déclenchent la crise en rentrant en ville avec les originaux et leurs copies.
-
----
-
-## Révélations clés
-
-### Vieux Colosse — la vérité de son arrivée
-Vieux Colosse n'a pas "trouvé" la ville. Il vivait dans une grotte de la zone depuis 200 ans, plongé dans l'étude. Quand il en est ressorti, la ville avait poussé autour de lui.
-
-### La grange — la chasse aux radcafards
-Les joueurs ont chassé des radcafards à la ferme. Ils ont trouvé **Géraldine**, une brahmine attelée à une cariole. Ils l'ont détachée et ont attelé **Vieux Colosse** à sa place pour tirer la cariole jusqu'à l'Institut. Géraldine est repartie librement.
-
-*(Révélation potentielle session 2 : Géraldine est un synthétique Gen 2, caméra du Dr. Vest.)*
-
-### La clinique — le terminal et la liste
-Les joueurs ont trouvé un terminal de l'Institut contenant la liste des habitants **non affectés** — confirmés humains. Ils ont **détruit le terminal** mais recopié la liste sur un bout de papier. Ce papier est en leur possession. C'est la seule copie physique existante.
-
-### La clinique — l'attaque des synthétiques
-Les joueurs ont capturé **Joseph** (vivant, ligoté). À la clinique, ils ont été attaqués par trois synthétiques :
-- **Jesse Pedigrue (synthétique)** — tué
-- **Johana (synthétique)** — tuée
-- **Mimimati (synthétique)** — tuée
-
-### L'Institut — la libération
-Les joueurs ont atteint le complexe souterrain. Ils ont retrouvé le **vrai Jesse Pedigrue**, captif depuis des mois. Jesse a fait un discours devant tous les prisonniers et toutes les répliques pour les convaincre de rejoindre la communauté. Tous ont suivi.
-
-### La fuite de Vest
-Le **Dr. Rolan Vest**, responsable scientifique, s'est échappé avec le **sonar** (l'appareil qui calibrait les copies). Il n'a pas été arrêté. Le signal est coupé mais l'homme est libre.
-
-### Le coup de fil de Hazel
-Pendant l'opération à l'Institut, **Hazel a contacté la Confrérie de l'Acier** et signalé la présence de l'Institut dans la zone. La Confrérie a répondu.
+Les PJ découvrent que New Eden est infiltrée par l'Institut via des copies synthétiques. Ils libèrent les prisonniers du complexe souterrain. En rentrant en ville avec les originaux et leurs copies, ils déclenchent l'arrivée de la Confrérie de l'Acier.
 
 ---
 
-## État de la ville en fin de session
+## Événements clés
 
-| Élément | État |
-|---------|------|
-| G.E.C.K. | Intact |
-| Signal Institut | Coupé |
-| Émetteur | Parti avec Vest |
-| Joseph | Vivant, ligoté, clinique |
-| Terminal clinique | Détruit |
-| Bout de papier (liste humains) | En possession des PJ |
-| Jesse Pedigrue (vrai) | Vivant |
-| Synthétiques Institut | Libérés, rentrés en ville |
-| Dr. Rolan Vest | En fuite avec le sonar |
-| Confrérie de l'Acier | Vertibirds au-dessus de la ville |
+- **La grange :** Chasse aux radcafards. Découverte de Géraldine (brahmine). Vieux Colosse attelé à la cariole.
+- **La clinique :** Terminal de l'Institut trouvé → liste des humains confirmés recopiée sur papier → terminal détruit. Capture de Joseph. Attaque de trois synthétiques (Jesse copie, Johana, Mimimati) → tous tués.
+- **L'Institut :** Jesse Pedigrue (vrai) retrouvé en cellule. Discours de libération devant tous les prisonniers et répliques. Dr. Vest s'échappe avec le sonar. Hazel contacte la Confrérie en secret.
+- **Le retour :** Colonne d'originaux + copies rentre en ville. Vertibirds dans le ciel.
+
+---
+
+## Changements d'état (delta)
+
+> Ce qui a changé ce jour. État actuel → `/state/world_state.md` et `/state/npc_tracker.md`
+
+| Élément | Avant | Après |
+|---------|-------|-------|
+| Signal Institut | Actif | Coupé |
+| Jesse Pedigrue (vrai) | Captif à l'Institut | Vivant, New Eden |
+| Jesse Pedigrue (copie) | Vivant, en ville | Mort |
+| Johana (copie) | Vivante, en ville | Morte |
+| Mimimati (copie) | Vivante, en ville | Morte |
+| Joseph | Libre | Ligoté à la clinique |
+| Terminal clinique | Intact | Détruit |
+| Bout de papier (liste) | N'existait pas | En possession des PJ |
+| Synthétiques Institut | Captifs | Libérés, en ville |
+| Dr. Vest | À l'Institut | En fuite avec le sonar |
+| Confrérie de l'Acier | Inconnue de la ville | Vertibirds en approche |
 
 ---
 
 ## Hooks actifs pour session 02
 
-- [ ] La Confrérie va identifier et "traiter" les synthétiques — dès l'aube
-- [ ] Le test d'empathie de la Confrérie est cassé (ne détecte plus les synths de New Eden)
-- [ ] Hazel a trahi — le groupe le sait-il ?
-- [ ] Mimimati (originale) est rentrée en ville — elle va chercher Hazel
-- [ ] Vest observe depuis 2-3 km dans un entrepôt agricole
+- [ ] La Confrérie démantèle les synthétiques à l'aube → `/events/arrivee_vertibirds.md`
+- [ ] Hazel a appelé la Confrérie — le groupe le sait-il ?
+- [ ] Mimimati (originale) est rentrée — elle cherche Hazel
+- [ ] Vest observe depuis 2-3 km → `/characters/dr_rolan_vest.md`
+- [ ] Le test d'empathie de Voss est cassé → `/characters/paladin_voss.md`
 
 ---
 
 ## Notes MJ
-- Le secret de Géraldine peut rester intact toute la session 2 — ne pas forcer la révélation
-- Vest n'est pas un monstre — il croit sincèrement que son travail est scientifiquement nécessaire
-- Le bout de papier peut contredire le test de Voss — c'est l'atout des PJ
+
+- Géraldine est synthétique — révélation possible en S02, ne pas forcer
+- Le bout de papier peut contredire le test de Voss — l'atout des PJ

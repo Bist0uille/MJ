@@ -73,14 +73,7 @@ Si les PJ demandent ce que "traiter" signifie : *"Démantèlement."*
 
 **Ambiance :** Philip K. Dick. La certitude s'effondre par accumulation.
 
-Voss fait rassembler tout le monde sur la place centrale. Deux soldats s'assoient aux tables. Une longue file se forme — originaux et synthétiques mélangés.
-
-Le test mesure les **micro-réactions involontaires** face à des questions morales chargées. Pas les réponses — comment elles arrivent.
-
-**Anomalies à déployer :**
-- Un synthétique connu des PJ passe le test → identifié "humain"
-- Un original indiscutable → colonne "cas non déterminé"
-- Voss regarde le registre en silence, repart sans commenter
+> Mécanique complète du test → `/characters/paladin_voss.md`
 
 **Résultats pour les PJ :**
 - Vieux Colosse + Bailey → "cas non déterminé" (réponses atypiques)
@@ -90,7 +83,7 @@ Le test mesure les **micro-réactions involontaires** face à des questions mora
 **5 scènes émotionnelles disponibles** (en déployer 2-3 max) :
 1. Le couple — il sait que sa femme est synthétique. Elle ne sait pas.
 2. Le synthétique qui ne veut pas être sauvé.
-3. Mimimati (originale) passe le test → résultat : synthétique (le test se trompe)
+3. Mimimati (originale) passe le test → résultat : synthétique (le test se trompe) → `/personnages/PJ_groupe.md` (Hazel)
 4. Un gamin de 10 ans, seul, dont les deux parents sont marqués synthétiques.
 5. Jesse passe le test publiquement.
 
@@ -119,13 +112,15 @@ Elle sait. Elle laisse faire. C'est de la gestion, pas de la gentillesse.
 
 ## PNJ clés
 
-| PNJ | Fichier | Rôle session |
-|-----|---------|-------------|
-| Paladin Cendra Voss | `/characters/paladin_voss.md` | L'obstacle — convaincue, pas fanatique |
-| Scribe Elias Kern | `/characters/scribe_kern.md` | Danger technologique sur le G.E.C.K. |
-| Dr. Rolan Vest | `/characters/dr_rolan_vest.md` | L'atout — son journal peut tout changer |
-| Jesse Pedigrue | `/characters/jesse_pedigrue.md` | Le symbole — a fait une promesse |
-| Géraldine | — | Synthétique Gen 2, caméra de Vest. Elle broute. |
+| PNJ | Rôle session | Fiche |
+|-----|-------------|-------|
+| Paladin Cendra Voss | L'obstacle | `/characters/paladin_voss.md` |
+| Scribe Elias Kern | Danger sur le G.E.C.K. | `/characters/scribe_kern.md` |
+| Dr. Rolan Vest | L'atout — son journal peut tout changer | `/characters/dr_rolan_vest.md` |
+| Jesse Pedigrue | Le symbole — a fait une promesse | `/characters/jesse_pedigrue.md` |
+| Géraldine | Caméra de Vest — elle broute | `/characters/dr_rolan_vest.md` |
+
+> Statuts actuels → `/state/npc_tracker.md`
 
 ---
 
