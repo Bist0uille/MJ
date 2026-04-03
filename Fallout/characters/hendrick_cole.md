@@ -1,38 +1,41 @@
-# PNJ — Hendrick Cole
+# PNJ — Joseph
 
 ## En un coup d'œil
-- **Rôle :** Grand Comptable de la Ligue des Marchands
-- **Lieu :** Portail-Sud, Entrepôt Cole
-- **Première impression :** Homme de 55 ans, costume de bureau pre-war impeccable et ridicule dans ce Wasteland. Sourire de banquier. Yeux qui comptent tout.
+- **Rôle :** Habitant de New Eden — premier cas visible d'amnésie sévère causée par le signal de l'Institut
+- **Lieu :** Clinique de New Eden — ligoté, vivant
+- **Première impression :** Un homme dont les yeux cherchent quelque chose qu'il ne retrouve plus
 
 ## Apparence
-Grand, mince, cheveux argentés coiffés avec soin. Porte toujours un holster visible — il veut qu'on sache qu'il n'est pas naïf. Main gauche légèrement brûlée (vieille cicatrice, ne l'explique pas).
+Homme d'âge moyen. Regarde souvent dans le vide comme s'il cherchait à attraper quelque chose. Parle parfois en boucle sur des détails infimes. Cela empirait depuis deux mois avant la fin du signal.
 
 ## Voix
-Calme, mesurée. Jamais de mots inutiles. Quand il est en colère, il parle encore plus lentement.
+Par intermittence cohérente. Il y a des moments où il est lucide — une phrase, une question pertinente — puis il repart dans la répétition ou le silence.
 
 ## Motivations
-- **Veut :** Rouvrir la Route 7, maintenir son pouvoir, trouver la taupe dans la Ligue
-- **Craint :** Perdre le contrôle — de la ville, de ses associés, de lui-même
-- **Cache :** Finance des assassinats via des mercenaires anonymes. A fait tuer au moins deux personnes "pour le bien commun".
+- **Veut :** Retrouver ses souvenirs. Comprendre ce qu'on lui a pris.
+- **Craint :** De ne plus jamais être entier.
+- **Cache :** Parfois il a des éclairs de mémoire sur "le docteur" — des phrases du Dr. Vest qui remontent.
+
+## État actuel
+Ligoté à la clinique depuis session 1 (capturé lors de l'attaque sur la clinique). Le signal est coupé — les amnésies ne progressent plus. Mais les dommages existants sont-ils réversibles ?
 
 ## Attitude envers les joueurs
-- **Départ :** Neutre professionnel — outil potentiel
-- **Peut devenir :** Allié froid / ennemi dangereux
-- **Ce qui le fait évoluer :** Résultats concrets. Il ne récompense pas les efforts, il récompense les résultats.
+- **Départ :** Méfiant, désorienté. Se souvient vaguement qu'ils l'ont capturé.
+- **Peut devenir :** Une source d'information sur Vest — si on l'écoute avec patience.
+- **Ce qui le fait évoluer :** La patience. La régularité. Quelqu'un qui revient chaque jour.
 
-## Ce qu'il sait
-- Le convoi intercepté transportait quelque chose de plus que des marchandises (il ne le dira pas spontanément)
-- Il a une liste de suspects pour la taupe — elle est fausse
-- L'état réel des réserves d'eau (pire que ce qu'il dit publiquement)
+## Ce qu'il sait (par éclairs)
+- *"Le docteur disait que la crise, c'est la vraie expérience. Que ça, c'était la vraie donnée."*
+- Des fragments sur l'emplacement du complexe souterrain
+- Des détails sur comment fonctionnait l'émetteur (incomplets, fragmentés)
 
 ## Ce qu'il peut offrir
-- Caps (généreux si résultats)
-- Accès à des informations de la Ligue
-- Escorte ou sauf-conduit dans le territoire de la Ligue
-- Accès à l'armurerie privée (si confiance très haute)
+- Un indice sur la localisation de Vest (entrepôt agricole)
+- De la sympathie — ses souffrances donnent un visage concret aux enjeux
+
+## Question ouverte
+Si le sonar de Vest peut restituer des souvenirs — Joseph le sait-il ? Et si oui, est-il prêt à faire confiance à Vest une deuxième fois pour les récupérer ?
 
 ## Phrases types
-- *"Je ne vous demande pas votre opinion. Je vous demande si vous pouvez le faire."*
-- *"Tout le monde a un prix. Trouvons le vôtre."*
-- *"Je ne menace pas. Je calcule des probabilités."*
+- *"C'était... hier ? Il y a longtemps ? Je me souviens du matin mais après—"*
+- *"Le docteur. Il disait que comprendre était plus important que ressentir. Il le croyait vraiment."*

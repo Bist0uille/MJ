@@ -20,6 +20,11 @@
 - "La technologie n'appartient pas aux masses."
 - "Tu as prouvé ta valeur. Pour l'instant."
 
+**Représentants à New Eden (En Fanfare, ou en Catimini) :**
+- **Paladin Cendra Voss** — commandante locale, convaincue pas fanatique, sait que son test est cassé mais continue
+- **Scribe Elias Kern** — technicien, là pour le G.E.C.K., ne voit pas les gens
+- Voir `/characters/paladin_voss.md` et `/characters/scribe_kern.md`
+
 ---
 
 ### NCR — New California Republic

@@ -1,43 +1,65 @@
 # World State
 
 > Source de vérité unique. Toujours lire ce fichier en premier.
-> Dernière mise à jour : Session 01
+> Dernière mise à jour : Fin Session 01 / Avant Session 02
 
 ---
 
-## Situation globale
+## La ville — New Eden
 
-Le Mojave Wasteland générique (région fictive, an 2210) est en équilibre instable.
-La Guerre a eu lieu il y a 133 ans. Les grandes villes sont des ruines. Des colonies se sont formées autour de l'eau et de la nourriture. Deux forces s'affrontent pour le contrôle de la région.
-
----
-
-## Statut des factions
-
-| Faction | Force | Territoire | Moral | Tendance |
-|---------|-------|-----------|-------|----------|
-| Les Fils du Cendre | Moyenne | Nord + routes | Fanatique | Expansion |
-| La Ligue des Marchands | Forte | Sud + villes | Pragmatique | Défensive |
+**New Eden** est une communauté construite autour d'un **G.E.C.K. opérationnel** qui assure la végétation, l'air filtré et l'énergie de la ville via un générateur à fusion froide. C'est le seul G.E.C.K. documenté et actif dans ce secteur.
 
 ---
 
-## Conflits actifs
+## Ce que tout le monde sait maintenant
 
-- **Conflit principal :** Les Fils du Cendre bloquent la Route 7, principale voie commerciale. La Ligue cherche une solution militaire ou diplomatique.
-- **Conflit secondaire :** Plusieurs villages du nord disparaissent. Cause inconnue.
+Le générateur à fusion froide contenait un **émetteur secret installé par l'Institut**, qui volait des fragments de souvenirs aux habitants et les transmettait vers le complexe souterrain de l'Institut. L'objectif : calibrer des copies synthétiques Gen 3 en continu pour les rendre imperceptibles.
 
----
-
-## Conséquences récentes
-
-- Le village de Redstone a été brûlé (3 jours). Survivants réfugiés à Portail-Sud.
-- Un convoi de la Ligue a été intercepté — marchandises disparues, gardes tués proprement (trop proprement pour des Raiders).
-- Le Dr. Mira Vale a quitté Portail-Sud sans explication.
+Le signal est coupé. L'émetteur est parti avec le scientifique responsable.
 
 ---
 
-## Tensions mondiales
+## Statut des éléments clés
 
-- L'eau se fait rare à l'est — migration vers l'ouest en cours.
-- Rumeur d'un Vault ouvert au nord (non confirmé).
-- La Ligue suspecte une trahison interne.
+| Élément | État |
+|---------|------|
+| Le G.E.C.K. | Intact — la ville survit |
+| Le signal de l'Institut | Coupé |
+| L'émetteur | Parti avec le Dr. Vest |
+| Joseph | Vivant, ligoté à la clinique, amnésie sévère |
+| Le terminal de la clinique | Détruit par les PJ |
+| Le bout de papier | En possession des PJ — liste des humains confirmés |
+| Jesse Pedigrue (vrai) | Vivant — a mené le discours de libération à l'Institut |
+| Jesse Pedigrue (synthétique) | Mort |
+| Johana (synthétique) | Morte |
+| Mimimati (synthétique) | Morte (tuée à la clinique) |
+| Les synthétiques de l'Institut | Libérés, revenus en ville avec leurs originaux |
+| Le Dr. Rolan Vest | En fuite, avec le sonar, 2-3 km de la ville |
+| La Confrérie de l'Acier | En approche — vertibirds au-dessus de la ville |
+| Hazel | A appelé la Confrérie depuis l'Institut |
+| Géraldine la brahmine | Synthétique Gen 2 — caméra de Vest depuis le début |
+
+---
+
+## Situation globale — fin session 01
+
+New Eden est en crise d'identité totale. Les originaux et leurs copies synthétiques coexistent en ville. Personne ne sait plus qui est qui. Et les vertibirds de la Confrérie de l'Acier arrivent.
+
+---
+
+## Tensions actives
+
+- **Immédiat :** La Confrérie de l'Acier identifie et veut "traiter" les synthétiques Gen 3
+- **Court terme :** Le test d'empathie de Voss — cassé, mais utilisé quand même
+- **Long terme :** Le Dr. Vest observe depuis l'extérieur et a le sonar
+- **Fracture interne :** Hazel a appelé la Confrérie. Le groupe ne le sait peut-être pas encore.
+
+---
+
+## Questions sans réponse
+
+- Qui, parmi les habitants rentrés, est l'original et qui est la copie ?
+- Qu'est-ce que Vest va faire avec le sonar ?
+- Hazel va-t-elle assumer son choix face au groupe ?
+- Joseph peut-il récupérer ses souvenirs ?
+- Certains PJ ont-ils encore leurs propres copies quelque part ?

@@ -1,47 +1,56 @@
 # Active Threads
 
 > Fils narratifs en cours. Mettre à jour après chaque session.
+> Dernière mise à jour : Fin Session 01 / Début Session 02
 
 ---
 
 ## Quêtes actives
 
-### [Q1] Rouvrir la Route 7
-- **Donneur :** Hendrick Cole, Ligue des Marchands
-- **Objectif :** Lever le blocus des Fils du Cendre
-- **Dernière action des joueurs :** Ont accepté la mission, pas encore commencé
-- **Options connues :** Négociation / Sabotage / Force
-- **Deadline :** 5 jours (les stocks de Portail-Sud s'épuisent)
+### [Q1] Survivre à la Confrérie
+- **Déclencheur :** Hazel a contacté la Confrérie depuis l'Institut
+- **Objectif :** Protéger les synthétiques libérés avant l'aube
+- **Dernière action des joueurs :** Rentrée en ville avec les synthétiques — vertibirds dans le ciel
+- **Options connues :** Négocier avec Voss / Cacher les synthétiques / Les faire fuir / Trouver le journal de Vest
+- **Deadline :** L'aube (quelques heures)
 
-### [Q2] Villages disparus
-- **Donneur :** Aucun officiel — découverte organique
-- **Objectif :** Comprendre pourquoi des villages disparaissent
-- **Dernière action des joueurs :** Ont entendu des rumeurs à la taverne
-- **Indice connu :** Pas de corps, pas de sang, juste des villages vides
-- **Lié à :** Vault rumeur (non confirmé)
+### [Q2] Le Dr. Rolan Vest
+- **Donneur :** Aucun — découverte organique
+- **Objectif :** Trouver le scientifique et récupérer (ou détruire) le sonar
+- **Localisation :** Ruines d'un entrepôt agricole, 2-3 km de New Eden
+- **Lié à :** Le sonar peut potentiellement restituer des souvenirs
+
+### [Q3] L'identité dans New Eden
+- **Nature :** Fil long terme, aucune résolution immédiate
+- **Objectif :** Comment deux versions d'un même être coexistent-elles ?
+- **Élément clé :** Un synthétique inconnu est rentré — personne ne reconnaît son original
 
 ---
 
 ## Décisions joueurs en attente de conséquences
 
-- [ ] Ont aidé un Fils du Cendre blessé sans le dénoncer → sa faction l'apprendra ?
-- [ ] Ont vendu des infos sur une cache de munitions → à qui vont ces munitions ?
+- [ ] Hazel a appelé la Confrérie — le groupe l'apprend-il ? Quand ? Comment ?
+- [ ] Les PJ ont détruit le terminal — la liste partielle sur papier est la seule copie
+- [ ] Jesse a fait un discours promettant l'intégration — peut-il tenir cette promesse ?
+- [ ] Joseph est ligoté à la clinique — que devient-il pendant la crise ?
 
 ---
 
 ## Mystères ouverts
 
-| Mystère | Premier indice | Statut |
+| Mystère | Dernier indice | Statut |
 |---------|---------------|--------|
-| Convoi proprement tué | Qui a les compétences ? | Ouvert |
-| Dr. Mira Vale disparue | Motif inconnu | Ouvert |
-| Vault au nord | Rumeur non vérifiée | Ouvert |
-| Villages vides | Aucun corps | Ouvert |
+| Qui est l'original, qui est la copie ? | Personne ne peut le prouver | Ouvert |
+| Géraldine est synthétique | Signal radio détectable | Ouvert si non révélé |
+| Le sonar peut-il restituer des souvenirs ? | Vest l'a laissé entendre | Non confirmé |
+| Les copies de PJ existent-elles encore ? | Aucune vérification faite | Ouvert |
+| La "Sujet 1179F" d'Augusta | Dans les notes de Vest | Non découvert |
 
 ---
 
 ## Menaces émergentes
 
-- **Immédiat :** Pénurie d'eau à Portail-Sud dans 5 jours
-- **Court terme :** Les Fils du Cendre recrutent activement
-- **Long terme :** Migration de l'est — des milliers de personnes arrivent
+- **Immédiat :** La Confrérie démantèle les synthétiques à l'aube si rien ne change
+- **Court terme :** Le test d'empathie de Voss donne des faux positifs ET des faux négatifs
+- **Long terme :** Vest a le sonar — il peut recommencer ailleurs
+- **Interne :** Mimimati (originale) va apprendre que sa copie est morte — tuée par le groupe

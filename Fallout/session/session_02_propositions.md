@@ -1,219 +1,138 @@
-# Préparation Session 02 — Propositions
+# Session 02 — "Les Couleurs qu'on Arbore"
 
-> Basé sur : session_01.md, world_state.md, active_threads.md, fiches factions/PNJ
-> Dernière mise à jour avant Session 02
-
----
-
-## Ce qui DOIT se passer au début de cette session
-
-Ces conséquences de la Session 01 sont inévitables — elles se jouent quelle que soit la direction choisie.
-
-### 1. Nora approche les PJs (dès le matin)
-Elle les attendait. Café chaud sur le comptoir. Elle pose une enveloppe.
-> *"Vous m'avez payé correctement la dernière fois. Alors ça, c'est gratuit. Mais vous me devrez quelque chose."*
-
-**Dans l'enveloppe :** une adresse à la lisière de la ville + un horaire. C'est là que le Dr. Mira Vale est passée la nuit avant de partir. Quelqu'un l'a escortée — un homme en manteau brun, pas un habitant de Portail-Sud.
-
-→ Nora ne donne pas plus. Elle a sa propre raison de vouloir que les PJs s'en occupent.
+> Scénario : *En Fanfare, ou en Catimini*
+> Dernier état mis à jour : Avant session 02
 
 ---
 
-### 2. Le garde mort — la vérité (MJ only)
-Le garde trouvé mort à la fin de Session 01 s'appelait **Dex Harrow**. Il travaillait pour Cole. Il surveillait les PJs depuis leur arrivée.
+## Thème de cette session
 
-Il a été tué proprement — même méthode que les gardes du convoi intercepté.
+La session 1 posait : *qui es-tu vraiment ?*
 
-**Ce que ça signifie :** La taupe dans la Ligue sait que Cole fait surveiller des gens. Elle a neutralisé son opérateur. Les PJs ont failli se faire tuer à la place de Dex — ou Dex est mort parce qu'il les a vus faire quelque chose.
+La session 2 pose : *qu'est-ce que tu es prêt à faire pour protéger quelqu'un d'autre ?*
 
-→ Cole ne le montrera pas, mais quand il les convoque ce matin, il est plus tendu que d'habitude.
+Pas en abstrait. Avec une file d'attente. Avec un registre. Avec une case cochée au bout.
 
----
-
-### 3. Renn — le message des Fils du Cendre (Jour 2)
-**Renn** (le Fils du Cendre blessé aidé en Session 01) a rapporté l'incident à son Cendrier. Silas Vorne l'a su dans la nuit.
-
-Silas ne comprend pas pourquoi des étrangers aident ses gens. Ça ne correspond à rien dans son modèle du monde. Il est **curieux**. Et curieux chez Silas, c'est dangereux.
-
-Un **Novice messager** arrive à la porte de Portail-Sud ce matin. Il demande les PJs par leurs noms. Il porte une lettre cachetée à la cire noire.
-
-**Le message de Silas :**
-> *"On m'a dit que vous étiez différents. Je veux voir par moi-même. Venez à la Route 7 au coucher du soleil. Venez seuls. Vous ne serez pas blessés — vous avez ma parole. Venez armés si ça vous rassure. Silas."*
-
-**Implication :** C'est à la fois une opportunité unique et un risque réel. Silas tient sa parole — mais il teste toujours.
+**Inspirations :** Philip K. Dick, Kafka, Fallout.
 
 ---
 
-## Trois directions possibles pour la session
+## Structure temporelle
+
+```
+JOUR    → Les vertibirds arrivent. Le test. Les listes.
+          Les joueurs subissent et observent.
+          Chaque scène émotionnelle pose un visage sur quelqu'un à sauver.
+
+NUIT    → La fenêtre. Les joueurs agissent.
+          Chaque heure qui passe est une heure de moins avant l'aube.
+          Chaque action réussie est une personne de plus qui passe la muraille.
+
+AUBE    → Voss appelle les noms sur sa liste.
+          Certains répondent. D'autres ont disparu pendant la nuit.
+          Ce qui n'a pas été sauvé pendant la nuit ne sera pas sauvé.
+```
+
+**La règle des pertes partielles :** tout le monde ne s'en sort pas. La différence entre perdre 8 personnes et en sauver 15 — c'est ce que les joueurs ont fait pendant la nuit.
 
 ---
 
-## PROPOSITION A — "La Main Tendue"
-*Focus : Diplomatie / Silas Vorne / Route 7*
-**Durée estimée :** 1 session complète
+## Musique d'ambiance
 
-### Tension centrale
-Les PJs doivent décider : répondre à l'invitation de Silas ou l'ignorer. S'ils vont, ils ont une chance de lever le blocus sans violence. Mais rencontrer Silas, c'est entrer dans son jeu.
-
-### Structure
-
-**Acte 1 — Le choix**
-Cole les convoque. Il a entendu parler du messager Fils du Cendre. Il est furieux mais dissimule. Il leur dit d'ignorer l'invitation et de passer en force avec l'escorte de la Ligue ce soir.
-
-Les PJs sont pris entre deux injonctions contradictoires :
-- Cole : "Passez en force ce soir"
-- Silas : "Venez seuls au coucher du soleil"
-
-Nora peut leur souffler (si on lui pose la question) : *"Cole veut les choses faites à sa façon. Mais c'est pas lui qui mourra sur la Route 7."*
-
-**Acte 2 — La Route**
-Trajet vers le blocus. Rencontre aléatoire possible (table Wasteland). En approchant, ils voient le checkpoint des Fils du Cendre : barricade de ferraille, feux, 4-6 Brûlants.
-
-Si les PJs ont répondu à l'invitation : **Renn les attend** à 500 mètres du checkpoint. Il les escorte sans un mot jusqu'à une tente en retrait. Silas est là.
-
-**Acte 3 — Silas**
-Entretien avec Silas. Il évalue les PJs en posant des questions philosophiques pas des questions pratiques :
-- *"Qu'est-ce que vous avez perdu depuis la naissance ?"*
-- *"Est-ce que vous croyez que le monde méritait de brûler ?"*
-- *"Pourquoi avez-vous aidé Renn ?"*
-
-Il propose un accord : il lève le blocus **contre la garantie que la Ligue n'amène plus de technologie pre-war dans le nord**. Il veut que les PJs servent de garants — pas Cole, eux.
-
-**Tension cachée :** Un Cendrier (la dissidence interne) observe l'entretien depuis l'ombre. Il a sa propre agenda.
-
-### Conséquences selon le choix
-
-| Choix | Conséquence immédiate | Conséquence long terme |
-|-------|----------------------|----------------------|
-| Accord avec Silas | Blocus levé, pénurie évitée | Cole furieux — il perd du contrôle, cherche à trahir les PJs |
-| Refus / Attaque | Combat, blocus tenu | Guerre ouverte dans 3 jours |
-| Accord mais Cole sabote | Le convoi amène quand même de la tech | Silas les considère comme traîtres |
-
-### Hooks ouverts en fin de session
-- Qui est le Cendrier dissident ? Que voulait-il ?
-- Cole va-t-il honorer l'accord ou le contourner ?
-- Silas a mentionné "les bunkers du nord" sans s'en rendre compte — pourquoi ?
+| Moment | Titre | Effet voulu |
+|--------|-------|-------------|
+| Arrivée des vertibirds | *"I'm Movin' On"* — Hank Snow | La menace qui avance quoi qu'on fasse |
+| Débarquement | Silence total | Le silence des armures lourdes |
+| Les files d'attente | *"Sixteen Tons"* — Tennessee Ernie Ford | Le processus qui écrase les individus |
+| Négociation avec Voss | *"Big Rock Candy Mountain"* — Harry McClintock | Des promesses qui sonnent fausses |
+| Scènes émotionnelles | *"Crying"* — Roy Orbison, très bas | La douleur sans l'annoncer |
+| Jesse et les PJ (acte 3) | Silence | Charge les joueurs de tout le poids |
+| La fuite / décision finale | *"Ghost Riders in the Sky"* — Johnny Cash | L'élan vers l'inconnu |
+| Épilogue | *"A Satisfied Mind"* — Red Foley | Ce qu'on a défendu. Ce qu'on a perdu. |
 
 ---
 
-## PROPOSITION B — "La Taupe"
-*Focus : Intrigue / Trahison dans la Ligue / Dr. Mira Vale*
-**Durée estimée :** 1 session complète
+## Acte 1 — La Mainmise (Le jour)
 
-### Tension centrale
-Dex Harrow est mort. Nora a des informations sur Vale. Quelqu'un à l'intérieur de la Ligue œuvre activement contre Portail-Sud. Et cette personne sait maintenant que les PJs existent.
+**Ambiance :** Bureaucratique et écrasant. La Confrérie ne crie pas. Elle procède.
 
-### Structure
+Voss s'installe. Deux tables, deux registres, deux lampes. Quatre soldats T-60. Elle cherche "le responsable de cette communauté."
 
-**Acte 1 — L'adresse de Nora**
-Les PJs suivent l'indice de Nora : une vieille remise à l'est de la ville. Ils trouvent des traces de départ précipité — et une **holotape** cachée dans une cavité du mur.
+Elle est directe :
+> *"Nous avons des informations confirmant la présence de synthétiques Gen 3. Nous venons récupérer la technologie et traiter le problème synthétique. Nous n'avons pas l'intention de blesser quiconque n'est pas une réplique artificielle."*
 
-Sur la holotape : la voix du Dr. Vale. Elle parle à quelqu'un qu'on n'entend pas :
-> *"...ils vont trouver. Je ne peux pas rester. Le signal vient pas du nord, il vient d'en dessous. Les fondations du générateur. Quelqu'un dans la Ligue est au courant depuis le début et n'a rien dit. Je pars chercher la source. Si je reviens pas—"*
+Si les PJ demandent ce que "traiter" signifie : *"Démantèlement."*
 
-La bande s'arrête. Elle a été coupée.
+**Kern cherche Augusta** dans l'heure qui suit. Il veut les données du générateur et du G.E.C.K.
 
-**Acte 2 — Remonter la piste**
-"Le signal vient d'en dessous." — Qu'est-ce que ça signifie ? Vale parlait d'un signal et d'un générateur. Il y a un **vieux générateur abandonné** dans le quartier est de Portail-Sud, désaffecté depuis 2 ans.
-
-En investiguant : le générateur est toujours actif en secret. Un équipement caché à l'intérieur émet un signal basse fréquence. Signal de quoi ? Vers qui ?
-
-La taupe de la Ligue comprend que les PJs approchent trop près. Elle envoie deux hommes les arrêter — discrets, propres, efficaces. Pas des Raiders. Des professionnels.
-
-**Acte 3 — La Confrontation**
-Les PJs identifient le Facteur traître : **Aldric Vane**, 45 ans, responsable des stocks du nord. Toujours calme, toujours poli. Il leur offre un verre si on l'approche directement.
-
-Il ne nie pas. Il propose à la place :
-> *"Ce signal sert à des gens qui peuvent vous aider bien plus que Cole. Vous voulez savoir ce qu'il y a dans ce Vault au nord ? Je vous donne les coordonnées. Contre votre silence."*
-
-Il représente un troisième parti encore non révélé — ni la Ligue, ni les Fils du Cendre.
-
-### Conséquences selon le choix
-
-| Choix | Conséquence immédiate | Conséquence long terme |
-|-------|----------------------|----------------------|
-| Livrer Aldric à Cole | Cole récompense mais cherche à effacer les PJs (ils en savent trop) | Le troisième parti devient hostile |
-| Accepter le marché d'Aldric | Coordonnées du Vault | Ils doivent garder le secret — tension |
-| Tuer Aldric | Cole perd sa source de renseignement | Le troisième parti envoie quelqu'un chercher les PJs |
-
-### Hooks ouverts en fin de session
-- Qui est ce troisième parti ? (Enclave ? Remnants militaires ?)
-- Le Vault au nord — est-ce ce que cherchait Vale ?
-- Vale est-elle encore vivante ?
+**Jesse est dans la foule.** Sa main tient l'épaule d'un synthétique libéré. Ses doigts sont blancs. Il ne donne pas d'ordres aux PJ — il les regarde.
 
 ---
 
-## PROPOSITION C — "Le Village de Cendres"
-*Focus : Action / Mystère / Villages disparus*
-**Durée estimée :** 1 session complète
+## Acte 2 — Le Test (Le jour, suite)
 
-### Tension centrale
-Sur la route vers le nord, les PJs passent par **Caldwell's Rest** — un village de 40 personnes. Il devrait y avoir de la fumée, des bruits, des chiens. Il n'y a rien.
+**Ambiance :** Philip K. Dick. La certitude s'effondre par accumulation.
 
-### Structure
+Voss fait rassembler tout le monde sur la place centrale. Deux soldats s'assoient aux tables. Une longue file se forme — originaux et synthétiques mélangés.
 
-**Acte 1 — Caldwell's Rest**
-Le village est vide mais intact. Pas de corps, pas de sang, pas de destruction. Les feux sont éteints depuis 24h. Les repas sont encore sur les tables. Un enfant a laissé un jouet au milieu de la route.
+Le test mesure les **micro-réactions involontaires** face à des questions morales chargées. Pas les réponses — comment elles arrivent.
 
-Indices à découvrir :
-- Des traces de pas menent tous vers le nord — familles entières, en ordre, comme une procession
-- Un vieillard **resté en arrière** : trop malade pour marcher, caché dans une cave. Il a tout vu.
-- Un message gravé dans une poutre : *"Nous allons vers ce qui est juste. Ne nous cherchez pas."*
+**Anomalies à déployer :**
+- Un synthétique connu des PJ passe le test → identifié "humain"
+- Un original indiscutable → colonne "cas non déterminé"
+- Voss regarde le registre en silence, repart sans commenter
 
-**Ce que dit le vieillard :**
-Un homme est arrivé il y a 3 jours. Pas un Brûlant. Un homme calme, bien habillé pour le Wasteland, qui a parlé pendant des heures. Le lendemain, tout le village a voulu partir. Comme si c'était leur idée à eux.
+**Résultats pour les PJ :**
+- Vieux Colosse + Bailey → "cas non déterminé" (réponses atypiques)
+- Tommy → l'examinateur fronce les sourcils (trop bon contrôle)
+- Jesse passe le test → humain. Ce n'est pas un soulagement. C'est le contraire.
 
-*"Il avait des cicatrices partout sur les mains. Et il portait quelque chose autour du cou — une médaille retournée."*
-
-→ C'est Silas Vorne lui-même qui est venu. Seul. Sans escorte.
-
-**Acte 2 — Suivre la procession**
-Les traces menent vers Greyfall — mais par un chemin de traverse que personne ne connaît. Les PJs peuvent suivre. Ils arrivent à une **entrée secondaire de Greyfall** : une porte de service jamais mentionnée.
-
-À l'intérieur de cette partie du complexe : les "Cellules" — pas des cellules de prison mais des **dortoirs simples, propres, avec de la nourriture**. Les villageois sont là. Ils semblent... bien. Ils ne veulent pas partir.
-
-**Acte 3 — Le choix moral**
-Un villageois reconnaît les PJs et les supplie discrètement : *"On peut pas partir. Si on part, ils reprennent nos familles. Mon fils est quelque part dans cette forteresse."*
-
-D'autres villageois croient sincèrement à la cause des Fils du Cendre. Tous ne sont pas prisonniers — certains sont des convertis.
-
-Les PJs doivent décider qui sauver et comment, sans déclencher une bataille dans une forteresse de 200 guerriers.
-
-### Conséquences selon le choix
-
-| Choix | Conséquence immédiate | Conséquence long terme |
-|-------|----------------------|----------------------|
-| Sortir les villageois de force | Alarme, combat, fuite | Silas déclare les PJs ennemis |
-| Convaincre les villageois de partir | Long, incertain, certains refusent | Silas sait qu'ils sont entrés — il ne le dit pas encore |
-| Trouver le fils + partir discrètement | Petite victoire, découverte du plan de Silas | Contact avec la faction dissidente interne |
-
-### Hooks ouverts en fin de session
-- Les convertis sincères — ont-ils tort d'avoir choisi ça ?
-- La faction dissidente des Fils du Cendre — un Cendrier les a aidés à partir
-- Silas sait qu'ils sont venus. Il n'a pas réagi. Pourquoi ?
+**5 scènes émotionnelles disponibles** (en déployer 2-3 max) :
+1. Le couple — il sait que sa femme est synthétique. Elle ne sait pas.
+2. Le synthétique qui ne veut pas être sauvé.
+3. Mimimati (originale) passe le test → résultat : synthétique (le test se trompe)
+4. Un gamin de 10 ans, seul, dont les deux parents sont marqués synthétiques.
+5. Jesse passe le test publiquement.
 
 ---
 
-## Recommandation MJ
+## Acte 3 — La Nuit : La Fenêtre
 
-**Si tu veux une session de tension politique → Proposition A**
-Les joueurs jouent avec le feu en rencontrant Silas. Risque élevé, récompense élevée.
+**Ambiance :** L'horloge tourne. Pas de musique. Silence.
 
-**Si tu veux une session d'enquête urbaine → Proposition B**
-L'intrigue se resserre sur Portail-Sud. Un troisième parti entre dans le jeu.
+Voss annonce que les procédures commenceront à l'aube. Elle remet son gant. Elle entre dans sa tente.
 
-**Si tu veux une session d'action + moral → Proposition C**
-On sort de la ville, on découvre le secret des villages, et on doit faire des choix difficiles.
+> *"Les procédures commenceront au lever du soleil. D'ici là, vos affaires vous appartiennent. Je vous conseille de dormir."*
 
-**Elles peuvent se combiner :** A + C fonctionne naturellement (rencontre Silas → découverte des villageois). B est indépendante mais peut suivre A ou C.
+Elle sait. Elle laisse faire. C'est de la gestion, pas de la gentillesse.
+
+**New Eden la nuit :** Portes entrouvertes, voix basses, enfants qu'on essaie de faire dormir. Seule lumière : les lampes froides de la Confrérie. La clinique est allumée — Bailey travaille.
+
+**Options des joueurs :**
+- Faire fuir des synthétiques avant l'aube
+- Confronter Voss avec le bout de papier (humains confirmés par l'Institut lui-même)
+- Trouver Vest à 2-3 km et obtenir son journal (liste exacte)
+- Démontrer statistiquement que le test est cassé (Augusta, INT + Sciences diff 3)
+- Jesse parle à Voss — seul, sans armes
 
 ---
 
-## État du monde au début de Session 02
+## PNJ clés
 
-- **Jour :** Jour 2 sur 5 avant pénurie d'eau
-- **Portail-Sud :** Tendu, réfugiés toujours là, un garde mort non élucidé
-- **Fils du Cendre :** Silas a envoyé un message — il attend une réponse
-- **Ligue :** Cole surveille les PJs, la taupe est active
-- **Dr. Vale :** Disparue, laissé une holotape (si Proposition B)
-- **Renn :** Disponible comme point de contact neutre avec les Fils du Cendre
+| PNJ | Fichier | Rôle session |
+|-----|---------|-------------|
+| Paladin Cendra Voss | `/characters/paladin_voss.md` | L'obstacle — convaincue, pas fanatique |
+| Scribe Elias Kern | `/characters/scribe_kern.md` | Danger technologique sur le G.E.C.K. |
+| Dr. Rolan Vest | `/characters/dr_rolan_vest.md` | L'atout — son journal peut tout changer |
+| Jesse Pedigrue | `/characters/jesse_pedigrue.md` | Le symbole — a fait une promesse |
+| Géraldine | — | Synthétique Gen 2, caméra de Vest. Elle broute. |
+
+---
+
+## Questions sans réponse intentionnelles
+
+Le MJ ne connaît pas les réponses à ces questions. Personne ne les connaît.
+
+- Mimimati — laquelle est l'originale, laquelle est la copie ? (Hazel doit choisir sans certitude)
+- Hazel a appelé la Confrérie. Le groupe le sait-il maintenant ?
+- Certains PJ ont peut-être leurs propres copies encore quelque part.

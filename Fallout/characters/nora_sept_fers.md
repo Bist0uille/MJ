@@ -1,40 +1,33 @@
-# PNJ — Nora "Sept Fers"
+# PNJ — Mimimati
 
 ## En un coup d'œil
-- **Rôle :** Tenancière de La Gâchette, informatrice freelance
-- **Lieu :** Portail-Sud, La Gâchette (taverne)
-- **Première impression :** Femme de 40 ans, bras musclés, tablier taché, regard qui pèse les gens comme elle pèse ses rations.
+- **Rôle :** Amante d'Hazel — l'originale, revenue de l'Institut
+- **Lieu :** New Eden — cherche Hazel
+- **Première impression :** Une femme vivante qui ne sait pas encore qu'elle est morte pour quelqu'un
 
 ## Apparence
-Rousse coupée court, une oreille manquante (remplacée par une prothèse en métal — d'où "Sept Fers", elle en a compté sept sur elle). Toujours un verre à la main, rarement plein. Bouge vite pour quelqu'un d'aussi solide.
+Jeune femme. Des traits doux. Elle revient de l'Institut avec tous les autres libérés — elle croit avoir toujours vécu ici. Les souvenirs de Vest sont méticuleux.
 
-## Voix
-Accent du Sud, traînant. Ironique par défaut. Rit souvent, mais l'ironie ne disparaît jamais vraiment.
+## Ce qu'elle sait (ou croit savoir)
+Elle est l'originale. Elle a des souvenirs réels. Elle cherche Hazel.
 
-## Motivations
-- **Veut :** Que Portail-Sud survive — c'est son gagne-pain et sa famille de substitution
-- **Craint :** Que la Ligue sacrifie la ville pour sauver ses profits
-- **Cache :** Elle vend des informations aux deux côtés depuis des années. Personne ne le sait encore.
+## Ce qu'elle ne sait pas encore
+Que sa copie synthétique a été tuée à la clinique. Par le groupe d'Hazel.
 
-## Attitude envers les joueurs
-- **Départ :** Amicale avec réserve — ils sont des clients, donc importants
-- **Peut devenir :** Alliée précieuse / source d'ennuis si son double jeu est découvert
-- **Ce qui la fait évoluer :** Payer correctement, ne pas la menacer, lui prouver qu'on ne trahit pas ses contacts
+## Le test d'empathie
+Elle passe le test → résultat : **synthétique**. Le test se trompe. Son double a été tué en session 1 — mais le test ne sait pas ça. Il n'y a plus de double. L'originale est devant lui. Et le test dit synthétique.
 
-## Ce qu'elle sait
-*(Tout se paye en caps ou en service)*
-- Qui entre et sort de Portail-Sud depuis 6 mois
-- La taupe dans la Ligue (elle l'a deviné mais pas confirmé)
-- Où le Dr. Mira Vale est probablement allée
-- Les points faibles des murs de la ville
+## La question centrale
+Hazel sait que Mimimati est l'originale. Elle a peut-être le bout de papier pour le prouver. Mais le doute existe : si c'est l'originale qui est morte à la clinique, et que celle-ci est la copie — qui ne le sait pas ? Hazel n'a pas de preuve. Dans un sens ni dans l'autre.
 
-## Ce qu'elle peut offrir
-- Informations (payantes)
-- Faux papiers d'identité (contact externe)
-- Chambre sûre à l'étage (discrétion garantie)
-- Introduction à des personnes utiles
+## Attitude envers Hazel
+Elle cherche Hazel. Elle ne comprend pas pourquoi Hazel a l'air comme elle a l'air. Tout va bien. Non ?
+
+Quand elle apprend la vérité — que sa copie est morte, tuée par le groupe d'Hazel — la réaction est à jouer librement avec la joueuse.
+
+## La scène à ne pas rater
+Mimimati et Hazel. Seules. Lumière douce d'une lampe à huile. Le silence avant les mots. Mimimati vient d'apprendre que sa copie est morte. Comment réagit-on à la mort de soi-même ?
 
 ## Phrases types
-- *"Tout le monde parle quand ils boivent assez. Mon travail c'est de les faire boire."*
-- *"J'ai pas de camp. J'ai des clients."*
-- *"Tu poses les bonnes questions, étranger. C'est soit très intelligent, soit très dangereux."*
+- *"Hazel. J'essayais de te trouver depuis ce matin. Tout va bien ?"*
+- *"Ma... copie ? Qu'est-ce que tu veux dire ?"*

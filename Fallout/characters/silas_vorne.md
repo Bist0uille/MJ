@@ -1,42 +1,31 @@
-# PNJ — Silas Vorne
+# PNJ — Géraldine
 
 ## En un coup d'œil
-- **Rôle :** Prophète et fondateur des Fils du Cendre
-- **Lieu :** Greyfall, Cathédrale de Cendre / Tour de commandement
-- **Première impression :** Homme de 60 ans, robe grise rapiécée mais propre. Regard d'une intensité dérangeante. Parle doucement. Ne hausse jamais la voix.
+- **Rôle :** Brahmine apparemment ordinaire — en réalité caméra de surveillance synthétique du Dr. Vest
+- **Lieu :** New Eden — se déplace librement
+- **Première impression :** Une brahmine à deux têtes qui broute tranquillement dans un coin.
 
-## Apparence
-Cheveux et barbe blancs, longs. Cicatrices de radiation sur les mains et le cou — portées avec fierté. Mince jusqu'à l'ascétisme. Porte un vieux badge Enclave retourné comme pendentif — peu le reconnaissent pour ce que c'est.
+## La vérité
+Géraldine est un **synthétique Gen 2 modifié**. Deux têtes, deux flux d'observation vidéo en temps réel transmis via signal basse fréquence à l'ordinateur portable de Vest.
 
-## Voix
-Grave, posée, liturgique. Il parle comme quelqu'un qui a tout le temps du monde. Fait des pauses longues et inconfortables avant de répondre.
+Elle est dans la ville depuis avant la fondation. Vest l'a placée là en éclaireur avant même d'activer l'émetteur. Elle a observé toute la campagne depuis le début. Elle continue.
 
-## Motivations
-- **Veut :** Que la région rejette la technologie pre-war et se soumette à "la vérité de la Cendre"
-- **Craint :** Un Vault ouvert qui prouverait que la technologie peut sauver — détruirait sa théologie
-- **Cache :** Son passé de scientifique Enclave. Son mouvement est en partie construit sur sa propre culpabilité pour des expériences qu'il a menées.
+## Pourquoi personne ne l'a détecté
+Personne ne teste une vache.
 
-## Attitude envers les joueurs
-- **Départ :** Curieux et évaluateur — les voit comme des âmes à convertir ou des outils
-- **Peut devenir :** Ennemi principal / allié improbable (s'ils l'aident contre les Vaults)
-- **Ce qui le fait évoluer :** Prouver qu'on comprend la "vérité du Wasteland" / menacer son mouvement
+## Indices disponibles
 
-## Ce qu'il sait
-- L'emplacement exact de tous les villages capturés
-- Un accès au réseau de bunkers militaires pre-war (héritage Enclave)
-- La dissidence dans ses rangs (il la surveille, ne l'a pas encore écrasée)
+**Moment 1 :** Une tête de Géraldine se tourne vers un PJ au moment précis où il dit quelque chose d'important. Juste une seconde. Trop précise pour être un hasard.
 
-## Ce qu'il peut offrir
-- Libération des villageois (si les joueurs trouvent un levier)
-- Informations sur les bunkers militaires
-- Neutralité armée (s'ils convainquent sa faction dissidente)
+**Moment 2 :** Augusta ou Marvin détecte un signal radio de faible portée émis depuis sa direction. Pas fort — juste là.
 
-## Phrases types
-- *"Tu portes ton équipement comme un fardeau. Parce que c'en est un."*
-- *"Le monde a brûlé parce qu'il le méritait. Nous, nous avons survécu parce que nous le méritions aussi."*
-- *"Je ne te demande pas de croire. Je te demande de regarder autour de toi."*
+**Moment 3 :** Si la Confrérie décide de tester absolument tout, quelqu'un propose les animaux. Le test dit : **synthétique**. Silence dans la pièce.
 
-## Secrets (MJ only)
-- Silas a des crises de doute la nuit — un journal personnel dans sa tour documente tout
-- Il regrette les villageois capturés mais ne peut pas reculer sans perdre son autorité
-- Si on lui prouve qu'il peut expier autrement, il pourrait changer de camp
+## Ce que Vest dit si on lui présente ça
+> *"Elle a été très utile. Vous aussi, d'ailleurs. La différence c'est qu'elle ne se pose pas de questions sur ce qu'elle est."*
+
+## Règle importante pour le MJ
+**Ne force pas cette révélation.** Si personne ne cherche, Géraldine broute jusqu'à la fin. Le mystère intact est plus beau que la révélation forcée.
+
+## Note historique
+Les PJ ont détaché Géraldine de la cariole en session 1 pour atteler Vieux Colosse à sa place. Géraldine est repartie librement dans le Wasteland. Puis est rentrée. Elle est revenue. Elle broute.
