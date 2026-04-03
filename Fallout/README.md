@@ -51,7 +51,9 @@ Fallout/
 │   └── marvin.md               PJ — Mister Handy, observateur
 │
 ├── locations/                  ← Lieux clés
-│   └── new_eden.md             La communauté — G.E.C.K., place centrale, clinique
+│   ├── new_eden.md             La communauté — G.E.C.K., place centrale, clinique
+│   ├── ferme_joseph_theresa.md Scène de crime session 01 — ferme adobe en périphérie
+│   └── complexe_institut.md    Installation secrète de l'Institut — neutralisée en session 01
 │
 ├── events/                     ← Événements actifs
 │   └── arrivee_vertibirds.md   L'arrivée de la Confrérie — structure session 2
