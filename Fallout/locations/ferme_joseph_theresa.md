@@ -11,5 +11,6 @@ Depuis la session 01 : porte défoncée, intérieur saccagé, traces de lutte. T
 
 ## Liens
 
-- Joseph et Theresa → PNJ secondaires, pas de fiche dédiée
+- Joseph → `/characters/joseph.md`
+- Theresa → `/characters/theresa.md`
 - Dr. Vest → avait visité la ferme quelques jours avant le scénario → `/characters/dr_rolan_vest.md`
