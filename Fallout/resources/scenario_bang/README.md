@@ -66,6 +66,6 @@ L'Institut a infiltré New Eden et piraté un dispositif caché dans le généra
 | Dr. Rolan Vest | `/characters/dr_rolan_vest.md` | Scientifique — l'architecte de tout |
 | Paladin Cendra Voss | `/characters/paladin_voss.md` | Confrérie — la menace à l'aube |
 | Scribe Elias Kern | `/characters/scribe_kern.md` | Confrérie — danger sur le G.E.C.K. |
-| Joseph | `/characters/hendrick_cole.md` | Victime — premier cas d'amnésie |
-| Mimimati | `/characters/nora_sept_fers.md` | L'amante d'Hazel — l'originale |
-| Géraldine | `/characters/silas_vorne.md` | La caméra de Vest — synthétique |
+| Joseph | *(pas de fiche dédiée — PNJ secondaire)* | Victime — premier cas d'amnésie |
+| Mimimati | *(pas de fiche dédiée — PNJ secondaire)* | L'amante d'Hazel — l'originale |
+| Géraldine | `/characters/dr_rolan_vest.md` | La caméra de Vest — synthétique |
