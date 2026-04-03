@@ -29,7 +29,8 @@ Fallout/
 │
 ├── session/                    ← Historique et préparation des sessions
 │   ├── session_01.md           Résumé session 1 — "En Fanfare, ou en Catimini"
-│   ├── session_02_propositions.md   Guide session 2 — "Les Couleurs qu'on Arbore"
+│   ├── session_02_propositions.md       Guide session 2 — "Les Couleurs qu'on Arbore" (Confrérie)
+│   ├── session_02_propositions_bis.md   Alternative session 2 — "Ce qu'on t'a pris" (crise interne)
 │   ├── session_03_propositions.md   5 propositions post-crise Confrérie
 │   ├── notes_template.md       Modèle de notes de session
 │   └── scenario_vierge.md      Modèle de scénario vierge
