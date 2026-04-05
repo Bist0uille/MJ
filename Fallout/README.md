@@ -55,6 +55,7 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 | `session_02_propositions.md` | Version condensée du scénario session 2 (Confrérie) |
 | `session_02_propositions_bis.md` | Scénario alternatif session 2 "Ce qu'on t'a pris" (crise interne, sans Confrérie) |
 | `session_03_propositions.md` | 5 propositions pour la suite — diplomatie, identité, traque, trahison, reconstruction |
+| `pretires_integration.md` | Supplément MJ — crochets scénaristiques, questions de fête, fractures identitaires de chaque prétirés |
 | `notes_template.md` | Modèle de prise de notes post-session |
 | `scenario_vierge.md` | Modèle de scénario vierge |
 
@@ -92,7 +93,12 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 
 | Fichier | Lieu |
 |---------|------|
-| `new_eden.md` | La communauté — G.E.C.K., place centrale, clinique, muraille nord |
+| `new_eden.md` | La communauté — G.E.C.K., place centrale, muraille nord, vue d'ensemble |
+| `clinique.md` | Centre médical — réception, salles de soins, bureau du médecin |
+| `parc.md` | Espace vert — fontaine, arbre aux noms, bancs |
+| `comptoir_commercial.md` | Marché communautaire — comptoir principal + comptoir informel de Tommy |
+| `bar.md` | Bar — comptoir, jukebox, salle de la Fête des Fondateurs |
+| `grotte_vieux_colosse.md` | Cavité naturelle — 200 ans d'occupation solitaire, livres anciens |
 | `ferme_joseph_theresa.md` | Ferme en périphérie — scène de crime session 01 |
 | `complexe_institut.md` | Installation souterraine de l'Institut — neutralisée en session 01 |
 
