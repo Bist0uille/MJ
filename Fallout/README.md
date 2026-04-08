@@ -146,7 +146,13 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 | `README.md` | Index des ressources externes + liens utiles communauté Fallout 2d20 |
 | `boite_a_outils_scenariste.md` | Guide de conception de scénarios Fallout — formule narrative, construction de lieux, PNJ, dilemmes |
 | `prompt_storyboard.md` | Système de prompts image — fiches visuelles personnages, bloc style, substitutions IP, template de scène |
-| `storyboard_session_02.md` | 10 prompts storyboard prêts à l'emploi pour la session 2 |
+
+### `storyboards/` — Prompts image par session
+
+| Fichier | Contenu |
+|---------|---------|
+| `session_01.md` | 10 prompts storyboard — Fête des Fondateurs, grotte, grange, Institut, discours de Jesse, vertibirds |
+| `session_02.md` | 10 prompts storyboard — arrivée Confrérie, test d'empathie, séparations, aube sur la place |
 
 ---
 
