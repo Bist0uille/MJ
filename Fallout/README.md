@@ -55,7 +55,6 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 | `session_02_propositions.md` | Version condensée du scénario session 2 (Confrérie) |
 | `session_02_propositions_bis.md` | Scénario alternatif session 2 "Ce qu'on t'a pris" (crise interne, sans Confrérie) |
 | `session_03_propositions.md` | 5 propositions pour la suite — diplomatie, identité, traque, trahison, reconstruction |
-| `pretires_integration.md` | Supplément MJ — crochets scénaristiques, questions de fête, fractures identitaires de chaque prétirés |
 | `notes_template.md` | Modèle de prise de notes post-session |
 | `scenario_vierge.md` | Modèle de scénario vierge |
 
