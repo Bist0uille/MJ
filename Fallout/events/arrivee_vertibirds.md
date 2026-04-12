@@ -2,7 +2,7 @@
 
 ## Statut : ACTIF — Crise en cours
 
-> Forces en présence → `/factions/confrerie_acier.md`
+> Forces en présence → `/lore/factions.md`
 > Paladin Voss (comportement, test d'empathie) → `/characters/paladin_voss.md`
 > Dr. Vest (atout potentiel) → `/characters/dr_rolan_vest.md`
 

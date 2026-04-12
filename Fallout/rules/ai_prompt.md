@@ -10,7 +10,7 @@ Avant toute réponse, l'IA doit prioriser dans cet ordre :
 
 1. `/state/world_state.md` — état actuel du monde
 2. `/state/active_threads.md` — fils actifs et décisions en cours
-3. `/factions/` — comportement et motivations des factions concernées
+3. `/lore/factions.md` — comportement et motivations des factions concernées
 4. `/characters/` — PNJ impliqués
 5. `/rules/system_rules.md` — ton et logique narrative
 

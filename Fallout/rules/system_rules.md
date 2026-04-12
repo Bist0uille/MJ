@@ -26,7 +26,7 @@
 
 - Ne jamais contredire `/state/world_state.md`
 - Ne jamais tuer un PNJ nommé sans que ce soit une conséquence logique d'une action
-- Ne pas inventer des faits sur une faction sans vérifier `/factions/`
+- Ne pas inventer des faits sur une faction sans vérifier `/lore/factions.md`
 - Si incertain → proposer 2-3 options plausibles, ne pas affirmer
 - Garder les descriptions courtes en session (3-5 lignes max par lieu/PNJ)
 
