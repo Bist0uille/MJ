@@ -171,10 +171,23 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 | Fichier | Scène |
 |---------|-------|
 | `01_fete_des_fondateurs.png` | La Fête des Fondateurs — Jesse sur le pick-up |
+| `02_grotte_vieux_colosse.png` | Vieux Colosse lit dans sa grotte, ville au loin |
+| `03_chasse_radcafards_grange.png` | Tommy et Bailey chassent les radcafards |
 | `04_vieux_colosse_cariole.png` | Vieux Colosse tire la cariole |
 | `06_attaque_synthetiques_clinique.png` | Attaque des synthétiques à la clinique |
+| `07_jesse_cellule_institut.png` | Jesse en cellule, Vieux Colosse devant la vitre |
 | `08_discours_jesse_institut.png` | Discours de Jesse à l'Institut |
 | `10_colonne_vertibirds.png` | La colonne rentre — vertibirds au-dessus de New Eden |
+
+**Storyboard session 02 (`images/storyboards/session_02/`):**
+
+| Fichier | Scène |
+|---------|-------|
+| `01_voss_confronte_habitants.png` | Paladin Voss confronte les habitants sur la place |
+| `02_file_test_empathie.png` | File d'attente du test d'empathie — Bailey au premier plan |
+| `03_couple_registre.png` | Couple au registre face à un soldat Confrérie |
+| `04_discussion_nuit_muraille.png` | Vieux Colosse, Bailey, Tommy discutent près de la muraille |
+| `05_tommy_vole_registre.png` | Tommy consulte le registre dans la tente |
 
 ---
 
