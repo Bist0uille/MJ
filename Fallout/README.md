@@ -154,6 +154,28 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 | `session_01.md` | 10 prompts storyboard — Fête des Fondateurs, grotte, grange, Institut, discours de Jesse, vertibirds |
 | `session_02.md` | 10 prompts storyboard — arrivée Confrérie, test d'empathie, séparations, aube sur la place |
 
+### `images/` — Illustrations générées
+
+**Portraits personnages (`images/characters/`):**
+
+| Fichier | Personnage |
+|---------|-----------|
+| `augusta_byron.png` | Augusta Byron — combinaison Abri 75, lunettes, câbles |
+| `tommy_doyle.png` | Tommy Doyle — chapeau, cartes à jouer, smirk |
+| `vieux_colosse.png` | Vieux Colosse — lecture, robes, muraille |
+| `hazel_johnson.png` | Hazel Johnson — power armor, croix rouge, casque |
+| `bailey_tout_sourire.png` | Bailey Tout Sourire — goule, stéthoscope, sourire Glasgow |
+
+**Storyboard session 01 (`images/storyboards/session_01/`):**
+
+| Fichier | Scène |
+|---------|-------|
+| `01_fete_des_fondateurs.png` | La Fête des Fondateurs — Jesse sur le pick-up |
+| `04_vieux_colosse_cariole.png` | Vieux Colosse tire la cariole |
+| `06_attaque_synthetiques_clinique.png` | Attaque des synthétiques à la clinique |
+| `08_discours_jesse_institut.png` | Discours de Jesse à l'Institut |
+| `10_colonne_vertibirds.png` | La colonne rentre — vertibirds au-dessus de New Eden |
+
 ---
 
 ## Après chaque session — checklist
