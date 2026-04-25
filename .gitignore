@@ -1,16 +1,6 @@
-# OS
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Editors
-*.swp
-*.swo
-*~
-.~lock.*
-.vscode/
-.idea/
-
-# Temp
-*.tmp
-*.bak
+/node_modules
+/.next/
+/out/
+.env*
+!.env.example
+.vercel
