@@ -147,6 +147,12 @@ Exemples de questions à poser à Claude avec ce repo en contexte :
 | `boite_a_outils_scenariste.md` | Guide de conception de scénarios Fallout — formule narrative, construction de lieux, PNJ, dilemmes |
 | `prompt_storyboard.md` | Système de prompts image — fiches visuelles personnages, bloc style, substitutions IP, template de scène |
 
+### `one_shots/` — Scénarios one-shot indépendants
+
+| Dossier | Contenu |
+|---------|---------|
+| `ombres_murmurees/` | One-shot huis-clos horreur — manoir d'avant-guerre, IA folle (S.A.L.I.) — 6 prétirés originaux, guide MJ, suivi live |
+
 ### `storyboards/` — Prompts image par session
 
 | Fichier | Contenu |
