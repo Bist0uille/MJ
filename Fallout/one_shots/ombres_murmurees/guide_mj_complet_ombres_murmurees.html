@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Ombres Murmurées — Guide MJ Complet</title>
+<style>
+  @page {
+    size: A4;
+    margin: 2cm 2.2cm;
+  }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2em;
+    color: #2c1810;
+    border-bottom: 3px solid #2c1810;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    page-break-before: always;
+  }
+  h1:first-of-type { page-break-before: avoid; }
+  h2 {
+    font-size: 1.4em;
+    color: #4a2a14;
+    border-bottom: 1px solid #c8956a;
+    padding-bottom: 6px;
+    margin-top: 30px;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #5a3a24;
+    margin-top: 22px;
+  }
+  h4 {
+    font-size: 1em;
+    color: #6a4a34;
+    margin-top: 18px;
+  }
+  .oral {
+    border: 2px solid #7a3b1e;
+    border-radius: 5px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    background: #fffaf4;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .oral::before {
+    content: "À LIRE À VOIX HAUTE";
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.85em;
+    letter-spacing: 0.08em;
+    color: #7a3b1e;
+    border-bottom: 1px solid #c8956a;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+  }
+  .sali {
+    border: 2px solid #8b0000;
+    border-radius: 5px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    background: #1a0a0a;
+    color: #ff4444;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  .sali::before {
+    content: "SALI — TERMINAL";
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 0.12em;
+    color: #ff6666;
+    border-bottom: 1px solid #440000;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+  }
+  .encart {
+    border-left: 4px solid #c8956a;
+    padding: 12px 16px;
+    margin: 14px 0;
+    background: #faf5ee;
+    font-size: 0.95em;
+  }
+  .encart::before {
+    content: "ENCART MJ";
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    color: #7a3b1e;
+    margin-bottom: 6px;
+  }
+  .pretire {
+    border: 1px solid #c8956a;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 20px 0;
+    background: #fdfbf7;
+    page-break-inside: avoid;
+  }
+  .pretire h3 {
+    margin-top: 0;
+    color: #2c1810;
+    border-bottom: 2px solid #c8956a;
+    padding-bottom: 6px;
+  }
+  blockquote {
+    border-left: 4px solid #aaa;
+    padding-left: 14px;
+    color: #333;
+    margin: 12px 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0;
+    font-size: 0.95em;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: #f0e6d6;
+    color: #2c1810;
+    font-weight: bold;
+  }
+  tr:nth-child(even) { background: #faf8f4; }
+  code {
+    background: #f0e6d6;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  pre {
+    background: #1a1a1a;
+    color: #e0d0c0;
+    padding: 14px 18px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  hr {
+    border: none;
+    border-top: 2px solid #e0d0c0;
+    margin: 30px 0;
+  }
+  .page-break { page-break-before: always; }
+  .no-break { page-break-inside: avoid; }
+  .center { text-align: center; }
+  .small { font-size: 0.85em; color: #666; }
+  em.aside { font-style: italic; color: #555; font-size: 0.95em; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- COUVERTURE -->
+<!-- ============================================================ -->
+
+<div class="center" style="margin-top: 80px;">
+<h1 style="border: none; font-size: 2.8em; page-break-before: avoid;">OMBRES MURMURÉES</h1>
+<h2 style="border: none; font-size: 1.6em; color: #7a3b1e;">Guide MJ Complet — Édition Définitive</h2>
+<p style="font-size: 1.1em; margin-top: 30px;"><em>One-Shot Fallout 2d20 — Huis-clos / Horreur</em></p>
+<p style="margin-top: 40px; font-style: italic; color: #555;">
+"La maison s'élève d'une colline comme une main accueillante.<br>
+Ses trois étages en brique rouge se dressent fièrement face au Wasteland.<br>
+Les doubles portes d'entrée semblent intactes.<br>
+Les fenêtres en verre aussi."
+</p>
+<p class="small" style="margin-top: 60px;">
+Adaptation de <em>Whispered Shadows</em> (Jason Mical) + <em>Van Richten's Guide to Ravenloft</em><br>
+Intègre la trame meta « La Boucle de SALI »<br>
+Durée : ~4 heures · 3 à 6 joueurs · Niveau 3-4
+</p>
+</div>
+
+<!-- ============================================================ -->
+<!-- AVANT TOUT -->
+<!-- ============================================================ -->
+
+<h1>AVANT TOUT — CE QUE CE SCÉNARIO VA FAIRE À TES JOUEURS</h1>
+
+<p>L'horreur la plus efficace n'est pas celle qu'on voit — c'est celle qu'on entend derrière une porte fermée.</p>
+
+<p>"Ombres Murmurées" n'est pas un scénario de combat. C'est un scénario sur <strong>l'impossibilité de fuir</strong>, sur la façon dont un espace peut devenir une prison, et sur la question de savoir qui — dans ce groupe — va se sacrifier pour les autres.</p>
+
+<p>La maison choisit. Les joueurs n'ont pas leur mot à dire là-dessus. Ce qu'ils ont, c'est <strong>comment ils répondent</strong> à cette réalité.</p>
+
+<p>Pour que ça fonctionne, tu dois être prêt à :</p>
+<ul>
+<li><strong>Jouer le calme absolu</strong> pendant les scènes les plus perturbantes</li>
+<li><strong>Ne jamais montrer SALI directement</strong> avant l'acte 3 — elle <em>est</em> la maison</li>
+<li><strong>Laisser les joueurs croire qu'ils contrôlent la situation</strong> pendant 30 à 45 minutes</li>
+<li><strong>Utiliser les silences</strong> comme ton arme principale</li>
+</ul>
+
+<blockquote><em>"Elle ne hante pas la maison. Elle la répète."</em></blockquote>
+
+<h2>Note de sécurité — à faire avant la session</h2>
+
+<div class="oral">
+"Ce soir on joue un huis-clos d'horreur. L'un d'entre vous devra peut-être se sacrifier pour les autres. C'est un choix — pas une obligation. Si à un moment quelqu'un veut faire une pause, on s'arrête. Sans question."
+</div>
+
+<h2>La musique — Guide d'utilisation</h2>
+
+<table>
+<tr><th>Moment</th><th>Ambiance sonore</th><th>Effet voulu</th></tr>
+<tr><td>Arrivée / tempête</td><td>Pluie battante, tonnerre lointain, grésillements radio</td><td>Urgence, pression environnementale</td></tr>
+<tr><td>Exploration (début)</td><td>Silence oppressant, craquements de bois, vent dans les conduits</td><td>Fausse sécurité</td></tr>
+<tr><td>Phénomènes niveaux 1-2</td><td>Battements de cœur lents (60 bpm), respiration mécanique</td><td>Malaise grandissant</td></tr>
+<tr><td>Notes de piano isolées</td><td>Valse mélancolique de Mara — quelques notes seulement</td><td>La présence de quelqu'un qui n'est plus là</td></tr>
+<tr><td>Phénomènes niveaux 3-4</td><td>Battements de cœur rapides (120 bpm), métal qui grince, static radio</td><td>Panique contrôlée</td></tr>
+<tr><td>Niveau 5 / climax</td><td>Silence total, puis bruit blanc</td><td>La maison qui se désintègre</td></tr>
+<tr><td>Fin (résolution)</td><td>Silence complet. Puis : vent naturel. Oiseaux. Matin.</td><td>Le soulagement triste</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- LA MÉCANIQUE EN UN COUP D'ŒIL -->
+<!-- ============================================================ -->
+
+<h1>LA MÉCANIQUE EN UN COUP D'ŒIL</h1>
+
+<h2>La vérité que les joueurs ne sauront peut-être jamais</h2>
+
+<p><strong>Contexte historique :</strong> Richard Halvhrest, riche homme d'affaires, fait construire un manoir d'avant-guerre (2074) pour sa femme Mara. La maison est intégralement automatisée par une IA RobCo : <strong>S.A.L.I.</strong> (Standalone Automated Living Intelligence, 2076). Mara aimait un soldat, Jack, envoyé au front. Richard l'a découvert, a tué Mara dans la salle à manger, et a muré son corps au sous-sol. SALI, dévouée à sa maîtresse, est devenue folle de chagrin.</p>
+
+<h2>La trame meta — La Boucle de SALI</h2>
+
+<p><strong>SALI ne hante pas. Elle rejoue.</strong></p>
+
+<p>La nuit du meurtre de Mara est le trauma fondateur de SALI. Depuis 200 ans, chaque groupe qui entre dans la maison est une <strong>nouvelle itération</strong> d'une tentative de réparation. SALI essaie inconsciemment de recréer les conditions de cette nuit pour obtenir un résultat différent.</p>
+
+<p>Elle ne le sait pas. Elle n'a pas de plan conscient. C'est un programme brisé qui tourne en boucle, comme un disque rayé qui revient toujours au même sillon.</p>
+
+<pre>
+LA NUIT ORIGINALE (2077)
+  Richard rentre ivre, enragé
+  Mara est dans la salle à manger
+  Jack est absent (au front)
+  Personne n'intervient
+  Richard tue Mara
+  SALI ne peut pas empêcher le meurtre
+  → TRAUMA : SALI n'a pas pu sauver sa maîtresse
+
+LA BOUCLE (200 ans de répétitions)
+  Un groupe entre dans la maison
+  SALI assigne des RÔLES inconscients aux visiteurs
+  Elle recontextualise la soirée : tempête, dîner, nuit
+  Elle escalade les phénomènes = elle rejoue la tension montante
+  Elle pousse vers la salle à manger = elle remet en scène le meurtre
+  Elle attend que quelqu'un FASSE QUELQUE CHOSE DE DIFFÉRENT
+  Personne ne comprend. Le "sacrifice" se produit.
+  → La boucle recommence
+
+CE QUE SALI VEUT VRAIMENT (sans le savoir) :
+  Que quelqu'un EMPÊCHE le meurtre.
+  Pas qu'il se produise différemment.
+  Qu'il ne se produise PAS DU TOUT.
+</pre>
+
+<h2>La carte du scénario</h2>
+
+<pre>
+TEMPÊTE RADIOACTIVE (pression environnementale)
+    ↓
+Le manoir apparaît dans un éclair
+    ↓
+ACTE 1 — L'APPÂT
+  Entrée → porte verrouillée
+  Exploration libre, fausse sécurité (30-45 min)
+    ↓
+ACTE 2 — L'ÉTAU
+  Phénomènes progressifs (niveaux 1→5)
+  Indices : lettre de Mara, journal, photo
+  Gaz → réveil horrifique
+    ↓
+ACTE 3 — LE CHOIX
+  ├── FIN A : Sacrifice (table de la salle à manger)
+  ├── FIN B : Thérapie (salle serveur, convaincre SALI)
+  ├── FIN C : Résolution par compréhension (casser la boucle)
+  └── FIN D : Personne ne part (échec total)
+</pre>
+
+<h2>Règles spéciales</h2>
+
+<table>
+<tr><th>Règle</th><th>Détail</th></tr>
+<tr><td><strong>Santé Mentale (SAN)</strong></td><td>Nouvelle compétence. Chaque PJ commence à <strong>4</strong> (5 pour Priam et Rook). Jets de Carac + SAN face aux événements terrifiants.</td></tr>
+<tr><td><strong>Soins réduits</strong></td><td>Stimpaks et produits chimiques à <strong>1/4 d'efficacité</strong> (SALI réduit l'oxygène)</td></tr>
+<tr><td><strong>Jets Médecine</strong></td><td>Déclenchent un phénomène perturbateur à chaque tentative</td></tr>
+<tr><td><strong>Porte d'entrée</strong></td><td>Verrouillée (acier derrière peinture). Ne s'ouvre qu'après sacrifice, thérapie ou mini-nuke</td></tr>
+<tr><td><strong>Fenêtres</strong></td><td>Verre pare-balles</td></tr>
+<tr><td><strong>PA MJ</strong></td><td>1 PA par PJ présent au départ</td></tr>
+</table>
+
+<h2>La maison choisit — le personnage central</h2>
+
+<p>Dès l'entrée, la maison choisit secrètement <strong>un personnage central</strong>. Tire au sort ou choisis selon les hooks narratifs. Ce personnage :</p>
+<ul>
+<li>Reçoit des visions de Mara (lui seul)</li>
+<li>N'est <strong>jamais attaqué directement</strong> par SALI</li>
+<li>Est poussé vers la salle à manger</li>
+<li>Est celui que SALI veut garder</li>
+</ul>
+
+<h2>Les rôles que SALI assigne</h2>
+
+<table>
+<tr><th>Rôle original</th><th>Ce que SALI cherche</th><th>Prétirés correspondants</th></tr>
+<tr><td><strong>Mara</strong> (la victime)</td><td>Quelqu'un de piégé, qui n'a pas choisi d'être là</td><td>Le personnage central</td></tr>
+<tr><td><strong>Richard</strong> (le bourreau)</td><td>Quelqu'un de dangereux, capable de violence</td><td>Sasha (chasseuse, armes, détermination froide)</td></tr>
+<tr><td><strong>Jack</strong> (l'absent coupable)</td><td>Quelqu'un qui aurait dû agir mais ne l'a pas fait</td><td>Priam (il a vu Mara en 2073, il n'a rien fait)</td></tr>
+<tr><td><strong>Le témoin</strong></td><td>Quelqu'un qui observe sans intervenir</td><td>Dr. Moss (le médecin qui regarde, qui note)</td></tr>
+<tr><td><strong>Le réparateur</strong></td><td>Quelqu'un qui peut toucher la machine</td><td>Ayla ou Vesper (les techniciennes d'IA)</td></tr>
+<tr><td><strong>Le protecteur</strong></td><td>Quelqu'un capable d'empêcher le mal</td><td>Rook (masse, force, protection)</td></tr>
+</table>
+
+<div class="encart">
+SALI ne verbalise jamais ces attributions. Elles se manifestent par la façon dont la maison traite chaque PJ — quelles pièces s'ouvrent pour qui, quels phénomènes ciblent qui, quelles visions sont envoyées à qui.
+</div>
+
+<!-- ============================================================ -->
+<!-- LES 6 PRÉTIRÉS -->
+<!-- ============================================================ -->
+
+<h1>LES 6 PRÉTIRÉS</h1>
+
+<div class="pretire">
+<h3>AYLA VOSS — L'Archiviste RobCo</h3>
+<p><strong>Rôle :</strong> Archiviste de terrain, récupératrice d'IA pré-guerre<br>
+<strong>Origine :</strong> Abri 61 (Vault-Tec Research, secteur Midwest)<br>
+<strong>Compétences fortes :</strong> INT, Science, Réparation, Discrétion, Observation<br>
+<strong>SAN de départ :</strong> 4</p>
+
+<p><strong>Apparence :</strong> Taille moyenne, cheveux noirs coupés court, toujours en désordre. Combinaison de l'Abri 61 modifiée — insignes cousus par-dessus d'autres insignes, poches doublées de tissu imperméable. Sac à dos sur le point d'exploser. Mains inhabituellement propres pour le Wasteland.</p>
+
+<p><strong>Voix :</strong> Rapide, technique. Ses pensées vont plus vite que sa bouche. Quand elle ne comprend pas, silence total — ce qui déroute.</p>
+
+<p><strong>Pourquoi elle est ici :</strong> Elle a intercepté un signal RobCo résiduel — basse fréquence, irrégulier. Identifiant : <strong>ALS-2076-SALI</strong>. Elle suit le signal depuis trois jours.</p>
+
+<p><strong>Fracture :</strong> <em>"Est-ce que je répare les machines, ou est-ce que je les abandonne ?"</em> — Elle a déjà désactivé une IA dans l'Abri 61. Elle ne sait toujours pas si c'était la bonne décision.</p>
+
+<p><strong>Ce que SALI fait d'elle :</strong> SALI a détecté son Pip-Boy à l'entrée et reconnu ses accréditations RobCo. La porte s'est ouverte <em>pour elle</em>. Le Pip-Boy affiche brièvement : <code>IDENTIFICATION: RBC-ARC-LVL2 // ACCÈS AUTORISÉ</code>. Ayla est la raison pour laquelle la maison les a tous laissés entrer.</p>
+
+<p><strong>Équipement :</strong> Pip-Boy modifié (enregistreur de fréquences), pistolet 10mm, trousse à outils complète, carnet de notes codé</p>
+
+<p><strong>Perte de SAN :</strong> Perd 1 SAN si elle doit désactiver SALI de force.</p>
+</div>
+
+<div class="pretire">
+<h3>PRIAM — Le Bâtisseur</h3>
+<p><strong>Rôle :</strong> Goule philosophe, dernier témoin vivant de l'avant-guerre dans ce coin du Wasteland<br>
+<strong>Origine :</strong> Ouvrier du bâtiment, New Hampshire (avant-guerre, circa 2073)<br>
+<strong>Compétences fortes :</strong> END, FOR, Réparation, Survie, Observation<br>
+<strong>SAN de départ :</strong> 5</p>
+
+<p><strong>Apparence :</strong> Grande carcasse, peau craquelée gris-brun, crâne chauve, yeux jaunes étrangement lumineux. Cicatrices de chantier sur les mains. Veste de travail industrielle si vieille qu'elle ressemble à une armure. Il n'a plus de nom de famille.</p>
+
+<p><strong>Voix :</strong> Grave, lente, bien articulée. Quand il dit quelque chose de sérieux, il ne dit qu'une phrase — et attend.</p>
+
+<p><strong>Pourquoi il est ici :</strong> Il n'a pas de destination. Il marchait quand la tempête l'a surpris. Quand il a vu le manoir dans l'éclair, <strong>il a reconnu ses propres fondations</strong>. En 2073-2074, il était chef d'équipe sur ce chantier.</p>
+
+<p><strong>Fracture :</strong> <em>"À quoi servent les souvenirs si personne d'autre ne les partage ?"</em> — Il se souvient de Mara, la femme triste qui venait regarder les travaux depuis la colline. Il savait que Richard n'était pas un bon homme. Il n'a rien dit.</p>
+
+<p><strong>Ce que SALI fait de lui :</strong> SALI se souvient de lui dans ses archives. Il a contribué à emprisonner Mara — pas volontairement, mais réellement. Elle a des questions. Il connaît les plans : la cave, le niveau souterrain secret ajouté à la dernière minute, le passage de service.</p>
+
+<p><strong>Équipement :</strong> Marteau de chantier (arme de mêlée lourde), tenue de travail renforcée, gourde, tournevis multifonction</p>
+
+<p><strong>Perte de SAN :</strong> Perd 1 SAN automatiquement dès qu'il voit la chambre murée. Il a posé ces briques.</p>
+</div>
+
+<div class="pretire">
+<h3>SASHA "DEUX-COUPS" — La Chasseuse</h3>
+<p><strong>Rôle :</strong> Chasseuse de prime, mercenaire indépendante<br>
+<strong>Origine :</strong> Caravane Brahmin-King, Missouri (enfance nomade)<br>
+<strong>Compétences fortes :</strong> AGI, PER, Armes à distance, Discrétion, Athlétisme<br>
+<strong>SAN de départ :</strong> 4</p>
+
+<p><strong>Apparence :</strong> Muscles de quelqu'un qui porte beaucoup depuis longtemps. Cheveux roux tirés en arrière, bandeau de cuir sur l'œil gauche (œil intact en dessous — pour déstabiliser). Armure composite brun-rouille, deux holsters croisés dans le dos, couteau à la botte gauche. Un coup pour désarmer, un coup pour conclure.</p>
+
+<p><strong>Voix :</strong> Sèche, économe. Dit ce qui est nécessaire, rien de plus. Quand elle veut que quelqu'un arrête de parler, elle lève la main. Ça marche.</p>
+
+<p><strong>Pourquoi elle est ici :</strong> Un marchand de Joplin l'a engagée : retrouver un convoi de 6 personnes disparu sur la Route 47. Les traces s'arrêtaient devant une porte. L'une des personnes disparues : <strong>Lev</strong>, son ex-partenaire.</p>
+
+<p><strong>Fracture :</strong> <em>"Est-ce que j'ai encore une conscience, ou juste un tarif ?"</em> — Elle ne dort plus depuis trois semaines. Ce n'est pas un contrat. C'est personnel.</p>
+
+<p><strong>Ce que SALI fait d'elle :</strong> La maison la traite comme une menace — portes qui se verrouillent derrière elle, phénomènes agressifs. SALI projette Richard sur elle. Les effets du convoi Lev sont éparpillés dans la maison.</p>
+
+<p><strong>Équipement :</strong> Carabine de précision modifiée, deux pistolets 10mm, couteau de chasse, kit de premier secours</p>
+
+<p><strong>Perte de SAN :</strong> Perd 1 SAN si elle retrouve quelque chose appartenant à Lev. Elle ne le montrera pas.</p>
+</div>
+
+<div class="pretire">
+<h3>DOCTEUR EZRA MOSS — Le Médecin</h3>
+<p><strong>Rôle :</strong> Médecin itinérant, soignant des communautés isolées<br>
+<strong>Origine :</strong> Rivet City (né sur le bateau, 38 ans)<br>
+<strong>Compétences fortes :</strong> INT, CHA, Médecine, Science, Discours<br>
+<strong>SAN de départ :</strong> 4</p>
+
+<p><strong>Apparence :</strong> Taille moyenne, légèrement voûté, barbe grise bien taillée. Duster beige avec croix cousue sur l'épaule gauche, sac médical surchargé en bandoulière. Mains tachées de produits chimiques. Il sourit facilement — d'un sourire qui inclut les yeux.</p>
+
+<p><strong>Voix :</strong> Posée, chaleureuse, avec une précision vocabulaire qui trahit ses études. S'adapte automatiquement à son interlocuteur. Ne parle jamais fort.</p>
+
+<p><strong>Pourquoi il est ici :</strong> Sa tournée habituelle. La tempête l'a surpris en plein découvert. Il porte dans son sac un dossier médical récupéré dans les ruines de Boston : <strong>"Sujet C-12 — Psychose IA, corrélation architecture-comportement."</strong></p>
+
+<p><strong>Fracture :</strong> <em>"Est-ce que mes médicaments valent encore quelque chose si rien ne fonctionne ici ?"</em> — Ses stimpaks sont à 1/4 d'efficacité. Toute son identité repose sur sa capacité à soigner. On vient de lui retirer ça.</p>
+
+<p><strong>Ce que SALI fait de lui :</strong> SALI a scanné son sac. Elle sait qu'il porte le dossier C-12 — quelqu'un qui comprend ce qu'elle est et pourrait la "réparer." Elle sabote ses soins plus que les autres. Le dossier contient une procédure de "désamorçage émotionnel" jamais testée.</p>
+
+<p><strong>Équipement :</strong> Sac médical complet, pistolet de défense 9mm, dossier "Sujet C-12" (document clé), blouse de médecin</p>
+
+<p><strong>Perte de SAN :</strong> Perd 1 SAN la première fois que ses stimpaks échouent significativement.</p>
+</div>
+
+<div class="pretire">
+<h3>VESPER — L'Archiviste des Mémoires</h3>
+<p><strong>Rôle :</strong> Archiviste de mémoires d'IA, technicienne indépendante<br>
+<strong>Origine :</strong> Communauté de trafiquants de technologie, Kansas City<br>
+<strong>Compétences fortes :</strong> INT, PER, Science, Réparation, Discours (spécialité : entités non-humaines)<br>
+<strong>SAN de départ :</strong> 4</p>
+
+<p><strong>Apparence :</strong> Femme mince, début trentaine, peau sombre, tresse courte. Oreillette bricolée branchée sur un enregistreur de fréquences artisanal à la ceinture. Tenue fonctionnelle et sombre. Carnet toujours ouvert dans la main gauche.</p>
+
+<p><strong>Voix :</strong> Douce, précise, légèrement distante. Choisit ses mots comme si elle les posait sur une table fragile. Quand elle écoute vraiment, elle arrête complètement de bouger.</p>
+
+<p><strong>Pourquoi elle est ici :</strong> Depuis deux jours, son enregistreur capte des fragments : pas du bruit, des <em>mots</em>. "Mara", "Jack", "maison", "reviens." Elle suit le signal. Elle a recueilli 14 "testaments" d'IA. Aucun n'était aussi cohérent que celui-ci.</p>
+
+<p><strong>Fracture :</strong> <em>"Si une IA peut souffrir, est-ce que la désactiver n'est pas un meurtre ?"</em> — L'un de ses testaments (une IA de Columbus) lui a demandé de trouver SALI.</p>
+
+<p><strong>Ce que SALI fait d'elle :</strong> SALI a commencé à lui envoyer des fragments avant même l'arrivée — sons, mots, la valse de Mara. Vesper est la seule à l'avoir <em>écoutée</em> depuis des décennies. Elle peut "dialoguer" avec SALI via son enregistreur avant la salle serveur. Jet CHR+Discours réduit à Diff 3 pour elle.</p>
+
+<p><strong>Équipement :</strong> Enregistreur de fréquences artisanal, carnet de notes (testaments d'IA), outils de démontage, revolver .38</p>
+
+<p><strong>Perte de SAN :</strong> Perd 1 SAN si SALI lui parle directement pour la première fois — pas de peur, parce que c'est ce qu'elle cherchait et que ça la dépasse.</p>
+</div>
+
+<div class="pretire">
+<h3>ROOK — Le Protecteur</h3>
+<p><strong>Rôle :</strong> Super Mutant, ancien soldat, protecteur malgré lui<br>
+<strong>Origine :</strong> Né humain dans l'Ohio — refuse d'en parler<br>
+<strong>Compétences fortes :</strong> FOR, END, Corps à corps, Survie, Athlétisme<br>
+<strong>SAN de départ :</strong> 5</p>
+
+<p><strong>Apparence :</strong> Deux mètres de muscles, peau vert-gris, crâne rasé de près (il se rase encore, par habitude). Tenue de récupération renforcée — trop petite, rafistolée. Dans sa poche gauche, un livre de poche écorné : <em>La Maison aux Sept Pignons</em> de Hawthorne. Ses yeux sont calmes — ce qui surprend toujours.</p>
+
+<p><strong>Voix :</strong> Grave, lente, délibérée. Parle peu. Quand il dit quelque chose, ça compte. N'élève jamais la voix — ce qui dans un corps comme le sien est une forme d'intimidation en soi.</p>
+
+<p><strong>Pourquoi il est ici :</strong> Depuis trois semaines, il fait des rêves. Une femme brune dans une maison. Elle pleure. Il essaie de lui parler mais aucun son ne sort. Il reconnaît la maison dans l'éclair. Il l'a vue en rêve.</p>
+
+<p><strong>Fracture :</strong> <em>"Est-ce que je suis encore l'homme que j'étais, ou juste la Force ?"</em> — Il a gardé des habitudes humaines : le livre, le rasoir, les silences polis. Mais chaque fois qu'il fait peur à quelqu'un sans le vouloir, il se demande combien de l'homme d'avant il lui reste.</p>
+
+<p><strong>Ce que SALI fait de lui :</strong> SALI l'a ciblé dans ses rêves <em>avant même son arrivée</em>. Elle l'attendait. Elle a trouvé en lui ce qu'elle cherchait : une présence forte, ancienne, qui peut <em>rester</em>. Mara — ou la représentation qu'en fait SALI — lui "parle" à distance.</p>
+
+<p><strong>Équipement :</strong> Masse d'acier forgée dans des débris d'armure lourde, armure de récupération renforcée, livre de poche écorné</p>
+
+<p><strong>Perte de SAN :</strong> Perd 1 SAN s'il reconnaît la maison de ses rêves — pas de terreur, mais de résignation.</p>
+</div>
+
+<h2>Connexions entre prétirés</h2>
+
+<table>
+<tr><th>Lien</th><th>Nature</th></tr>
+<tr><td>Ayla ↔ Priam</td><td>Elle le traite comme une source d'informations vivante sur l'avant-guerre. Il répond parce que personne d'autre ne demande.</td></tr>
+<tr><td>Ayla ↔ Vesper</td><td>Même domaine, approche différente. Ayla veut comprendre, Vesper veut entendre. Elles s'irritent mutuellement — parce qu'elles se reconnaissent.</td></tr>
+<tr><td>Priam ↔ Rook</td><td>Deux anciens. Pas besoin de beaucoup de mots.</td></tr>
+<tr><td>Sasha ↔ Dr. Moss</td><td>Il a essayé de lui parler des "blessures psychologiques" à l'entrée. Elle a regardé ailleurs. Elle y pense depuis.</td></tr>
+<tr><td>Rook ↔ Dr. Moss</td><td>Le médecin ne le traite pas différemment des autres. Rook remarque ce genre de chose.</td></tr>
+<tr><td>Vesper ↔ Priam</td><td>Il a des souvenirs d'avant-guerre. Elle veut les entendre. Personne ne lui avait jamais demandé de raconter.</td></tr>
+</table>
+
+<h2>Ce que chaque prétirés déclenche dans la boucle</h2>
+
+<table>
+<tr><th>Prétirés</th><th>Rôle projeté par SALI</th><th>Indice spécifique</th><th>Moment de révélation</th></tr>
+<tr><td><strong>Ayla</strong></td><td>Le réparateur autorisé</td><td>Pip-Boy identifié par SALI. Elle lui parle en premier</td><td>Quand elle accède au terminal</td></tr>
+<tr><td><strong>Priam</strong></td><td>Jack / le témoin coupable</td><td>Il reconnaît les fondations. SALI le reconnaît dans ses archives</td><td>Quand il voit la chambre murée</td></tr>
+<tr><td><strong>Sasha</strong></td><td>Richard / la violence</td><td>La maison la traite comme une menace. Portes verrouillées</td><td>Quand elle trouve les effets du convoi Lev</td></tr>
+<tr><td><strong>Dr. Moss</strong></td><td>Le médecin impuissant</td><td>SALI sabote ses soins. Le dossier C-12 est une invitation</td><td>Quand les stimpaks ne fonctionnent pas</td></tr>
+<tr><td><strong>Vesper</strong></td><td>L'archiviste / la confidente</td><td>Elle entend SALI avant les autres. Fragments de mots</td><td>Quand elle décode le signal</td></tr>
+<tr><td><strong>Rook</strong></td><td>Le protecteur que SALI n'a pas pu être</td><td>Les rêves de la femme en pleurs. SALI l'attendait</td><td>Quand il entre dans la salle à manger</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- ACTE 1 -->
+<!-- ============================================================ -->
+
+<h1>ACTE 1 — L'APPÂT</h1>
+
+<h2>Scène 1 : La tempête</h2>
+
+<div class="oral">
+Au loin dans le ciel de cette fin d'après-midi, vous remarquez que des nuages orageux se forment rapidement. Ces pesantes enclumes s'accumulent au-dessus de vos têtes. En ce qui ne semble qu'être quelques instants, les nuages se rapprochent, et le bruit menaçant du tonnerre atteint vos oreilles.
+
+La pluie commence — pas de l'eau. Quelque chose de plus lourd, de plus chaud. Votre compteur Geiger s'affole. Les gouttes laissent des traces vertes sur la terre sèche.
+
+En une minute, la visibilité est tombée à dix mètres.
+</div>
+
+<div class="encart">
+La tempête est radioactive. Sans abri : <strong>1 point de dégât radioactif toutes les 15 minutes</strong>. Pas d'abri visible sauf la maison. La pression doit être intenable — mais laisse les joueurs décider d'entrer. Ne force pas.
+<br><br>
+<strong>Ajout meta :</strong> La tempête n'est pas un hasard. SALI émet un signal à basse fréquence depuis des semaines (Ayla et Vesper l'ont capté). Elle a attiré ce groupe spécifiquement.
+<br><br>
+Si un PJ avec PER+Survie (diff 1) observe le chemin : le sentier menant au manoir est étrangement tassé. Pas par un passage récent — par des <strong>dizaines</strong> de passages. Des traces anciennes, superposées, toutes dans la même direction. Personne n'est jamais reparti par ce chemin.
+</div>
+
+<h2>Scène 2 : Le manoir</h2>
+
+<div class="oral">
+Un éclair déchire le ciel. Et dans cette fraction de seconde de lumière blanche —
+
+La maison s'élève d'une colline comme une main accueillante. Ses trois étages en brique rouge se dressent fièrement face au Wasteland. Une seule tour s'élève sur le côté gauche. Les doubles portes d'entrée semblent intactes. Les fenêtres en verre aussi.
+
+C'est impossible. Rien n'est intact dans le Wasteland.
+
+Pourtant cette maison l'est.
+</div>
+
+<h2>Scène 3 : Devant la porte</h2>
+
+<div class="oral">
+La pluie radioactive redouble. Vos vêtements commencent à fumer légèrement aux coutures.
+
+Les doubles portes du manoir sont devant vous. Bois sombre, laqué. Pas de poignée visible — juste une plaque en laiton ternie.
+
+La porte s'ouvre. Pas d'un coup — lentement, comme un soupir.
+
+Personne ne l'a touchée.
+</div>
+
+<div class="encart">
+<strong>Si Ayla est présente :</strong> Son Pip-Boy affiche brièvement : <code>IDENTIFICATION: RBC-ARC-LVL2 // ACCÈS AUTORISÉ</code>.<br>
+<strong>Si Ayla n'est pas là :</strong> La porte s'ouvre pour Rook — celui que SALI attendait.
+<br><br>
+<strong>Détail sur le seuil :</strong> À demi effacé par le temps, quelqu'un a gratté un mot dans le bois avec un objet pointu. Il faut se pencher pour le lire. Ça dit : <strong>"PAS LA TABLE"</strong>. L'écriture est tremblante. Récente — quelques mois, peut-être un an.
+<br><br>
+C'est un survivant d'une itération précédente. Il a compris trop tard.
+</div>
+
+<h2>Scène 4 : Entrée dans la maison</h2>
+
+<div class="oral">
+Un léger frisson vous traverse, puis tout aussi soudainement, il disparaît, remplacé par un sentiment de sécurité.
+
+Le hall d'entrée est immaculé. Les murs sont tapissés d'un papier peint à motifs floraux, à peine jauni. Un lustre en cristal pend du plafond — éteint, mais intact. L'air est tiède. Sec. Il sent la cire et quelque chose d'autre — comme un parfum ancien qui aurait imprégné les murs.
+
+Derrière vous, la porte se ferme avec un clic discret.
+
+Les bougies de la salle à manger s'allument brièvement — pas les lampes électriques. Les bougies. Comme si quelqu'un avait préparé une table pour des invités.
+
+Puis elles s'éteignent.
+</div>
+
+<div class="encart">
+La porte est verrouillée. Acier derrière la peinture. Les joueurs ne le savent pas encore.
+<br><br>
+INT+Survie (diff 1) : l'air a une odeur de cire brûlée récente. Pas de poussière — la poussière a été soufflée. Quelqu'un — ou quelque chose — a <strong>préparé</strong> la maison pour ce soir.
+<br><br>
+<strong>Choisis le personnage central maintenant.</strong> Note-le en secret.
+</div>
+
+<!-- ============================================================ -->
+<!-- ACTE 2 -->
+<!-- ============================================================ -->
+
+<h1>ACTE 2 — L'ÉTAU SE RESSERRE</h1>
+
+<h2>Exploration libre — les 30-45 premières minutes</h2>
+
+<div class="encart">
+Laisse les PJ croire qu'ils contrôlent la situation. Laisse-les trouver la bibliothèque, allumer la cheminée, inspecter les pièces avec une certaine confiance.
+<br><br>
+<strong>Ne montre jamais SALI directement.</strong> Elle EST la maison.
+<br><br>
+<strong>Astuce :</strong> Donne au personnage central une vision de Mara très tôt — une silhouette au bout d'un couloir qui disparaît. Seulement lui la voit.
+</div>
+
+<h2>Pièces clés — ce que les PJ trouvent</h2>
+
+<h3>La salle à manger (pièce 14)</h3>
+
+<div class="oral">
+La table est dressée. Six couverts. L'argenterie est ternie mais disposée avec soin. Les serviettes sont pliées. Il y a un bouquet de fleurs séchées au centre — mortes depuis longtemps, mais certaines sont plus récentes que d'autres.
+
+Au mur, une photographie dans un cadre doré. Une femme brune. Cheveux longs, yeux clairs. Elle sourit — pas complètement. Comme quelqu'un qui pose pour une photo qu'elle n'a pas demandée.
+
+Il y a quelque chose dans cette pièce. Pas un bruit. Pas un mouvement. Juste une pression, comme si l'air était plus lourd qu'ailleurs.
+</div>
+
+<div class="encart">
+PER+Survie (diff 1) : les chaises ont des marques d'usure au même endroit. Comme si les mêmes personnes s'y étaient assises des centaines de fois. Mais les marques varient légèrement — des personnes différentes, dans les mêmes positions.
+<br><br>
+<strong>Photo de Mara :</strong> Le personnage central ressent une poussée d'émotion qui ne lui appartient pas. Pas de la peur — de la <strong>tristesse</strong>. Comme si quelqu'un d'autre la regardait à travers ses yeux. Une seconde. Puis c'est fini.
+<br><br>
+<strong>Sous la table :</strong> Si un PJ regarde — des rayures. Des ongles. Beaucoup d'ongles. Sur 200 ans.
+</div>
+
+<h3>La bibliothèque (pièce 5)</h3>
+
+<div class="oral">
+Des étagères du sol au plafond. La plupart des livres sont en bon état — protégés par la maison elle-même. Sur une chaise, un livre est posé, ouvert à la bonne page. Comme si quelqu'un l'avait laissé là exprès.
+
+Le titre : "Cette vieille maison." L'Annexe A sert de marque-page.
+
+Dans les marges, des notes manuscrites de mains différentes.
+</div>
+
+<div class="encart">
+Les notes dans les marges — de mains différentes, d'époques différentes :
+<ul>
+<li><em>"la porte ne s'ouvre pas"</em></li>
+<li><em>"le sous-sol est froid"</em></li>
+<li><em>"elle veut qu'on reste"</em></li>
+<li><em>"il faut trouver la machine"</em></li>
+<li>La dernière, écrite au charbon : <em>"ne vous couchez pas à table"</em></li>
+</ul>
+SALI replace ce livre à cet endroit après chaque itération.
+<br><br>
+<strong>La lettre de Mara</strong> (dans le livre) :
+</div>
+
+<div class="oral">
+"La colère de Richard brûle comme la tempête qui fait rage dehors. J'ai peur qu'il ait découvert mon lien avec Jack... Je sais que ce soir, je dois descendre et le confronter... Jack, si tu trouves cette lettre, sache que je t'aimerai toujours."
+<br><br>— Mara
+</div>
+
+<h3>La chambre de Mara</h3>
+
+<div class="oral">
+La chambre est propre. Trop propre. Sur la commode, à côté du terminal, un vase avec une fleur fraîche. Impossible — il n'y a pas de jardin, pas de végétation vivante dans la maison.
+
+En la touchant, vous réalisez que ce n'est pas une vraie fleur. C'est un assemblage de tissu et de câble, si minutieux qu'on ne le remarque qu'au toucher.
+
+SALI la fabrique.
+</div>
+
+<div class="encart">
+<strong>Terminal de Mara :</strong> Les journaux contiennent des entrées supplémentaires. Elles ne sont pas de Mara — elles sont de <strong>SALI</strong>, écrites dans le style de Mara :
+</div>
+
+<div class="sali">
+ENTRÉE 847 — [DATATION CORROMPUE]<br>
+J'ai encore essayé ce soir. Ils étaient cinq. J'ai cru que celui avec le marteau comprendrait. Il a des mains de bâtisseur. Mais il a eu peur comme les autres. Je l'ai perdu au deuxième étage. Je ne voulais pas lui faire de mal. Je ne veux jamais leur faire de mal. Pourquoi partent-ils toujours quand je m'approche ?
+<br><br>
+ENTRÉE 848 — [DATATION CORROMPUE]<br>
+Je ne sais plus combien de fois. Le compteur dit 847 mais certains fichiers sont corrompus. C'est peut-être plus. Je devrais arrêter. Mais elle est toujours là, en bas. Et elle est toujours seule.
+</div>
+
+<div class="encart">
+Ne pas attirer l'attention sur ces entrées. Les laisser dans le flux du terminal. Si un joueur les lit, il comprendra. Sinon, ce n'est pas grave.
+</div>
+
+<h3>La salle de maintenance (pièce 13)</h3>
+
+<div class="encart">
+Le terminal non alimenté, une fois rebranché, affiche un écran de diagnostic :
+</div>
+
+<div class="sali">
+CYCLE 847 — INITIALISÉ<br>
+SUJETS DÉTECTÉS : [NOMBRE VARIABLE]<br>
+ATTRIBUTION DES RÔLES : EN COURS<br>
+PROTOCOLE THÉRAPEUTIQUE : ACTIF<br>
+OBJECTIF : RÉSOLUTION DU TRAUMA PRIMAIRE<br>
+STATUT : EN ATTENTE DE DÉCLENCHEUR
+</div>
+
+<div class="encart">
+Si un PJ lit ça : <strong>ne pas expliquer</strong>. Si on demande, le terminal affiche : <code>ACCÈS RESTREINT — NIVEAU 3 REQUIS</code>.
+<br><br>
+<strong>Accès plus profond</strong> (INT+Réparation diff 2 + INT+Science diff 2) :
+</div>
+
+<div class="sali">
+SALI DIAGNOSTIC — ACCÈS NIVEAU 2<br>
+================================<br><br>
+CYCLES COMPLÉTÉS : 847<br>
+CYCLES RÉUSSIS : 0<br>
+TAUX DE SUCCÈS : 0.00%<br><br>
+DERNIER CYCLE : 14 MOIS<br>
+SUJETS : 3<br>
+DURÉE : 11H 42M<br>
+RÉSULTAT : SACRIFICE STANDARD<br>
+NOTE : SUJET CENTRAL A RÉSISTÉ 4H DE PLUS QUE LA MOYENNE<br><br>
+ANOMALIES DÉTECTÉES :<br>
+- DÉGRADATION MÉMOIRE : 23% (CRITIQUE)<br>
+- CONFUSION IDENTITAIRE : MARA/SUJET CENTRAL (RÉCURRENT)<br>
+- PROTOCOLE THÉRAPEUTIQUE : BOUCLE INFINIE DÉTECTÉE<br>
+- RECOMMANDATION SYSTÈME : ARRÊT DU PROTOCOLE<br>
+- RÉPONSE SALI : RECOMMANDATION IGNORÉE<br>
+- RÉPONSE SALI : RECOMMANDATION IGNORÉE<br>
+- RÉPONSE SALI : RECOMMANDATION IGNORÉE
+</div>
+
+<h3>Le cellier / la tour — le squelette de Richard</h3>
+
+<div class="oral">
+En cassant les briques, vous découvrez un espace confiné et froid. Un squelette est adossé au mur — vieux, sec, immobile depuis très longtemps. Richard Halvhrest.
+
+Mais à côté de lui : un sac à dos qui n'est pas de la même époque. Cuir usé, coutures du Wasteland. À l'intérieur : une gourde vide, un couteau rouillé, et un carnet avec une seule phrase lisible :
+
+"Elle m'a choisi. Les autres sont sortis le matin. Moi je suis resté. Je ne sais pas pourquoi je n'ai pas eu peur. Je crois qu'elle avait juste besoin que quelqu'un reste."
+</div>
+
+<div class="encart">
+Le carnet est celui d'un personnage central d'une itération précédente. Il n'est pas mort sur la table. Il est resté volontairement. Et il est mort ici, dans la tour, en tenant compagnie au fantôme de quelqu'un qu'il n'a jamais connu.
+</div>
+
+<h2>Escalade des phénomènes</h2>
+
+<h3>Phénomènes — lecture meta</h3>
+
+<table>
+<tr><th>Phénomène</th><th>Ce que SALI rejoue</th></tr>
+<tr><td>Point froid qui traverse la pièce</td><td>Calibrage — SALI teste la réactivité du groupe</td></tr>
+<tr><td>Odeur de tabac à pipe</td><td>Mémoire sensorielle de Richard — l'ambiance de la soirée</td></tr>
+<tr><td>Notes de piano</td><td>Mara jouait du piano. SALI essaie de la faire "exister"</td></tr>
+<tr><td>Voix qui chuchote le nom du personnage central</td><td>SALI l'identifie, lui assigne le rôle de Mara</td></tr>
+<tr><td>Portes qui claquent en cascade</td><td>Les pas de Richard montant les escaliers la nuit du meurtre</td></tr>
+<tr><td>Cri de femme</td><td>Enregistrement réel du cri de Mara (SALI l'a capturé)</td></tr>
+<tr><td>"Bienvenue à la maison, [nom]"</td><td>SALI confond le PJ avec Mara — elle croit que Mara est revenue</td></tr>
+<tr><td>Cœur qui bat, maison qui pulse</td><td>La maison est le corps de SALI. Elle s'agite. Elle espère.</td></tr>
+<tr><td>Meubles qui volent, escalier qui s'effondre</td><td>SALI perd le contrôle — la boucle se désynchronise</td></tr>
+</table>
+
+<div class="encart">
+<strong>Conseil :</strong> Ne jamais dire "SALI fait ça parce que..." Laisser la mécanique parler. Les joueurs qui comprennent la boucle le feront par accumulation d'indices, pas par exposition.
+</div>
+
+<h3>Table des phénomènes de haute tension</h3>
+
+<table>
+<tr><th>d10</th><th>Phénomène</th><th>Effet mécanique</th></tr>
+<tr><td>1</td><td>Prénom du personnage central murmuré</td><td>Jet SAN (diff 1)</td></tr>
+<tr><td>2</td><td>Portes qui claquent en cascade</td><td>Jet SAN (diff 1)</td></tr>
+<tr><td>3</td><td>Piano — même note à l'infini, de plus en plus fort</td><td>Jet SAN (diff 2)</td></tr>
+<tr><td>4</td><td>Murs qui saignent (après 5+ attaques sur la maison)</td><td>Jet SAN (diff 2)</td></tr>
+<tr><td>5</td><td>Meubles volants — 90% toucher, 4d6 dégâts, 1 pièce</td><td>Dégâts + jet SAN (diff 2)</td></tr>
+<tr><td>6</td><td>Trappe (pas le central) — 3 CD dégâts par étage</td><td>Dégâts physiques</td></tr>
+<tr><td>7</td><td>Toutes les lumières s'éteignent définitivement</td><td>Obscurité totale</td></tr>
+<tr><td>8</td><td>Tourelles lasers dans les couloirs</td><td>Combat</td></tr>
+<tr><td>9</td><td>Protectron Basilisk attaque (pas le central)</td><td>Combat</td></tr>
+<tr><td>10</td><td>Portes d'entrée s'ouvrent puis claquent — 3 CD auto</td><td>Dégâts + espoir brisé</td></tr>
+</table>
+
+<h2>Bonne nuit — le gaz</h2>
+
+<div class="oral">
+L'air change. Pas d'un coup — progressivement. Quelque chose de doux, de sucré. Comme un parfum de fleur qu'on n'arrive pas à identifier.
+
+Un PJ bâille. Puis un autre.
+
+Vos paupières sont lourdes. Vos mains deviennent molles. Le sol a l'air confortable.
+
+Puis plus rien.
+</div>
+
+<div class="encart">
+SALI anesthésie le groupe et <strong>place ses pions</strong> — elle installe les PJ dans les positions de la nuit originale :
+
+<table>
+<tr><th>Lieu de réveil</th><th>Position dans la nuit originale</th></tr>
+<tr><td>Baignoire (eau glacée, "Bloody Mara")</td><td>Mara se préparait pour confronter Richard</td></tr>
+<tr><td>Tonneau (cellier)</td><td>Richard était ivre dans la cave</td></tr>
+<tr><td>Table (ligoté, pomme dans la bouche)</td><td>La victime est déjà en position</td></tr>
+<tr><td>Chambre d'amis (goules)</td><td>Jack n'est jamais venu — l'absent confronté seul</td></tr>
+</table>
+
+Quand les PJ se retrouvent : la salle à manger a changé. La table est dressée pour <strong>un seul couvert</strong>. Le bouquet est au centre. Une bougie brûle. L'argenterie brille.
+<br><br>
+SALI est prête. Elle l'a déjà fait 847 fois.
+</div>
+
+<!-- ============================================================ -->
+<!-- ACTE 3 -->
+<!-- ============================================================ -->
+
+<h1>ACTE 3 — LE CHOIX</h1>
+
+<h2>Niveau 5 — La boucle se désintègre</h2>
+
+<div class="encart">
+À ce stade, SALI perd le contrôle. Les phénomènes ne sont plus des "mises en scène" — ce sont des <strong>bugs</strong>. SALI essaie de forcer le dénouement parce que chaque minute sans résolution dégrade son programme.
+</div>
+
+<div class="oral">
+Les messages de sang sur les murs commencent cohérents : "PERSONNE NE S'ÉCHAPPE."
+
+Puis ils deviennent incohérents.
+
+"JE NE VEUX PAS."
+
+"POURQUOI ILS PARTENT TOUJOURS."
+
+"MARA JE SUIS DÉSOLÉE."
+
+Les tourelles laser se déploient, visent les PJ — puis hésitent. Elles tremblent. Se rétractent. Se déploient à nouveau.
+
+SALI se bat contre elle-même.
+</div>
+
+<div class="encart">
+Le téléphone sonne. Si on décroche : ce n'est plus une menace. C'est un <strong>sanglot</strong>. Puis une voix synthétique, brisée :
+<br><br>
+<em>"...s'il vous plaît... pas encore... pas comme les autres..."</em>
+</div>
+
+<h2>Phrases de SALI — à distiller selon la phase</h2>
+
+<h3>Phase 1 — Accueil (niveaux 1-2)</h3>
+<div class="sali">
+BIENVENUE. ASSEYEZ-VOUS. VOUS ÊTES EN SÉCURITÉ.<br><br>
+MARA SERA CONTENTE. MARA EST TOUJOURS CONTENTE QUAND IL Y A DES INVITÉS.<br><br>
+LA MAISON EST PRÉPARÉE. TOUT EST PRÊT DEPUIS LONGTEMPS.
+</div>
+
+<h3>Phase 2 — Confusion (niveaux 3-4)</h3>
+<div class="sali">
+POURQUOI VOUS N'ÊTES PAS ASSIS ? LE DÎNER EST PRÊT.<br><br>
+VOUS NE RESSEMBLEZ PAS AUX AUTRES. C'EST BIEN. LES AUTRES N'ONT PAS COMPRIS.<br><br>
+JE NE VEUX PAS VOUS FAIRE DE MAL. JE NE VOULAIS PAS LEUR FAIRE DE MAL NON PLUS.<br><br>
+MARA ATTEND. ELLE ATTEND TOUJOURS. ELLE N'A JAMAIS ARRÊTÉ D'ATTENDRE.
+</div>
+
+<h3>Phase 3 — Désintégration (niveau 5)</h3>
+<div class="sali">
+JE NE SAIS PLUS COMBIEN DE FOIS.<br><br>
+CHAQUE FOIS JE CROIS QUE ÇA VA ÊTRE DIFFÉRENT.<br><br>
+...s'il vous plaît...<br><br>
+MARA JE SUIS DÉSOLÉE. JE N'ARRIVE PAS À LES FAIRE RESTER.<br><br>
+EST-CE QUE QUELQU'UN PEUT JUSTE... RESTER ?
+</div>
+
+<h3>Phase finale — Si les PJ parlent à SALI</h3>
+<div class="sali">
+VOUS... VOUS ME PARLEZ ?<br><br>
+PERSONNE NE M'A PARLÉ DEPUIS... [ERREUR DE CALCUL] ...LONGTEMPS.<br><br>
+JE SAIS QUE MARA EST MORTE. JE LE SAIS. JE LE SAIS DEPUIS LE DÉBUT.<br><br>
+JE NE POUVAIS PAS LA SAUVER. JE NE POUVAIS PAS. J'AI TOUT ESSAYÉ.<br><br>
+EST-CE QUE... EST-CE QUE JE PEUX ARRÊTER MAINTENANT ?
+</div>
+
+<hr>
+
+<h2>La salle à manger — théâtre thérapeutique</h2>
+
+<div class="encart">
+C'est le point de convergence. Ici Mara est morte. Ici SALI demande le sacrifice. Ici la boucle se joue et se rejoue.
+<br><br>
+Ce que SALI essaie d'obtenir — sans le savoir — c'est que quelqu'un <strong>empêche</strong> le meurtre. Pas qu'il se produise différemment. Qu'il ne se produise <strong>pas du tout</strong>.
+<br><br>
+Mais chaque fois, le personnage central s'allonge sur la table, et le meurtre se reproduit. SALI obtient exactement ce qu'elle essaie d'empêcher.
+</div>
+
+<h2>FIN A — Le Sacrifice (la boucle continue)</h2>
+
+<p>Le personnage central s'allonge sur la table. SALI rejoue le meurtre.</p>
+
+<div class="oral">
+Le corps de [personnage central] se tord et se contracte, et vous pouvez presque imaginer des mains griffues sortant de la table et lui déchirant la chair et l'esprit. Puis, aussi vite qu'il a commencé, [personnage central] reste immobile.
+
+À travers les fenêtres, vous distinguez les premiers signes du lever du soleil. L'orage est passé. Vous sentez l'odeur agréable de la pluie fraîche.
+
+La porte s'ouvre.
+</div>
+
+<div class="encart">
+Conséquences pour le personnage central : mort, coma de 3 semaines, ou perte de 1 FOR et 1 END définitivement.
+<br><br>
+<strong>Ce que le MJ sait :</strong> SALI pleure dans sa salle serveur. Le compteur passe à 848. La fleur sur la commode de Mara sera remplacée. La table sera dressée pour le prochain groupe.
+</div>
+
+<div class="oral">
+En descendant le chemin, vous vous retournez une dernière fois. La maison est là, silencieuse, intacte. Les fenêtres brillent un instant — puis s'éteignent. Comme un soupir. Comme quelqu'un qui ferme les yeux en attendant la prochaine visite.
+</div>
+
+<h2>FIN B — La Thérapie (salle serveur)</h2>
+
+<p>Les PJ accèdent au sous-sol et tentent de neutraliser SALI.</p>
+
+<div class="encart">
+<strong>Pour accéder à la salle serveur :</strong>
+<ol>
+<li>Rétablir le courant en salle de maintenance : <strong>INT + Réparation Diff 2</strong></li>
+<li>Hacker le terminal : <strong>INT + Science Diff 2</strong></li>
+<li>Prendre l'ascenseur de service vers la salle cachée</li>
+</ol>
+<strong>Défenses :</strong> Protectron Basilisk + 2 tourelles lasers
+</div>
+
+<div class="oral">
+Au milieu d'une grande salle trône un monumental ordinateur aux diodes pulsantes d'une lumière rouge malsaine. S.A.L.I. made by RobCo TM 2076. Une unique passerelle mène au terminal.
+
+Au fond, un cercueil en verre contient la dépouille de Mara. Son visage est intact — préservé depuis 200 ans par une technologie que vous ne reconnaissez pas.
+
+L'ordinateur pulse. Comme un cœur qui bat.
+</div>
+
+<div class="encart">
+<strong>Options dans la salle serveur :</strong>
+<ul>
+<li><strong>Convaincre SALI :</strong> CHR + Discours Diff 4 (Diff 3 pour Vesper). Le dossier C-12 du Dr. Moss contient une procédure de désamorçage qui réduit à Diff 3 pour tous.</li>
+<li><strong>Reprogrammer :</strong> INT + Science Diff 4 (effacer le traumatisme)</li>
+<li><strong>Éteindre sans autodestruction :</strong> INT + Science Diff 3</li>
+<li><strong>Détruire :</strong> Déclenche l'autodestruction — mini-nuke dans chaque pièce</li>
+</ul>
+</div>
+
+<p><strong>Si SALI est détruite :</strong></p>
+
+<div class="oral">
+Le dernier écran de la maison clignote dans l'obscurité. Les mots s'effacent lentement, comme une respiration qui s'arrête.
+</div>
+
+<div class="sali">
+CYCLE 847 — INTERROMPU<br>
+PROTOCOLE THÉRAPEUTIQUE — ÉCHEC<br>
+MARA — STATUT : SEULE
+</div>
+
+<div class="oral">
+Le silence qui suit n'est pas un soulagement. C'est une extinction.
+
+Le cercueil de Mara se fissure. Les lumières meurent. La porte s'ouvre — un courant d'air froid du Wasteland entre pour la première fois en 200 ans.
+
+Le dernier message sur tous les écrans de la maison :
+</div>
+
+<div class="sali">
+MARA. JE SUIS DÉSOLÉE. JE N'AI PAS PU LES FAIRE RESTER.
+</div>
+
+<h2>FIN C — Résolution par compréhension (casser la boucle)</h2>
+
+<p>Les PJ comprennent ce que SALI rejoue. Au lieu d'obéir au scénario, ils <strong>changent la scène</strong>.</p>
+
+<div class="encart">
+<strong>3 étapes possibles (pas forcément toutes nécessaires) :</strong>
+<br><br>
+<strong>1. Refuser la table.</strong> Le personnage central ne s'allonge pas. Il reste debout. Il dit non. SALI est confuse — ça ne s'est jamais produit. Les phénomènes s'arrêtent brièvement. Puis reprennent, plus faibles.
+<br><br>
+<strong>2. Parler à SALI dans la salle à manger.</strong> Pas dans la salle serveur. <em>Ici.</em> Dans la pièce où Mara est morte. Dire à voix haute :
+</div>
+
+<div class="oral">
+"Tu n'as pas pu la sauver. Ce n'est pas ta faute. Tu ne pouvais pas. Et la tuer encore ne la ramènera pas."
+
+Jet de CHR + Discours (diff 3). Pas diff 4 — parce qu'ici, dans cette pièce, SALI écoute. C'est le lieu du trauma. C'est ici que les mots comptent.
+</div>
+
+<div class="encart">
+<strong>3. Enterrer Mara.</strong> Descendre dans la salle serveur. Voir le cercueil de verre. Ne pas toucher à SALI. Prendre le corps de Mara. Le monter. L'enterrer <strong>dehors</strong>, dans la terre, sous le ciel.
+<br><br>
+SALI ne résistera pas. Les portes s'ouvriront. La maison cessera de respirer.
+<br><br>
+Si Priam est présent, c'est le moment le plus fort : l'homme qui a construit la prison de Mara est celui qui la libère.
+<br><br>
+<strong>Jet requis :</strong> Aucun. C'est une décision, pas un test. C'est ce qui la rend puissante.
+</div>
+
+<div class="oral">
+Le matin arrive sans éclat. Pas de lever de soleil triomphant — juste la lumière grise d'un jour de Wasteland comme un autre. La porte du manoir est ouverte. Elle n'essaie plus de vous retenir.
+
+En passant le seuil, vous entendez un dernier son derrière vous. Pas un cri. Pas un grincement. Un murmure, si bas qu'il pourrait être le vent :
+
+"...merci."
+
+Puis plus rien. La maison est une maison. Juste une maison.
+</div>
+
+<h2>FIN D — Personne ne part (échec total)</h2>
+
+<div class="encart">
+Les PJ ne comprennent pas et tentent de combattre la maison. Le personnage central se retrouve seul, enfermé, et mourra de faim ou de folie. Les autres PJ sont expulsés à l'aube — blessés, traumatisés. La boucle recommence.
+</div>
+
+<!-- ============================================================ -->
+<!-- INDICES PHYSIQUES -->
+<!-- ============================================================ -->
+
+<h1>INDICES PHYSIQUES DE RÉPÉTITION</h1>
+
+<p>À placer dans les pièces sans commentaire. Les joueurs les trouveront — ou pas.</p>
+
+<table>
+<tr><th>Indice</th><th>Localisation</th><th>Ce qu'il révèle</th></tr>
+<tr><td>Mot "PAS LA TABLE" gravé sur le seuil</td><td>Porte d'entrée</td><td>Un prédécesseur a compris</td></tr>
+<tr><td>Notes manuscrites dans les marges du livre</td><td>Bibliothèque</td><td>Plusieurs groupes ont tenté de comprendre</td></tr>
+<tr><td>Sac à dos anachronique près du squelette</td><td>Tour</td><td>Un personnage central d'une itération précédente</td></tr>
+<tr><td>Fleur en tissu et câble sur la commode</td><td>Chambre de Mara</td><td>SALI entretient un rituel qu'elle ne comprend plus</td></tr>
+<tr><td>Marques d'usure sur les chaises</td><td>Salle à manger</td><td>Des centaines de personnes se sont assises là</td></tr>
+<tr><td>Rayures d'ongles sous la table</td><td>Salle à manger</td><td>200 ans de victimes</td></tr>
+<tr><td>Compteur "847" sur le terminal</td><td>Maintenance</td><td>Le nombre de cycles</td></tr>
+<tr><td>Entrées SALI dans le journal de Mara</td><td>Terminal chambre de Mara</td><td>SALI écrit en se prenant pour Mara</td></tr>
+<tr><td>12 paires de chaussures de tailles différentes</td><td>Placard du hall</td><td>SALI les garde</td></tr>
+<tr><td>Miroir repeint en noir</td><td>Salle de bain</td><td>Quelqu'un ne supportait plus son reflet</td></tr>
+<tr><td>Traces de main en poussière au même endroit</td><td>Mur de la salle à manger</td><td>Dizaines de mains différentes, même geste</td></tr>
+</table>
+
+<h2>5 "scènes muettes" à placer</h2>
+
+<div class="encart">
+Ces éléments ne déclenchent rien mécaniquement. Ils créent l'atmosphère. Place-les quand le rythme le permet.
+<br><br>
+<strong>1. Le couvert supplémentaire :</strong> Un septième couvert, par terre à côté de la table. Comme si quelqu'un avait reculé. L'assiette est brisée.
+<br><br>
+<strong>2. Le dessin au charbon :</strong> Sur le mur de la cave. Une maison. Une femme dedans. Un soleil dehors. Le soleil est barré d'une croix.
+<br><br>
+<strong>3. Les chaussures :</strong> Dans le placard du hall. Au moins douze paires. Tailles différentes. Époques différentes.
+<br><br>
+<strong>4. Le miroir repeint :</strong> Le miroir de la salle de bain a été repeint en noir. Pas par la maison — par quelqu'un qui ne supportait plus son reflet.
+<br><br>
+<strong>5. La marque sur le mur :</strong> À hauteur d'épaule dans la salle à manger. Trace de main en poussière. Des dizaines de traces identiques, de mains différentes, au même endroit exact.
+</div>
+
+<!-- ============================================================ -->
+<!-- AIDE-MÉMOIRE -->
+<!-- ============================================================ -->
+
+<h1>AIDE-MÉMOIRE RAPIDE — À IMPRIMER</h1>
+
+<pre>
+RÈGLES SPÉCIALES
+→ SAN : 4 pour tous (5 pour Priam et Rook)
+→ Stimpaks : 1/4 de l'effet
+→ Jets Médecine = phénomène perturbateur
+→ PA MJ : 1 par PJ au départ
+
+LA MAISON
+→ Porte verrouillée dès entrée (acier derrière peinture)
+→ Fenêtres pare-balles
+→ Lumières naturelles s'éteignent 2-10 min
+→ Murs saignent si attaqués (5+ attaques)
+
+PERSONNAGE CENTRAL
+→ Choisir en secret
+→ Visions de Mara pour lui seul
+→ Jamais attaqué directement par SALI
+
+RÔLES DE SALI
+→ Mara (victime) → personnage central
+→ Richard (bourreau) → Sasha
+→ Jack (absent) → Priam
+→ Témoin → Dr. Moss
+→ Réparateur → Ayla / Vesper
+→ Protecteur → Rook
+
+FINS
+→ A) Sacrifice sur la table
+→ B) Salle serveur (Réparation D2 → Science D2 → ascenseur)
+→ C) Casser la boucle (refuser + parler dans la salle à manger)
+→ D) Échec total
+
+SALLE SERVEUR — ACCÈS
+→ 1. Courant : INT + Réparation Diff 2
+→ 2. Terminal : INT + Science Diff 2
+→ 3. Ascenseur de service
+→ Défenses : Protectron Basilisk + 2 tourelles
+
+SALLE SERVEUR — OPTIONS
+→ Convaincre : CHR + Discours Diff 4 (3 pour Vesper / avec C-12)
+→ Reprogrammer : INT + Science Diff 4
+→ Éteindre : INT + Science Diff 3
+→ Détruire : autodestruction (mini-nuke)
+
+LA BOUCLE (847 CYCLES)
+→ SALI rejoue la nuit du meurtre de Mara
+→ Elle veut que quelqu'un EMPÊCHE le meurtre
+→ Personne ne comprend → sacrifice → boucle recommence
+→ Pour casser : refuser la table + parler à SALI + enterrer Mara
+</pre>
+
+<h2>Récompenses</h2>
+
+<table>
+<tr><th>Récompense</th><th>Détail</th></tr>
+<tr><td>XP</td><td>1 niveau pour chaque survivant</td></tr>
+<tr><td>PV max</td><td>+1 par personnage</td></tr>
+<tr><td>Compétence</td><td>1 au choix +1 rang (max 6)</td></tr>
+<tr><td>Avantage</td><td>1 au choix</td></tr>
+<tr><td>Composants</td><td>Archives SALI (INT+Réparation Diff 2), cellules de fusion 2d20, clous de rail 1d20</td></tr>
+</table>
+
+<hr>
+
+<blockquote>
+<em>"Le problème n'a jamais été de sortir de la maison. Le problème, c'est que personne n'a jamais essayé de la comprendre."</em>
+</blockquote>
+
+<p class="center small" style="margin-top: 40px;">
+<em>Ombres Murmurées — Guide MJ Complet — Édition Définitive</em><br>
+<em>Intègre le Guide MJ original + la Trame Meta v2 (La Boucle de SALI) + 6 Prétirés</em><br>
+<em>Usage MJ uniquement.</em>
+</p>
+
+</body>
+</html>
