@@ -353,7 +353,7 @@ function spawnBoss(){
   phase=2;
   const d=BOSSES[wave];
   const bHp=Math.round(CONFIG.AY_PV*Math.pow(2,wave+1));
-  boss={...d,hp:bHp,maxHp:bHp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0,iF:0};
+  boss={...d,hp:bHp,maxHp:bHp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0,iF:0,dashPhase:null,dashTimer:0,dashTarget:null};
   notify('🔥 BOSS : '+boss.name+' ('+boss.hp+' PV)','#f44');
 }
 
@@ -452,8 +452,9 @@ function movePlayer(){
   if(K['ArrowDown'] ||K['KeyS'])          dy+=1;
   const len=Math.hypot(dx,dy);
   if(len>1){dx/=len;dy/=len;}
-  player.x=clamp(player.x+dx*player.spd,16,W-16);
-  player.y=clamp(player.y+dy*player.spd,16,H-16);
+  player.pvx=dx*player.spd; player.pvy=dy*player.spd;
+  player.x=clamp(player.x+player.pvx,16,W-16);
+  player.y=clamp(player.y+player.pvy,16,H-16);
 }
 function updatePlay(){
   movePlayer();
@@ -514,6 +515,36 @@ function updatePlay(){
 function updateBoss(){
   const b=boss;
   if(b.flash>0)b.flash--;
+
+  // ── Machine d'état dash (Talorne) ────────────────────────────────────
+  if(b.dashPhase==='telegraph'){
+    b.dashTimer--;
+    b.flash=b.dashTimer%6<3?10:0; // strobe rapide
+    if(b.dashTimer<=0){
+      // Dash 1 : vers la cible prédite, dépassement de 85px
+      const tdx=b.dashTarget.x-b.x, tdy=b.dashTarget.y-b.y;
+      const tlen=Math.hypot(tdx,tdy)||1;
+      b.x=clamp(b.x+tdx/tlen*(tlen+85),b.sz,W-b.sz);
+      b.y=clamp(b.y+tdy/tlen*(tlen+85),b.sz,H-b.sz);
+      burst(b.x,b.y,b.col,12,6); camShake=8;
+      b.dashPhase='pause2'; b.dashTimer=15;
+    }
+    return; // boss figé pendant le télégraphe
+  }
+  if(b.dashPhase==='pause2'){
+    b.dashTimer--;
+    if(b.dashTimer<=0){
+      // Dash 2 : court, vers la position actuelle du joueur
+      const d2x=player.x-b.x, d2y=player.y-b.y, d2len=Math.hypot(d2x,d2y)||1;
+      b.x=clamp(b.x+d2x/d2len*60,b.sz,W-b.sz);
+      b.y=clamp(b.y+d2y/d2len*60,b.sz,H-b.sz);
+      burst(b.x,b.y,b.col,7,4); camShake=5; b.flash=6;
+      b.dashPhase=null; b.atkTimer=115+wave*10;
+    }
+    return; // boss figé pendant la pause
+  }
+
+  // ── Mouvement normal ─────────────────────────────────────────────────
   const ddx=player.x-b.x,ddy=player.y-b.y,len=Math.hypot(ddx,ddy)||1;
   b.x=clamp(b.x+ddx/len*b.spd,b.sz,W-b.sz);
   b.y=clamp(b.y+ddy/len*b.spd,b.sz,H-b.sz);
@@ -526,7 +557,14 @@ function updateBoss(){
     else if(b.atk==='pulse'){for(let k=0;k<8;k++){const ag=k/8*Math.PI*2;addBullet(b.x,b.y,Math.cos(ag)*4,Math.sin(ag)*4,b.dmg*.45,b.col,'boss');}}
     else if(b.atk==='laser'){for(let k=0;k<5;k++)setTimeout(()=>{if(!boss||boss.dead)return;addBullet(b.x,b.y,Math.cos(a)*9,Math.sin(a)*9,b.dmg*.5,b.col,'boss');},k*80);}
     else if(b.atk==='wave'){for(let k=0;k<12;k++){const ag=k/12*Math.PI*2;addBullet(b.x,b.y,Math.cos(ag)*3.5,Math.sin(ag)*3.5,b.dmg*.4,b.col,'boss');}}
-    else if(b.atk==='dash'){b.x=clamp(b.x+ddx/len*90,b.sz,W-b.sz);b.y=clamp(b.y+ddy/len*90,b.sz,H-b.sz);}
+    else if(b.atk==='dash'){
+      // Mémoriser la cible prédictive (où sera le joueur dans 25 frames)
+      b.dashTarget={
+        x:clamp(player.x+(player.pvx||0)*25,b.sz,W-b.sz),
+        y:clamp(player.y+(player.pvy||0)*25,b.sz,H-b.sz)
+      };
+      b.dashPhase='telegraph'; b.dashTimer=20;
+    }
   }
 }
 function updateBreak(){
@@ -895,6 +933,21 @@ function drawBoss(b){
     }
     ctx.restore();
   });
+  // Visuel télégraphe dash
+  if(b.dashPhase==='telegraph'&&b.dashTarget){
+    const prog=1-b.dashTimer/20;
+    const ring=b.sz*.8+prog*30;
+    ctx.save();
+    ctx.strokeStyle=`rgba(255,80,80,${0.4+prog*.6})`;ctx.lineWidth=3+prog*4;
+    ctx.beginPath();ctx.arc(b.x,b.y,ring,0,Math.PI*2);ctx.stroke();
+    // Croix rouge sur la cible prédite
+    const tx=b.dashTarget.x,ty=b.dashTarget.y,cr=12+prog*8;
+    ctx.strokeStyle=`rgba(255,40,40,${0.5+prog*.5})`;ctx.lineWidth=2.5;
+    ctx.beginPath();ctx.moveTo(tx-cr,ty);ctx.lineTo(tx+cr,ty);
+    ctx.moveTo(tx,ty-cr);ctx.lineTo(tx,ty+cr);ctx.stroke();
+    ctx.beginPath();ctx.arc(tx,ty,cr*.55,0,Math.PI*2);ctx.stroke();
+    ctx.restore();
+  }
   ctx.fillStyle='#fff';ctx.font='bold 13px monospace';ctx.textAlign='center';
   ctx.fillText(b.name,b.x,b.y-b.sz/2-22);
   const bw=W*.62;
