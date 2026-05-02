@@ -246,7 +246,7 @@ function handlePointer(x,y,isShoot){
     const startX=Math.round(W/2-(n-1)*spacing/2);
     for(let i=0;i<n;i++){
       const bx=startX+i*spacing,by=310;
-      if(x>bx-60&&x<bx+60&&y>by-145&&y<by+125){startGame(roster[i]);return;}
+      if(x>bx-60&&x<bx+60&&y>by-145&&y<by+150){startGame(roster[i]);return;}
     }
     return;
   }
@@ -626,11 +626,11 @@ function drawSelect(){
   roster.forEach((ch,i)=>{
     const bx=startX+i*spacing,by=310;
     const isRoly=ch.id==='roly';
-    const hov=!isMobile&&mx>bx-60&&mx<bx+60&&my>by-145&&my<by+125;
+    const hov=!isMobile&&mx>bx-60&&mx<bx+60&&my>by-145&&my<by+150;
     ctx.strokeStyle=hov?'#fff':ch.col;ctx.lineWidth=hov?3:1.5;
     ctx.fillStyle=hov?'#101030':'#080820';
     if(isRoly){ctx.shadowColor='#ff88ee';ctx.shadowBlur=20;}
-    rRect(bx-60,by-145,120,270,10);
+    rRect(bx-60,by-145,120,295,10);
     ctx.shadowBlur=0;
     drawImg(ch.id.toUpperCase(),bx,by-55,80,90,()=>drawCharSprite(ch,bx,by-55));
     ctx.fillStyle=ch.col;ctx.font='bold 14px monospace';ctx.textAlign='center';
