@@ -302,7 +302,7 @@ function spawnShroles(){
       ex=s===0?rnd(0,W):s===1?W+30:s===2?rnd(0,W):-30,
       ey=s===0?-30:s===1?rnd(0,H):s===2?H+30:rnd(0,H);
     enemies.push({x:ex,y:ey,
-      hp:CONFIG.SHROLES_PV+wave*6, maxHp:CONFIG.SHROLES_PV+wave*6,
+      hp:Math.round(CONFIG.SHROLES_PV*Math.pow(2,wave)), maxHp:Math.round(CONFIG.SHROLES_PV*Math.pow(2,wave)),
       spd:CONFIG.SHROLES_VITESSE+rnd(0,.9)+wave*.1,
       dmg:CONFIG.SHROLES_DEGATS+wave*2,
       type:'shrole',dead:false,iF:0});
@@ -318,7 +318,8 @@ function spawnBoss(){
   if(wave>=BOSSES.length){gs=GS.WIN;return;}
   phase=2;
   const d=BOSSES[wave];
-  boss={...d,maxHp:d.hp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0,iF:0};
+  const bHp=Math.round(CONFIG.AY_PV*Math.pow(2,wave));
+  boss={...d,hp:bHp,maxHp:bHp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0,iF:0};
   notify('🔥 BOSS : '+boss.name+' ('+boss.hp+' PV)','#f44');
 }
 
@@ -364,7 +365,7 @@ function hitEntity(e,dmg,isMelee){
     e.dead=true;score+=isBoss?500:10;
     burst(e.x,e.y,isBoss?e.col:'#c84',12,6);
     const n=isBoss?5:1;
-    for(let k=0;k<n;k++)if(Math.random()<(isBoss?1:.45))dropLoot(e.x+rnd(-35,35),e.y+rnd(-35,35));
+    for(let k=0;k<n;k++)if(Math.random()<.1)dropLoot(e.x+rnd(-35,35),e.y+rnd(-35,35));
   }
 }
 function dropLoot(x,y){const l=LOOTS[Math.floor(Math.random()*LOOTS.length)];loot.push({...l,x:clamp(x,20,W-20),y:clamp(y,20,H-20)});}
@@ -604,7 +605,7 @@ function drawGame(isBreak){
     ctx.fillText(isMobile?'Déplace-toi · Ramasse le loot (touche les objets)':'Déplace-toi · Ramasse le loot (clic)',W/2,H/2+36);
     if(wave<BOSSES.length){
       ctx.fillStyle='#f84';ctx.font='15px monospace';
-      ctx.fillText('Prochain boss : '+BOSSES[wave].name+'  ('+BOSSES[wave].hp+' PV)',W/2,H/2+62);
+      ctx.fillText('Prochain boss : '+BOSSES[wave].name+'  ('+Math.round(CONFIG.AY_PV*Math.pow(2,wave))+' PV)',W/2,H/2+62);
     }
     if(isMobile)drawMobileControls();
   }
