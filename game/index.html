@@ -53,7 +53,7 @@ const CONFIG = {
   SHROLES_NOMBRE:  25,    // Combien apparaissent à chaque vague
   SHROLES_PV:      30,    // PV de chaque Shrole
   SHROLES_VITESSE: 1.3,   // Vitesse de déplacement
-  SHROLES_DEGATS:  6,     // Dégâts qu'ils infligent au joueur
+  SHROLES_DEGATS:  18,     // Dégâts qu'ils infligent au joueur
 
   // ── 💀 LES BOSS (points de vie) ────────────────────────────────────
   AY_PV:        2000,     // Boss 1 : AY        (l'ours rose)
@@ -174,14 +174,16 @@ const CHARS=[
   {id:'homme',   name:'Homme',    skill:'Persévérance', col:'#ffb347', hp:CONFIG.HOMME_PV,    spd:CONFIG.HOMME_VITESSE,    dmg:CONFIG.HOMME_DEGATS,    cd:15},
   {id:'trole',   name:'Trole',    skill:'Rapidité',     col:'#7fffb0', hp:CONFIG.TROLE_PV,    spd:CONFIG.TROLE_VITESSE,    dmg:CONFIG.TROLE_DEGATS,    cd:9 },
 ];
+const ROLY_CHAR={id:'roly',name:'Roly',skill:'Forme Ultime',col:'#ff88ee',hp:200,spd:4.5,dmg:35,cd:9};
+let rolyUnlocked=false;
 
 const BOSSES=[
-  {name:'AY',             hp:CONFIG.AY_PV,        col:'#f87070',sz:52,spd:1.0,dmg:10,shape:'bear',    atk:'spread', spr:'BOSS_AY'},
-  {name:'Talorne',        hp:CONFIG.TALORNE_PV,   col:'#d8d860',sz:36,spd:3.0,dmg:16,shape:'squid',   atk:'dash',   spr:'BOSS_TALORNE'},
-  {name:'Cœur Maléfique', hp:CONFIG.COEUR_PV,     col:'#cc0033',sz:46,spd:1.8,dmg:20,shape:'heart',   atk:'pulse',  spr:'BOSS_COEUR'},
-  {name:'AS',             hp:CONFIG.AS_PV,         col:'#ff7744',sz:56,spd:1.1,dmg:18,shape:'bear',    atk:'spread', spr:'BOSS_AS'},
-  {name:'AA',             hp:CONFIG.AA_PV,         col:'#bbbbbb',sz:64,spd:0.8,dmg:28,shape:'robot',   atk:'laser',  spr:'BOSS_AA'},
-  {name:'Le Musicien',    hp:CONFIG.MUSICIEN_PV,   col:'#ffee44',sz:78,spd:0.5,dmg:38,shape:'elephant',atk:'wave',   spr:'BOSS_MUSICIEN'},
+  {name:'AY',             hp:CONFIG.AY_PV,        col:'#f87070',sz:52,spd:1.0,dmg:26, shape:'bear',    atk:'spread', spr:'BOSS_AY'},
+  {name:'Talorne',        hp:CONFIG.TALORNE_PV,   col:'#d8d860',sz:36,spd:3.0,dmg:40, shape:'squid',   atk:'dash',   spr:'BOSS_TALORNE'},
+  {name:'Cœur Maléfique', hp:CONFIG.COEUR_PV,     col:'#cc0033',sz:46,spd:1.8,dmg:52, shape:'heart',   atk:'pulse',  spr:'BOSS_COEUR'},
+  {name:'AS',             hp:CONFIG.AS_PV,         col:'#ff7744',sz:56,spd:1.1,dmg:46, shape:'bear',    atk:'spread', spr:'BOSS_AS'},
+  {name:'AA',             hp:CONFIG.AA_PV,         col:'#bbbbbb',sz:64,spd:0.8,dmg:70, shape:'robot',   atk:'laser',  spr:'BOSS_AA'},
+  {name:'Le Musicien',    hp:CONFIG.MUSICIEN_PV,   col:'#ffee44',sz:78,spd:0.5,dmg:95, shape:'elephant',atk:'wave',   spr:'BOSS_MUSICIEN'},
 ];
 
 const LOOTS=[
@@ -228,7 +230,10 @@ cv.addEventListener('click',e=>{
 function onKD(e){
   if(gs===GS.TITLE){gs=GS.STORY;storyPage=0;return;}
   if(gs===GS.STORY){advStory();return;}
-  if(gs===GS.SELECT){const n=+e.key;if(n>=1&&n<=4)startGame(CHARS[n-1]);}
+  if(gs===GS.SELECT){
+    const n=+e.key;const roster=rolyUnlocked?[...CHARS,ROLY_CHAR]:CHARS;
+    if(n>=1&&n<=roster.length)startGame(roster[n-1]);
+  }
   if(gs===GS.PLAY){ if(e.code==='Space')meleeAtk(); if(e.code==='KeyE')useHeal(); }
 }
 
@@ -236,9 +241,12 @@ function handlePointer(x,y,isShoot){
   if(gs===GS.TITLE){gs=GS.STORY;storyPage=0;return;}
   if(gs===GS.STORY){advStory();return;}
   if(gs===GS.SELECT){
-    for(let i=0;i<4;i++){
-      const bx=112+i*170,by=310;
-      if(x>bx-70&&x<bx+70&&y>by-145&&y<by+125){startGame(CHARS[i]);return;}
+    const roster=rolyUnlocked?[...CHARS,ROLY_CHAR]:CHARS;
+    const n=roster.length,spacing=Math.min(170,Math.floor((W-80)/n));
+    const startX=Math.round(W/2-(n-1)*spacing/2);
+    for(let i=0;i<n;i++){
+      const bx=startX+i*spacing,by=310;
+      if(x>bx-60&&x<bx+60&&y>by-145&&y<by+125){startGame(roster[i]);return;}
     }
     return;
   }
@@ -344,7 +352,7 @@ function spawnBoss(){
   if(wave>=BOSSES.length){gs=GS.WIN;return;}
   phase=2;
   const d=BOSSES[wave];
-  const bHp=Math.round(CONFIG.AY_PV*Math.pow(2,wave));
+  const bHp=Math.round(CONFIG.AY_PV*Math.pow(2,wave+1));
   boss={...d,hp:bHp,maxHp:bHp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0,iF:0};
   notify('🔥 BOSS : '+boss.name+' ('+boss.hp+' PV)','#f44');
 }
@@ -489,7 +497,7 @@ function updatePlay(){
   if(boss&&!boss.dead)updateBoss();
   if(boss&&boss.dead){
     boss=null;wave++;
-    if(wave>=BOSSES.length){gs=GS.WIN;return;}
+    if(wave>=BOSSES.length){gs=GS.WIN;rolyUnlocked=true;return;}
     const pool=TALENTS.filter(t=>!player.talents.includes(t.id));
     pendingTalents=[];
     while(pendingTalents.length<3&&pool.length>0){
@@ -606,19 +614,28 @@ function drawSelect(){
   bg('#060620');
   ctx.fillStyle='#ff4';ctx.font='bold 28px monospace';ctx.textAlign='center';
   ctx.fillText('CHOISIS TON PERSONNAGE',W/2,52);
-  ctx.fillStyle='#444';ctx.font='13px monospace';
-  ctx.fillText(isMobile?'Touche un personnage':'Clique ou touche  1  2  3  4',W/2,80);
-  CHARS.forEach((ch,i)=>{
-    const bx=112+i*170,by=310;
-    const hov=!isMobile&&mx>bx-70&&mx<bx+70&&my>by-145&&my<by+125;
+  const roster=rolyUnlocked?[...CHARS,ROLY_CHAR]:CHARS;
+  const hint=isMobile?'Touche un personnage':'Clique ou touche  '+(roster.map((_,i)=>i+1).join('  '));
+  ctx.fillStyle='#444';ctx.font='13px monospace';ctx.fillText(hint,W/2,80);
+  if(rolyUnlocked){
+    ctx.fillStyle='#ff88ee';ctx.font='bold 13px monospace';
+    ctx.fillText('✨ ROLY DÉBLOQUÉ !  Tu as terminé le jeu !',W/2,108);
+  }
+  const n=roster.length,spacing=Math.min(170,Math.floor((W-80)/n));
+  const startX=Math.round(W/2-(n-1)*spacing/2);
+  roster.forEach((ch,i)=>{
+    const bx=startX+i*spacing,by=310;
+    const isRoly=ch.id==='roly';
+    const hov=!isMobile&&mx>bx-60&&mx<bx+60&&my>by-145&&my<by+125;
     ctx.strokeStyle=hov?'#fff':ch.col;ctx.lineWidth=hov?3:1.5;
     ctx.fillStyle=hov?'#101030':'#080820';
-    rRect(bx-70,by-145,140,270,10);
-    // Sprite héros : image si disponible, dessin canvas sinon
+    if(isRoly){ctx.shadowColor='#ff88ee';ctx.shadowBlur=20;}
+    rRect(bx-60,by-145,120,270,10);
+    ctx.shadowBlur=0;
     drawImg(ch.id.toUpperCase(),bx,by-55,80,90,()=>drawCharSprite(ch,bx,by-55));
-    ctx.fillStyle=ch.col;ctx.font='bold 15px monospace';ctx.textAlign='center';
+    ctx.fillStyle=ch.col;ctx.font='bold 14px monospace';ctx.textAlign='center';
     ctx.fillText(ch.name,bx,by+50);
-    ctx.fillStyle='#888';ctx.font='12px monospace';ctx.fillText(ch.skill,bx,by+68);
+    ctx.fillStyle=isRoly?'#ff88ee':'#888';ctx.font='11px monospace';ctx.fillText(ch.skill,bx,by+68);
     sBar(bx,by+90,ch.hp,240,'♥','#4f4');
     sBar(bx,by+108,ch.dmg,60,'⚔','#f84');
     sBar(bx,by+126,ch.spd*18,100,'⚡','#4af');
@@ -671,7 +688,7 @@ function drawGame(isBreak){
     ctx.fillText(isMobile?'Déplace-toi · Ramasse le loot (touche les objets)':'Déplace-toi · Ramasse le loot (clic)',W/2,H/2+36);
     if(wave<BOSSES.length){
       ctx.fillStyle='#f84';ctx.font='15px monospace';
-      ctx.fillText('Prochain boss : '+BOSSES[wave].name+'  ('+Math.round(CONFIG.AY_PV*Math.pow(2,wave))+' PV)',W/2,H/2+62);
+      ctx.fillText('Prochain boss : '+BOSSES[wave].name+'  ('+Math.round(CONFIG.AY_PV*Math.pow(2,wave+1))+' PV)',W/2,H/2+62);
     }
     if(isMobile)drawMobileControls();
   }
