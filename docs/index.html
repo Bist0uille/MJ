@@ -156,21 +156,26 @@ const GS={TITLE:0,STORY:1,SELECT:2,PLAY:3,BREAK:4,DEAD:5,WIN:6,TALENT:7,CONTROLS
 let gs=GS.TITLE, storyPage=0;
 
 const DIFFICULTIES=[
-  {name:'Facile',   col:'#4f4', stars:'★☆☆', desc:'Pour apprendre',
+  {name:'Facile',   col:'#4f4', stars:'★☆☆☆', desc:'Pour apprendre',
    bossHpFn: w=>Math.round(CONFIG.AY_PV*Math.pow(1.6,w)),
    shroleHpFn:w=>Math.round(CONFIG.SHROLES_PV*Math.pow(1.5,w)),
    shroleDmg: Math.round(CONFIG.SHROLES_DEGATS*.4),
    bossDmgMul:.4, loot:.25},
-  {name:'Moyen',    col:'#ff4', stars:'★★☆', desc:'Équilibré',
+  {name:'Moyen',    col:'#ff4', stars:'★★☆☆', desc:'Équilibré',
    bossHpFn: w=>Math.round(CONFIG.AY_PV*Math.pow(2,w)),
    shroleHpFn:w=>Math.round(CONFIG.SHROLES_PV*Math.pow(2,w)),
    shroleDmg: Math.round(CONFIG.SHROLES_DEGATS*.6),
    bossDmgMul:.65, loot:.15},
-  {name:'Difficile',col:'#f44', stars:'★★★', desc:'Pour les pros',
+  {name:'Difficile',col:'#f44', stars:'★★★☆', desc:'Pour les pros',
    bossHpFn: w=>Math.round(CONFIG.AY_PV*Math.pow(2,w+1)),
    shroleHpFn:w=>Math.round(CONFIG.SHROLES_PV*Math.pow(2,w)),
    shroleDmg: CONFIG.SHROLES_DEGATS,
    bossDmgMul:1.0, loot:.10},
+  {name:'Expert',   col:'#f0f', stars:'★★★★', desc:'Bonne chance…',
+   bossHpFn: w=>Math.round(CONFIG.AY_PV*Math.pow(2,w+2)),
+   shroleHpFn:w=>Math.round(CONFIG.SHROLES_PV*Math.pow(2,w+1)),
+   shroleDmg: CONFIG.SHROLES_DEGATS*2,
+   bossDmgMul:2.0, loot:.05},
 ];
 let difficulty=1;
 
@@ -253,7 +258,7 @@ cv.addEventListener('mouseleave',()=>mouseDown=false);
 function onKD(e){
   if(gs===GS.TITLE){gs=GS.STORY;storyPage=0;return;}
   if(gs===GS.STORY){advStory();return;}
-  if(gs===GS.DIFFICULTY){const n=+e.key;if(n>=1&&n<=3){difficulty=n-1;gs=GS.CONTROLS;}return;}
+  if(gs===GS.DIFFICULTY){const n=+e.key;if(n>=1&&n<=DIFFICULTIES.length){difficulty=n-1;gs=GS.CONTROLS;}return;}
   if(gs===GS.CONTROLS){gs=GS.SELECT;return;}
   if(gs===GS.SELECT){
     const n=+e.key;const roster=rolyUnlocked?[...CHARS,ROLY_CHAR]:CHARS;
@@ -267,8 +272,8 @@ function handlePointer(x,y,isShoot){
   if(gs===GS.STORY){advStory();return;}
   if(gs===GS.DIFFICULTY){
     DIFFICULTIES.forEach((d,i)=>{
-      const cx=W/2+(i-1)*220,cy=H/2;
-      if(x>cx-95&&x<cx+95&&y>cy-100&&y<cy+100){difficulty=i;gs=GS.CONTROLS;}
+      const cx=diffCardX(i),cy=H/2;
+      if(x>cx-85&&x<cx+85&&y>cy-100&&y<cy+100){difficulty=i;gs=GS.CONTROLS;}
     });
     return;
   }
@@ -846,6 +851,10 @@ function drawHUD(){
   }
 }
 
+function diffCardX(i){
+  const n=DIFFICULTIES.length,sp=Math.min(205,Math.floor((W-60)/n));
+  return Math.round(W/2+(i-(n-1)/2)*sp);
+}
 function drawDifficulty(){
   bg('#060010');
   ctx.textAlign='center';
@@ -853,10 +862,10 @@ function drawDifficulty(){
   ctx.shadowColor='#ff4';ctx.shadowBlur=22;
   ctx.fillText('DIFFICULTÉ',W/2,68);ctx.shadowBlur=0;
   ctx.font='14px monospace';ctx.fillStyle='#555';
-  if(!isMobile)ctx.fillText('Clique ou touche  1  2  3',W/2,100);
+  if(!isMobile)ctx.fillText('Clique ou touche  1  2  3  4',W/2,100);
+  const cw=170,ch=200,cy=H/2;
   DIFFICULTIES.forEach((d,i)=>{
-    const cx=W/2+(i-1)*220,cy=H/2,cw=190,ch=200;
-    const sel=difficulty===i;
+    const cx=diffCardX(i),sel=difficulty===i;
     ctx.save();
     ctx.shadowColor=d.col;ctx.shadowBlur=sel?28:8;
     ctx.fillStyle=sel?'#1a1a2e':'#0d0d1a';
@@ -865,19 +874,18 @@ function drawDifficulty(){
     if(ctx.roundRect)ctx.roundRect(cx-cw/2,cy-ch/2,cw,ch,14);
     else ctx.rect(cx-cw/2,cy-ch/2,cw,ch);
     ctx.fill();ctx.stroke();ctx.shadowBlur=0;
-    ctx.font='bold 20px monospace';ctx.fillStyle=d.col;
-    ctx.fillText(d.name,cx,cy-ch/2+38);
-    ctx.font='22px monospace';ctx.fillStyle=d.col;
-    ctx.fillText(d.stars,cx,cy-ch/2+72);
-    ctx.font='12px monospace';ctx.fillStyle='#aaa';
-    ctx.fillText(d.desc,cx,cy-ch/2+100);
-    // Stats condensées
-    const hp0=d.shroleHpFn(0), hp2=d.shroleHpFn(2);
-    ctx.font='11px monospace';ctx.fillStyle='#666';
-    ctx.fillText('Shroles : '+hp0+' → '+hp2+' PV/vague',cx,cy-ch/2+130);
-    ctx.fillText('Boss 1 : '+d.bossHpFn(0)+' PV',cx,cy-ch/2+148);
-    ctx.fillText('Loot : '+(d.loot*100)+'%',cx,cy-ch/2+166);
-    if(!isMobile){ctx.fillStyle='#333';ctx.font='18px monospace';ctx.fillText('['+(i+1)+']',cx,cy-ch/2-12);}
+    ctx.font='bold 17px monospace';ctx.fillStyle=d.col;
+    ctx.fillText(d.name,cx,cy-ch/2+34);
+    ctx.font='16px monospace';ctx.fillStyle=d.col;
+    ctx.fillText(d.stars,cx,cy-ch/2+62);
+    ctx.font='11px monospace';ctx.fillStyle='#aaa';
+    ctx.fillText(d.desc,cx,cy-ch/2+86);
+    const hp0=d.shroleHpFn(0),hp2=d.shroleHpFn(2);
+    ctx.font='10px monospace';ctx.fillStyle='#666';
+    ctx.fillText('Shroles : '+hp0+' → '+hp2+' PV',cx,cy-ch/2+116);
+    ctx.fillText('Boss 1 : '+d.bossHpFn(0)+' PV',cx,cy-ch/2+133);
+    ctx.fillText('Loot : '+(d.loot*100)+'%',cx,cy-ch/2+150);
+    if(!isMobile){ctx.fillStyle='#333';ctx.font='16px monospace';ctx.fillText('['+(i+1)+']',cx,cy-ch/2-12);}
     ctx.restore();
   });
 }
