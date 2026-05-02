@@ -157,7 +157,7 @@ let gs=GS.TITLE, storyPage=0;
 
 const TALENTS=[
   {id:'double',  name:'Double Tir',  desc:'25% de chance de tirer 2 balles à la fois', col:'#f4f'},
-  {id:'vampi',   name:'Vampirisme',  desc:'Récupère 8% des dégâts infligés en PV',     col:'#f44'},
+  {id:'vampi',   name:'Vampirisme',  desc:'+18 PV récupérés à chaque kill ennemi',        col:'#f44'},
   {id:'berserk', name:'Berserk',     desc:'Sous 30% PV → tes dégâts sont doublés',     col:'#f80'},
   {id:'blindage',name:'Blindage',    desc:'Tous les dégâts reçus sont réduits de 15%', col:'#88f'},
   {id:'frene',   name:'Frénésie',    desc:'Chaque kill +2% DMG (max +50%, reset/vague)',col:'#ff4'},
@@ -318,6 +318,16 @@ function advStory(){storyPage++;if(storyPage>=4)gs=GS.SELECT;}
 // ── DÉMARRAGE ─────────────────────────────────────────────────────────
 function hasTalent(id){return player.talents&&player.talents.includes(id);}
 
+// Dégâts reçus par le joueur — réduction DEF à rendements décroissants
+// isBoss=true : DEF moitié moins efficace (les boss percent mieux)
+// Plancher à 20% des dégâts bruts : jamais invulnérable
+function dmgToPlayer(raw, isBoss=false){
+  const k=isBoss?60:30;
+  const red=player.def/(player.def+k);
+  const after=raw*(1-red)*(hasTalent('blindage')?.85:1);
+  return Math.max(raw*.20, after);
+}
+
 function startGame(ch){
   player={x:W/2,y:H/2,hp:ch.hp,maxHp:ch.hp,spd:ch.spd,dmg:ch.dmg,atkCdMax:ch.cd,
     weapon:'Couteau',shield:null,def:0,thorns:0,pots:CONFIG.SOINS_DEPART,char:ch,iF:0,
@@ -402,13 +412,13 @@ function hitEntity(e,dmg,isMelee){
   if(isBoss)boss.flash=5;
   camShake=Math.max(camShake,isMelee?6:3);
   burst(e.x,e.y,'#fff',4,3);
-  if(hasTalent('vampi'))player.hp=Math.min(player.maxHp,player.hp+dmg*.08);
   if(e.hp<=0){
     e.dead=true;score+=isBoss?500:10;
     burst(e.x,e.y,isBoss?e.col:'#c84',12,6);
     const n=isBoss?5:1;
     for(let k=0;k<n;k++)if(Math.random()<.1)dropLoot(e.x+rnd(-35,35),e.y+rnd(-35,35));
     if(!isBoss){
+      if(hasTalent('vampi'))player.hp=Math.min(player.maxHp,player.hp+18);
       if(hasTalent('adrena'))player.hp=Math.min(player.maxHp,player.hp+4);
       if(hasTalent('frene'))player.freneBonus=Math.min(.5,(player.freneBonus||0)+.02);
     }
@@ -483,8 +493,7 @@ function updatePlay(){
       if(hit)bullets.splice(i,1);
     } else {
       if(player.iF<=0&&dist(b.x,b.y,player.x,player.y)<16){
-        const recv=Math.max(1,(b.dmg-player.def)*(hasTalent('blindage')?.85:1));
-        player.hp-=recv;player.iF=22;camShake=9;bullets.splice(i,1);
+        player.hp-=dmgToPlayer(b.dmg, b.owner==='boss');player.iF=22;camShake=9;bullets.splice(i,1);
       }
     }
   }
@@ -493,7 +502,7 @@ function updatePlay(){
     if(e.iF>0){e.iF--;return;}
     const ddx=player.x-e.x,ddy=player.y-e.y,len=Math.hypot(ddx,ddy)||1;
     e.x+=ddx/len*e.spd;e.y+=ddy/len*e.spd;
-    if(len<22&&player.iF<=0){const crecv=Math.max(.05,(e.dmg-player.def)/60*(hasTalent('blindage')?.85:1));player.hp-=crecv;if(player.thorns>0)hitEntity(e,player.thorns);}
+    if(len<22&&player.iF<=0){player.hp-=dmgToPlayer(e.dmg)/60;if(player.thorns>0)hitEntity(e,player.thorns);}
   });
   if(boss&&!boss.dead)updateBoss();
   if(boss&&boss.dead){
@@ -548,7 +557,7 @@ function updateBoss(){
   const ddx=player.x-b.x,ddy=player.y-b.y,len=Math.hypot(ddx,ddy)||1;
   b.x=clamp(b.x+ddx/len*b.spd,b.sz,W-b.sz);
   b.y=clamp(b.y+ddy/len*b.spd,b.sz,H-b.sz);
-  if(len<b.sz/2+16&&player.iF<=0){player.hp-=b.dmg/60*(hasTalent('blindage')?.85:1);player.iF=4;}
+  if(len<b.sz/2+16&&player.iF<=0){player.hp-=dmgToPlayer(b.dmg,true)/60;player.iF=4;}
   b.atkTimer--;
   if(b.atkTimer<=0){
     b.atkTimer=85+wave*8;
