@@ -318,7 +318,7 @@ function spawnBoss(){
   if(wave>=BOSSES.length){gs=GS.WIN;return;}
   phase=2;
   const d=BOSSES[wave];
-  boss={...d,maxHp:d.hp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0};
+  boss={...d,maxHp:d.hp,x:W/2,y:d.sz+40,dead:false,atkTimer:100,flash:0,iF:0};
   notify('🔥 BOSS : '+boss.name+' ('+boss.hp+' PV)','#f44');
 }
 
@@ -337,9 +337,9 @@ function shoot(tx,ty){
 function meleeAtk(){
   if(atkCd>0)return;
   atkCd=player.atkCdMax+12;
-  const R=95;
+  const R=55;
   [...enemies,...(boss&&!boss.dead?[boss]:[])].forEach(e=>{
-    if(dist(player.x,player.y,e.x,e.y)<R)hitEntity(e,player.dmg*1.6,true);
+    if(dist(player.x,player.y,e.x,e.y)<R)hitEntity(e,player.dmg*0.8,true);
   });
   burst(player.x,player.y,player.char.col,10,4);
   notify('Mêlée !','#ff4');
@@ -357,6 +357,7 @@ function hitEntity(e,dmg,isMelee){
   if(!isBoss&&e.iF>0)return;
   e.hp-=dmg;
   if(!isBoss)e.iF=7;
+  if(isBoss)boss.flash=5;
   camShake=Math.max(camShake,isMelee?6:3);
   burst(e.x,e.y,'#fff',4,3);
   if(e.hp<=0){
@@ -793,6 +794,14 @@ function drawPlayer(){
     ctx.fillStyle='#000';ctx.fillRect(-5,-29,2,2);ctx.fillRect(3,-29,2,2);
     ctx.globalAlpha=1;ctx.restore();
   });
+  // Barre de PV au-dessus du joueur
+  const phw=38,phh=5,pbx=player.x-phw/2,pby=player.y-60;
+  ctx.fillStyle='#300';ctx.fillRect(pbx,pby,phw,phh);
+  const pr=player.hp/player.maxHp;
+  ctx.fillStyle=pr>.6?'#4f4':pr>.3?'#ff4':'#f44';ctx.fillRect(pbx,pby,phw*pr,phh);
+  ctx.strokeStyle='#666';ctx.lineWidth=1;ctx.strokeRect(pbx,pby,phw,phh);
+  ctx.fillStyle='#fff';ctx.font='bold 11px monospace';ctx.textAlign='center';
+  ctx.fillText(Math.ceil(player.hp)+'',player.x,pby-2);
   if(!isMobile){
     ctx.strokeStyle='rgba(255,255,100,.18)';ctx.lineWidth=1;ctx.setLineDash([4,7]);
     ctx.beginPath();ctx.moveTo(player.x,player.y-16);ctx.lineTo(mx,my);ctx.stroke();
