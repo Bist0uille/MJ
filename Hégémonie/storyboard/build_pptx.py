@@ -34,9 +34,38 @@ TITRE = {
         "Le noir est ton état par défaut. Une image ne reste jamais affichée "
         "pendant qu'on joue — tu la montres, tu laisses 10 secondes, tu reprends "
         "le noir. Sinon les joueurs regardent l'écran au lieu de se parler.\n\n"
+        "♪ MUSIQUE : {MUSIQUE_INTRO}\n"
+        "Deux moments sans musique du tout : la négociation avec les marmottes une "
+        "fois entamée, et les 4 minutes de silence de l'acte III.\n\n"
         "Rappel de ton : personne ne dit jamais « on est dans une baleine ». "
         "Les habitants disent « on habite ici »."
     ),
+}
+
+# Conduite musicale. Detail et justifications : CONDUITE_MUSICALE.md
+MUSIQUE = {
+    1:  ("Nils Frahm — Ambre (Felt)", "intégral, ~4 min",
+         "Avant ta première phrase. COUPE NET quand la femelle décolle."),
+    2:  ("Jóhann Jóhannsson — Flight From the City (Orphée)", "~0:00 à ~2:30, piano seul",
+         "Sur « La femelle ne touche plus le sol. » Pas avant."),
+    3:  ("Brian Eno — An Ending (Ascent) (Apollo)", "intégral, ~4:25",
+         "Sur « Une ombre passe sous la coque. » LAISSE-LA FINIR dans le noir, ne parle pas dessus."),
+    4:  ("Nils Frahm — Says (Spaces)", "~0:00 à ~3:30 (jusqu'à ~6:00 si tu veux la montée)",
+         "Juste avant « Vous vous attendiez à du noir. » Laisse respirer plus longtemps qu'ailleurs."),
+    5:  ("Bonobo — Days to Come (album Days to Come)", "intégral, ~4:00",
+         "Dès le quartier commerçant. BAISSE DE MOITIÉ quand Bumbur fait son signe."),
+    6:  ("Jóhann Jóhannsson — The Cause of Labour Is the Hope of the World (The Miners' Hymns)",
+         "intégral ~6 min, ou les 3 premières",
+         "En entrant dans la salle des roues. Coupe quand la négociation commence vraiment."),
+    7:  ("Max Richter — On the Nature of Daylight (The Blue Notebooks)", "intégral ~6:10, ou ~0:00 à ~3:30",
+         "Au moment où tu avances le marqueur d'une zone. Sans commentaire."),
+    8:  ("Jóhann Jóhannsson — The Sun's Gone Dim and the Sky's Turned Black (IBM 1401)",
+         "~0:00 à ~2:40",
+         "Quand Pagure annonce l'ordre du jour. COUPE BRUTALEMENT si un joueur nomme la cathédrale."),
+    9:  ("Austin Wintory — Apotheosis (Journey)", "~0:30 à la fin (~3:40)",
+         "ATTENTION : les 4 minutes de silence se jouent SANS musique. Tu lances quand la minuterie sonne."),
+    10: ("Ólafur Arnalds — Near Light (Living Room Songs)", "intégral, ~3:10",
+         "Sur la dernière image. Laisse-la FINIR avant de poser la question à Bumbur."),
 }
 
 NOTES = {
@@ -260,6 +289,43 @@ def text_slide(prs, titre: str, sous: str, notes: str):
     return slide
 
 
+# Appariement des mp3 deposes a cote du script. Cle = mot distinctif du nom de fichier.
+AUDIO_MATCH = {
+    1: "ambre", 2: "flight from the city", 3: "an ending", 4: "says",
+    5: "bonobo", 6: "cause of labour", 7: "nature of daylight",
+    8: "suns gone dim", 9: "apotheosis", 10: "near light",
+}
+
+
+def _norm(s: str) -> str:
+    import unicodedata
+    return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+
+
+def find_audio() -> dict[int, Path]:
+    mp3 = list(HERE.glob("*.mp3"))
+    out = {}
+    for num, needle in AUDIO_MATCH.items():
+        for f in mp3:
+            if needle in _norm(f.name):
+                out[num] = f
+                break
+    return out
+
+
+def attach_audio(slide, mp3: Path) -> None:
+    """Insere le mp3 en bas a gauche, petite icone, lecture au clic."""
+    try:
+        slide.shapes.add_movie(
+            str(mp3),
+            Inches(0.15), Inches(SLIDE_H - 0.65),
+            Inches(0.45), Inches(0.45),
+            mime_type="audio/mpeg",
+        )
+    except Exception as exc:                      # pragma: no cover
+        print(f"  ! audio non insere ({mp3.name}) : {exc}")
+
+
 def image_slide(prs, img: Path, notes: str):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     im = Image.open(img)
@@ -278,34 +344,61 @@ def image_slide(prs, img: Path, notes: str):
     return slide
 
 
-def main() -> int:
+def build(with_audio: bool, dest: Path):
     images = make_slide_images()
     missing = [n for n in NOTES if n not in images]
     if missing:
         raise SystemExit(f"Images manquantes pour les scenes {missing}")
+    audio = find_audio() if with_audio else {}
 
     prs = Presentation()
     prs.slide_width = Inches(SLIDE_W)
     prs.slide_height = Inches(SLIDE_H)
 
-    text_slide(prs, TITRE["titre"], TITRE["sous"], TITRE["notes"])
+    intro = (
+        "les 10 pistes sont EMBARQUÉES dans les diapos. Clique la petite icône en bas "
+        "à gauche pour lancer, reclique pour couper. Tu lances toujours 2 à 4 secondes "
+        "AVANT de parler."
+        if with_audio else
+        "playlist de 10 pistes dans l'ordre, sur ton téléphone ou un second onglet. "
+        "Tu lances toujours 2 à 4 secondes AVANT de parler."
+    ) + " Volume assez bas pour qu'on parle normalement par-dessus."
+    text_slide(prs, TITRE["titre"], TITRE["sous"],
+               TITRE["notes"].replace("{MUSIQUE_INTRO}", intro))
 
     for num in sorted(NOTES):
         n = NOTES[num]
+        titre_m, section, cue = MUSIQUE[num]
+        piste = audio.get(num)
+        ligne_audio = (
+            f"   Fichier : {piste.name}  (clique l'icône en bas à gauche)\n"
+            if piste else "   Fichier : non embarqué\n"
+        )
         notes = (
             f"=== {num}. {n['titre'].upper()} ===\n"
             f"QUAND : {n['quand']}\n\n"
+            f"♪ MUSIQUE : {titre_m}\n"
+            f"   Section : {section}\n"
+            f"{ligne_audio}"
+            f"   Départ  : {cue}\n\n"
             f"--- À LIRE ---\n{n['lire']}\n\n"
             f"--- ENSUITE ---\n{n['apres']}\n\n"
             f"(Écran noir : touche B)"
         )
-        image_slide(prs, images[num], notes)
+        slide = image_slide(prs, images[num], notes)
+        if piste:
+            attach_audio(slide, piste)
 
     text_slide(prs, FIN["titre"], FIN["sous"], FIN["notes"])
+    prs.save(dest)
+    mo = dest.stat().st_size / 1024 / 1024
+    print(f"OK  {dest.name}  —  {len(NOTES) + 2} diapos, {mo:.1f} Mo"
+          f"{' , ' + str(len(audio)) + ' pistes embarquees' if audio else ''}")
 
-    prs.save(DECK)
-    size = DECK.stat().st_size / 1024 / 1024
-    print(f"OK  {DECK.name}  —  {len(prs.slides.__iter__.__self__._sldIdLst)} diapos, {size:.1f} Mo")
+
+def main() -> int:
+    build(with_audio=False, dest=HERE / "Le_Service_du_soir.pptx")
+    build(with_audio=True,  dest=HERE / "Le_Service_du_soir_AVEC_MUSIQUE.pptx")
     return 0
 
 

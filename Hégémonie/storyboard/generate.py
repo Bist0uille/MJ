@@ -34,8 +34,10 @@ sys.path.insert(0, str(HERE))
 from prompts import (  # noqa: E402
     REFERENCE_FILES, SCENES, build_prompt, scene_by_id,
 )
+from prompts_accessoires import PROPS, build_prop_prompt  # noqa: E402
 
-MODEL = "fal-ai/nano-banana-2/edit"
+MODEL = "fal-ai/nano-banana-2/edit"        # scenes : fiches perso en reference
+MODEL_PROPS = "fal-ai/nano-banana-2"      # accessoires : texte seul, pas de reference
 
 # fal : $0.08 / image en 1K, x1.5 en 2K, x2 en 4K
 COST_PER_IMAGE_USD_1K = 0.08
@@ -84,16 +86,17 @@ def reference_paths(scene: dict) -> list[Path]:
     return paths
 
 
-def estimate(scenes: list[dict], resolution: str) -> dict:
+def estimate(scenes: list[dict], resolution: str, model: str = MODEL) -> dict:
     unit = COST_PER_IMAGE_USD_1K * RESOLUTION_MULTIPLIER[resolution]
     return {
-        "model": MODEL,
+        "model": model,
         "images": len(scenes),
         "resolution": resolution,
         "cost_per_image_usd": round(unit, 4),
         "estimated_total_usd": round(unit * len(scenes), 2),
         "scenes": [{"id": s["id"], "titre": s["titre"], "seed": s["seed"],
-                    "refs": s["refs"]} for s in scenes],
+                    "refs": s.get("refs", []), "ratio": s.get("ratio", "16:9")}
+                   for s in scenes],
         "output_dir": str(OUT),
     }
 
@@ -104,24 +107,35 @@ def log_run(entry: dict) -> None:
         fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
-def generate_one(fal_client, scene: dict, resolution: str, seed: int | None) -> Path:
-    refs = reference_paths(scene)
-    prompt = build_prompt(scene)
+def generate_one(fal_client, scene: dict, resolution: str, seed: int | None,
+                 is_prop: bool = False) -> Path:
+    if is_prop:
+        refs = []
+        prompt = build_prop_prompt(scene)
+        ratio = scene.get("ratio", "3:4")
+        subdir = OUT / "accessoires"
+    else:
+        refs = reference_paths(scene)
+        prompt = build_prompt(scene)
+        ratio = "16:9"
+        subdir = OUT
     used_seed = seed if seed is not None else scene["seed"]
 
     args = {
         "prompt": prompt,
-        "image_urls": [data_uri(p) for p in refs],
         "num_images": 1,
         "output_format": "png",
-        "aspect_ratio": "16:9",
+        "aspect_ratio": ratio,
         "resolution": resolution.upper(),
         "seed": used_seed,
     }
+    if refs:
+        args["image_urls"] = [data_uri(p) for p in refs]
 
-    print(f"  -> appel fal ({len(refs)} references, seed {used_seed})...", flush=True)
+    model = MODEL_PROPS if is_prop else MODEL
+    print(f"  -> {model} ({len(refs)} refs, {ratio}, seed {used_seed})...", flush=True)
     started = time.time()
-    handle = fal_client.submit(MODEL, arguments=args)
+    handle = fal_client.submit(model, arguments=args)
     result = handle.get()
 
     images = result.get("images") or []
@@ -132,8 +146,8 @@ def generate_one(fal_client, scene: dict, resolution: str, seed: int | None) -> 
     if not url:
         raise SystemExit(f"Image sans url : {json.dumps(images[0])[:300]}")
 
-    OUT.mkdir(parents=True, exist_ok=True)
-    dest = OUT / f"{scene['id']:02d}_{scene['slug']}.png"
+    subdir.mkdir(parents=True, exist_ok=True)
+    dest = subdir / f"{scene['id']:02d}_{scene['slug']}.png"
 
     if url.startswith("data:"):
         dest.write_bytes(base64.b64decode(url.split(",", 1)[1]))
@@ -147,8 +161,9 @@ def generate_one(fal_client, scene: dict, resolution: str, seed: int | None) -> 
     log_run({
         "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "scene_id": scene["id"], "titre": scene["titre"], "slug": scene["slug"],
-        "model": MODEL, "resolution": resolution, "seed": used_seed,
-        "refs": scene["refs"], "cost_usd": round(unit, 4),
+        "kind": "accessoire" if is_prop else "scene",
+        "model": model, "resolution": resolution, "seed": used_seed,
+        "refs": refs and scene.get("refs") or [], "cost_usd": round(unit, 4),
         "seconds": elapsed, "output": str(dest.relative_to(HERE)),
     })
     print(f"  OK  {dest.name}  ({dest.stat().st_size // 1024} Ko, {elapsed}s)", flush=True)
@@ -161,13 +176,26 @@ def main() -> int:
     g.add_argument("--scene", type=int, help="numero de scene (1-10)")
     g.add_argument("--scenes", help="plage ou liste, ex. 2-10 ou 3,5,7")
     g.add_argument("--all", action="store_true", help="les 10 scenes")
+    g.add_argument("--props", nargs="?", const="1-7", default=None,
+                   help="accessoires ; plage optionnelle, ex. --props 2-7")
     ap.add_argument("--resolution", choices=list(RESOLUTION_MULTIPLIER), default="2k")
     ap.add_argument("--seed", type=int, default=None, help="surcharge le seed de la scene")
     ap.add_argument("--confirm-spend", action="store_true",
                     help="obligatoire pour depenser reellement")
     args = ap.parse_args()
 
-    if args.all:
+    is_prop = args.props is not None
+    if is_prop:
+        wanted = []
+        for chunk in args.props.split(","):
+            chunk = chunk.strip()
+            if "-" in chunk:
+                a, b = chunk.split("-", 1)
+                wanted.extend(range(int(a), int(b) + 1))
+            elif chunk:
+                wanted.append(int(chunk))
+        scenes = [p for p in PROPS if p["id"] in set(wanted)]
+    elif args.all:
         scenes = SCENES
     elif args.scenes:
         wanted = []
@@ -181,7 +209,8 @@ def main() -> int:
         scenes = [scene_by_id(i) for i in sorted(set(wanted))]
     else:
         scenes = [scene_by_id(args.scene)]
-    plan = estimate(scenes, args.resolution)
+    plan = estimate(scenes, args.resolution, MODEL_PROPS if is_prop else MODEL)
+    plan["kind"] = "accessoires" if is_prop else "scenes"
     print(json.dumps(plan, ensure_ascii=False, indent=2), flush=True)
 
     if not args.confirm_spend:
@@ -196,7 +225,7 @@ def main() -> int:
     done = []
     for scene in scenes:
         print(f"[{scene['id']:02d}] {scene['titre']}", flush=True)
-        done.append(generate_one(fal_client, scene, args.resolution, args.seed))
+        done.append(generate_one(fal_client, scene, args.resolution, args.seed, is_prop))
 
     unit = COST_PER_IMAGE_USD_1K * RESOLUTION_MULTIPLIER[args.resolution]
     print(f"\n{len(done)} image(s) dans {OUT}")

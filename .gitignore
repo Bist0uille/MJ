@@ -10,3 +10,12 @@ node_modules/
 **/out/preview/
 **/out/slides/
 .tmp-review/
+
+# Musique (droits tiers, hors depot)
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+# Deck avec audio embarque (~83 Mo, regenerable)
+*_AVEC_MUSIQUE.pptx
