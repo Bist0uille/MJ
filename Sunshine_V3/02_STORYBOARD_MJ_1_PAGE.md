@@ -1,0 +1,17 @@
+# STORYBOARD MJ — UNE PAGE
+
+| Temps | Scène et but | Endroit — son — odeur (dix mots environ) | À dire / à révéler | Interpellations |
+|---|---|---|---|---|
+| 0:00 | **Salon : réunir le Groupe Soleil** | Verrière dorée, enclos rapiécé, stand enfumé, caramel chaud, ozone. | Décrire l’enclos de Marguerite, puis le « bronx » de Solarius au milieu des stands parfaits. Lire son discours. Concours, Héliocell, Lucette, badge commun. | Maëlle : Marguerite refuse l’estrade. Noé : la machine vibre. Iris : on attend son discours. Sacha : une preuve attire son œil. Céleste : le ciel est géométriquement faux. |
+| 0:20 | **Crépuscule : faire choisir dans l’urgence** | Soleil tranché, silence aspiré, alarmes molles, plastique chaud, laine. | L’ombre est artificiellement nette. Stockage verrouillé. Résoudre deux urgences. | Céleste mesure l’ombre. Noé ouvre ce qui ne s’ouvre plus. Maëlle calme les loupes. Iris obtient un ordre. Sacha conserve une preuve. |
+| 0:45 | **Le grain : donner une piste physique** | Trottoir froid, pluie de verre, lampe grinçante, poussière métallique. | Grain noir plat ; il pivote et renvoie la lampe vers le ciel. Solarius l’emporte. | Maëlle lit son comportement. Céleste confirme la visée orbitale. Sacha filme. Noé l’isole. Iris reconnaît un marquage effacé. |
+| 1:00 | **Laboratoire : décider d’entrer** | Cuivre humide, bocaux lumineux, pompes asthmatiques, craie, café brûlé. | Grain artificiel, actif, trop petit. Lucette garde un rayon. Miniaturiseur + rappel. | Noé stabilise. Céleste règle l’échelle. Maëlle rassure Lucette. Iris ouvre un protocole. Sacha choisit ce qu’il enregistre. |
+| 1:20 | **Dans le grain : comprendre le complot** | Désert miroir, chœurs radio, chaleur sèche, goût de pile. | Révéler six lignes du terminal dans l’ordre. Rien sur les aliens. | Chacun résout un obstacle selon son domaine ; finir sur Zénith puis phase Étoile. |
+| 2:00 | **Qiao + atelier : construire leur riposte** | Atelier sombre, outils au sol, voix lointaines, huile, peur. | Qiao assume SUN+. Solarius : déclencher, propager, sécuriser. Dix minutes réelles. | Tour de table : « Ma contribution, c’est… » Maëlle/loupes, Noé/machines, Céleste/trajectoire, Sacha/preuves-signal, Iris/accès Tiānguāng. |
+| 2:30 | **Zénith : gagner contre Qiao** | Terre immense, coque vibrante, bips feutrés, air recyclé, métal. | Verrou physique. Qiao propose un marché et pose le vrai risque d’incendie. | Iris répond à Qiao. Faire agir en priorité ceux qui ont moins parlé. Montrer le rayon naturel revenu avant le twist. |
+| 3:10 | **Prise Mère : changer d’échelle** | Sol ouvert, câble-tunnel, grondement grave, ozone violet, poussière chaude. | « Ce n’est pas à nous. » Puis Vrrr-7 : émission, caméras optiques, énergie cachée. | Noé identifie la prise. Sacha choisit quoi diffuser. Tous protègent une partie de leur invention avant la coupure. |
+| 3:30 | **314 ans plus tard : rendre leurs choix durables** | Moulin nocturne, dynamos râpeuses, soupe fumée, laine, charbon froid. | Monde fragmenté mais vivant. Groupe Soleil devenu légende. Retour de Vrrr-7. | Demander à chacun : « Qu’est devenu ton héritage ? » |
+
+## Si tu bloques
+
+**Une scène = une image + une information + un choix.** Solarius reformule les faits déjà découverts, jamais la solution. Si le temps manque : deux urgences, deux obstacles dans le grain, atelier de dix minutes, confrontation courte, victoire visible, prise, Vrrr-7, épilogue.
