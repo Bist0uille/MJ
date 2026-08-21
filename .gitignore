@@ -1,16 +1,19 @@
-# OS
-.DS_Store
-Thumbs.db
-Desktop.ini
 
-# Editors
-*.swp
-*.swo
-*~
-.~lock.*
-.vscode/
-.idea/
+# Venvs & caches
+.env/
+.venv*/
+__pycache__/
+*.pyc
+node_modules/
 
-# Temp
-*.tmp
-*.bak
+# Sorties derivees
+.tmp-review/
+
+# Musique (droits tiers, hors depot)
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+# Deck avec audio embarque (~83 Mo, regenerable)
+*_AVEC_MUSIQUE.pptx
