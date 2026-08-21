@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Fiche Préparation MJ — Tu étais différent</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, serif;
+  font-size: 10pt;
+  background: white;
+  color: #1a1a1a;
+  padding: 1.3cm 1.6cm;
+}
+
+h1 {
+  font-size: 16pt;
+  color: #3a1206;
+  border-bottom: 3px solid #7a3b1e;
+  padding-bottom: 6px;
+  margin-bottom: 3px;
+  font-family: 'Special Elite', Georgia, serif;
+  letter-spacing: 0.03em;
+}
+
+.tagline {
+  font-size: 8pt;
+  color: #7a3b1e;
+  font-style: italic;
+  margin-bottom: 18px;
+  letter-spacing: 0.08em;
+}
+
+/* Grille principale */
+.grille {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.grille-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.bloc {
+  border: 1.5px solid #c8956a;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bloc-header {
+  background: #7a3b1e;
+  color: white;
+  font-size: 7.5pt;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+
+.bloc-body {
+  padding: 8px 10px;
+  background: #fdf6ec;
+}
+
+.bloc-body p {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.bloc-body p:last-child { margin-bottom: 0; }
+
+/* Checklist */
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-bottom: 5px;
+  font-size: 9.5pt;
+  line-height: 1.4;
+}
+
+.check-box {
+  width: 13px;
+  height: 13px;
+  min-width: 13px;
+  border: 1.5px solid #7a3b1e;
+  border-radius: 2px;
+  margin-top: 1px;
+  background: white;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 18px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: #c8956a;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7a3b1e;
+  border: 2px solid white;
+  outline: 1.5px solid #7a3b1e;
+}
+
+.tl-titre {
+  font-size: 8pt;
+  font-weight: bold;
+  color: #7a3b1e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tl-texte {
+  font-size: 9pt;
+  line-height: 1.45;
+  color: #1a1a1a;
+}
+
+.tl-temps {
+  font-size: 7.5pt;
+  color: #999;
+  font-style: italic;
+}
+
+/* Tableau espace */
+.espace-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+.espace-table td {
+  border: 1px solid #c8956a;
+  padding: 5px 8px;
+  vertical-align: top;
+  background: #fdf6ec;
+}
+.espace-table td.centre {
+  background: #7a3b1e;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8pt;
+  letter-spacing: 0.1em;
+  width: 80px;
+}
+.espace-table td.label {
+  font-size: 7.5pt;
+  color: #7a3b1e;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #fff3e8;
+}
+
+/* Phrase */
+.phrase-oral {
+  border-left: 3px solid #7a3b1e;
+  background: #fffaf4;
+  padding: 7px 11px;
+  font-style: italic;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  margin: 5px 0;
+}
+
+/* Règle */
+.regle {
+  background: #fff3e0;
+  border: 1px solid #e0a060;
+  border-radius: 3px;
+  padding: 5px 9px;
+  font-size: 9pt;
+  color: #3a1206;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+/* Séparateur */
+.sep {
+  border: none;
+  border-top: 1px solid #c8956a;
+  margin: 14px 0;
+}
+
+/* Table documents */
+table.docs {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+table.docs th {
+  background: #7a3b1e;
+  color: white;
+  padding: 4px 8px;
+  text-align: left;
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+}
+table.docs td {
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  vertical-align: top;
+}
+table.docs tr:nth-child(even) td { background: #fdf6ec; }
+table.docs td.non { color: #c0392b; font-weight: bold; }
+table.docs td.oui { color: #27ae60; font-weight: bold; }
+
+/* Notes zone */
+.notes-zone {
+  border: 1.5px dashed #c8956a;
+  border-radius: 3px;
+  padding: 8px 10px;
+  min-height: 50px;
+  background: white;
+}
+
+.notes-lignes {
+  margin-top: 6px;
+}
+.notes-lignes div {
+  border-bottom: 1px solid #e8d8c0;
+  height: 18px;
+  margin-bottom: 0;
+}
+
+/* Questions joueurs */
+.qj {
+  margin-bottom: 7px;
+  padding: 6px 9px;
+  background: #fdf6ec;
+  border-left: 3px solid #c8956a;
+  border-radius: 0 3px 3px 0;
+}
+.qj-perso {
+  font-size: 7.5pt;
+  color: #7a3b1e;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+}
+.qj-question {
+  font-size: 9pt;
+  font-style: italic;
+  line-height: 1.4;
+}
+.qj-reponse {
+  border-bottom: 1px solid #c8956a;
+  height: 16px;
+  margin-top: 4px;
+}
+
+@page { margin: 1.3cm 1.6cm; size: A4; }
+@media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+
+<!-- TITRE -->
+<h1>TU ÉTAIS DIFFÉRENT</h1>
+<div class="tagline">Fiche de préparation MJ &nbsp;·&nbsp; Fallout JdR &nbsp;·&nbsp; Première session</div>
+
+<!-- LIGNE 1 : DOCUMENTS + ESPACE DE JEU -->
+<div class="grille">
+
+  <div class="bloc">
+    <div class="bloc-header">Ce que tu imprimes</div>
+    <div class="bloc-body">
+      <table class="docs">
+        <tr>
+          <th>Document</th>
+          <th style="width:50px">À table</th>
+          <th>Usage</th>
+        </tr>
+        <tr>
+          <td>Guide MJ v5</td>
+          <td class="oui">OUI</td>
+          <td>Script principal, ouvert à l'acte en cours</td>
+        </tr>
+        <tr>
+          <td>Fiche dialogues MJ</td>
+          <td class="oui">OUI</td>
+          <td>Devant toi en permanence, à gauche</td>
+        </tr>
+        <tr>
+          <td>Fiches prétirés originales</td>
+          <td class="oui">OUI</td>
+          <td>Distribuer aux joueurs</td>
+        </tr>
+        <tr>
+          <td>Fiches contexte joueurs</td>
+          <td class="oui">OUI</td>
+          <td>Glisser avec chaque fiche prétirée</td>
+        </tr>
+        <tr>
+          <td>Intégration prétirés</td>
+          <td class="non">NON</td>
+          <td>Prep terminée, laisse chez toi</td>
+        </tr>
+        <tr>
+          <td>Feuille vierge + stylo</td>
+          <td class="oui">OUI</td>
+          <td>Noter ce que les joueurs inventent à la fête</td>
+        </tr>
+      </table>
+      <div style="margin-top:7px">
+        <div class="regle"><strong>Marque-pages :</strong> colle un post-it au début de l'Acte 2 et un au début de l'Acte 3 avant d'arriver.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloc">
+    <div class="bloc-header">Ton espace de jeu</div>
+    <div class="bloc-body">
+      <table class="espace-table">
+        <tr>
+          <td class="label">Fiche<br>dialogues<br>(fixe)</td>
+          <td style="text-align:center; font-size:8pt; color:#888; font-style:italic">feuille<br>vierge<br>+ stylo</td>
+          <td class="label">Guide MJ<br>ouvert à<br>l'acte en cours</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="centre">TOI</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align:center; font-size:8.5pt; color:#666; font-style:italic; padding:6px">Les joueurs autour</td>
+        </tr>
+      </table>
+      <div style="margin-top:8px">
+        <div class="regle">La fiche dialogues ne bouge pas de la session. Le guide MJ s'ouvre à la page dont tu as besoin. La feuille vierge c'est ta mémoire en direct.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- LIGNE 2 : TIMELINE SESSION -->
+<div class="bloc" style="margin-bottom:14px">
+  <div class="bloc-header">Déroulé de la session — minutage indicatif</div>
+  <div class="bloc-body">
+    <div class="grille-3" style="margin-bottom:0">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-titre">Avant l'arrivée des joueurs</div>
+          <div class="tl-texte">Ouvre le guide au Prologue. Lance la playlist. Pose les fiches sur la table, face cachée.</div>
+          <div class="tl-temps">15 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Distribution des fiches</div>
+          <div class="tl-texte">Fiche prétirée + fiche contexte ensemble. Lecture silencieuse. Tu regardes les joueurs, pas tes notes.</div>
+          <div class="tl-temps">10 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Contrat de table</div>
+          <div class="tl-texte">La promesse à voix haute. Puis la question à chaque joueur : <em>"La chose dont la perte détruirait ton personnage ?"</em> Note les réponses visiblement.</div>
+          <div class="tl-temps">10 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Prologue — La Fête</div>
+          <div class="tl-texte">Une question par joueur. Tu notes. La ville prend vie. Jesse monte sur scène.</div>
+          <div class="tl-temps">30 min</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-titre">Acte 1 — La ferme</div>
+          <div class="tl-texte">Jesse envoie les joueurs. La ferme. La scène de crime. Theresa. La grange. Joseph.</div>
+          <div class="tl-temps">45 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Transition</div>
+          <div class="tl-texte">La fête est finie. La ville dort. Ou fait semblant. Coupe la musique.</div>
+          <div class="tl-temps">5 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Acte 2 — La ville</div>
+          <div class="tl-texte">Le lendemain. Jesse ce matin. Le parc, le bar, la clinique. Le médecin. Le twist.</div>
+          <div class="tl-temps">45 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Transition</div>
+          <div class="tl-texte">Les coordonnées. La ville dans le dos. Vers l'ouest.</div>
+          <div class="tl-temps">5 min</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-titre">Acte 3 — L'Institut</div>
+          <div class="tl-texte">Le complexe. L'entrée. Le couloir des cellules. Jesse. La salle principale. Le parc reconstitué. Les copies. Le scientifique.</div>
+          <div class="tl-temps">60 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Le marché + le test</div>
+          <div class="tl-texte">La seringue. La question. Ne réponds jamais avec certitude.</div>
+          <div class="tl-temps">20 min</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-titre">Épilogue</div>
+          <div class="tl-texte">Sleepwalk — Santo &amp; Johnny. Chaque joueur dit ce que son personnage fait ensuite. Tu ne conclus rien. Tu laisses ouvert.</div>
+          <div class="tl-temps">15 min</div>
+        </div>
+      </div>
+    </div>
+    <div class="regle" style="margin-top:8px"><strong>Total visé : 4h (5 joueurs).</strong> Acte 1 max 40 min, Acte 2 max 40 min — si ça déborde, saute le bar ou le comptoir, garde la clinique. Ne coupe jamais l'Institut.</div>
+  </div>
+</div>
+
+<!-- LIGNE 3 : CONTRAT + QUESTIONS FÊTE -->
+<div class="grille">
+
+  <div class="bloc">
+    <div class="bloc-header">Contrat de table — à lire à voix haute</div>
+    <div class="bloc-body">
+      <div class="phrase-oral">"Ce soir, je vais essayer de vous faire ressentir quelque chose de vrai. Le scénario va toucher à des choses inconfortables — la mémoire, la confiance, l'identité. Tout ce que vous allez inventer sur vos personnages cette nuit sera utilisé. Pas contre vous. Pour que ça compte vraiment."</div>
+      <p style="font-size:8.5pt; color:#666; margin-top:6px">Puis, à chaque joueur individuellement, à voix basse :</p>
+      <div class="phrase-oral">"Quelle est la chose dont la perte détruirait ton personnage ?"</div>
+      <div class="regle">Note les réponses sur ta feuille vierge. Visiblement. Les joueurs te voient écrire. Ces réponses sont tes munitions pour l'Acte 3.</div>
+    </div>
+  </div>
+
+  <div class="bloc">
+    <div class="bloc-header">Questions fête des fondateurs — une par joueur</div>
+    <div class="bloc-body">
+      <div class="qj">
+        <div class="qj-perso">Augusta Byron</div>
+        <div class="qj-question">"Tu as câblé toute cette ville. Si le générateur s'arrête, tout s'éteint. Comment tu vis avec ça ?"</div>
+        <div class="qj-reponse"></div>
+      </div>
+      <div class="qj">
+        <div class="qj-perso">"Joyeux" Tommy Doyle</div>
+        <div class="qj-question">"Il y a quelqu'un ici à qui tu n'as jamais menti. Qui c'est ?"</div>
+        <div class="qj-reponse"></div>
+      </div>
+      <div class="qj">
+        <div class="qj-perso">Bailey Tout Sourire</div>
+        <div class="qj-question">"Quand tu te réveilles le matin, quelle est la première chose que tu fais pour vérifier que tu es encore toi ?"</div>
+        <div class="qj-reponse"></div>
+      </div>
+      <div class="qj">
+        <div class="qj-perso">Vieux Colosse</div>
+        <div class="qj-question">"T'as vécu des siècles. C'est quoi, cette ville, dans tout ça ?"</div>
+        <div class="qj-reponse"></div>
+      </div>
+      <div class="qj">
+        <div class="qj-perso">Hazel Johnson</div>
+        <div class="qj-question">"La Confrérie t'a donné un nom, une mission, une armure. Qu'est-ce que cette ville t'a donné qu'elle ne peut pas te donner ?"</div>
+        <div class="qj-reponse"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<hr class="sep">
+
+<!-- LIGNE 4 : BOUÉES + RÈGLES DE SURVIE -->
+<div class="grille-3">
+
+  <div class="bloc">
+    <div class="bloc-header">Tes 3 bouées de sauvetage</div>
+    <div class="bloc-body">
+      <div class="check">
+        <div class="check-box"></div>
+        <div><strong>Tu te perds dans l'histoire</strong><br>Pose la question : <em>"Qu'est-ce que vous faites ?"</em> Écoute. Ils te diront où aller.</div>
+      </div>
+      <div class="check">
+        <div class="check-box"></div>
+        <div><strong>Tu ne sais pas quelle règle s'applique</strong><br>Décide en 5 secondes, continue. Vérifie après la session. La règle que tu inventes ce soir est la bonne.</div>
+      </div>
+      <div class="check">
+        <div class="check-box"></div>
+        <div><strong>Une scène s'emballe</strong><br>"Donnez-moi deux secondes." Regarde la fiche dialogues. Retrouve le PNJ. Reprends.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloc">
+    <div class="bloc-header">Ce que tu ne prépares pas</div>
+    <div class="bloc-body">
+      <div class="check">
+        <div class="check-box" style="border-color:#c0392b"></div>
+        <div>Les réponses sur l'identité des PJ<br><span style="color:#666;font-size:8.5pt">Tu ne sais pas. C'est le scénario.</span></div>
+      </div>
+      <div class="check">
+        <div class="check-box" style="border-color:#c0392b"></div>
+        <div>Ce qui se passe si les joueurs improvisent<br><span style="color:#666;font-size:8.5pt">Tu improvises aussi. Ça sera bien.</span></div>
+      </div>
+      <div class="check">
+        <div class="check-box" style="border-color:#c0392b"></div>
+        <div>Une fin précise<br><span style="color:#666;font-size:8.5pt">Les joueurs vont choisir la leur.</span></div>
+      </div>
+      <div class="check">
+        <div class="check-box" style="border-color:#c0392b"></div>
+        <div>La réponse au test de la seringue<br><span style="color:#666;font-size:8.5pt">Utilise les 4 formules ambiguës. C'est tout.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloc">
+    <div class="bloc-header">Playlist — ordre d'utilisation</div>
+    <div class="bloc-body">
+      <div class="check"><div class="check-box"></div><div><strong>Fête des Fondateurs</strong><br><em>I Don't Want to Set the World on Fire</em> — très bas</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>Arrivée à la ferme</strong><br>Silence total</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>Acte 2 — lendemain</strong><br><em>Anything Goes</em> — Cole Porter, très bas</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>La clinique</strong><br>Silence</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>Le twist</strong><br><em>It's All Over But the Crying</em> — volume max</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>Vers l'Institut</strong><br><em>The Wanderer</em> — couper à l'arrivée</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>Salle principale</strong><br><em>Civilization (Bongo Bongo)</em> — 5 sec puis couper</div></div>
+      <div class="check"><div class="check-box"></div><div><strong>Épilogue</strong><br><em>Sleepwalk</em> — Santo &amp; Johnny</div></div>
+    </div>
+  </div>
+
+</div>
+
+<hr class="sep">
+
+<!-- LIGNE 5 : NOTES EN DIRECT -->
+<div class="bloc">
+  <div class="bloc-header">Notes en direct — à remplir pendant la Fête des Fondateurs</div>
+  <div class="bloc-body">
+    <div class="grille-3" style="margin-bottom:0; gap:10px">
+      <div>
+        <p style="font-size:8pt; color:#7a3b1e; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:5px">Nom de la ville</p>
+        <div class="notes-lignes"><div></div></div>
+        <p style="font-size:8pt; color:#7a3b1e; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; margin:8px 0 5px 0">Ce sur quoi repose sa survie</p>
+        <div class="notes-lignes"><div></div><div></div></div>
+        <p style="font-size:8pt; color:#7a3b1e; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; margin:8px 0 5px 0">Son symbole / signe de ralliement</p>
+        <div class="notes-lignes"><div></div></div>
+      </div>
+      <div>
+        <p style="font-size:8pt; color:#7a3b1e; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:5px">Ce que chaque PJ a construit</p>
+        <div class="notes-lignes"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div>
+        <p style="font-size:8pt; color:#7a3b1e; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:5px">La chose dont la perte détruirait chaque PJ</p>
+        <div class="notes-lignes"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+    <div style="margin-top:10px">
+      <p style="font-size:8pt; color:#7a3b1e; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:5px">Personnes de confiance mentionnées (→ leur double synthétique sera à la clinique)</p>
+      <div class="notes-lignes"><div></div><div></div></div>
+    </div>
+    <div class="regle" style="margin-top:8px">Tout ce qui est écrit ici est une munition. Le médecin perd le souvenir d'un nom que tu as noté. Le scientifique le cite à l'Institut. La copie fait le geste dont un joueur t'a parlé.</div>
+  </div>
+</div>
+
+</body>
+</html>

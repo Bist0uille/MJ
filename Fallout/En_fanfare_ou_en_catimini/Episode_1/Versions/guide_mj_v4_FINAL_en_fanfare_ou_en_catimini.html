@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>En Fanfare, ou en Catimini — v4</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">En Fanfare, ou en Catimini — v4</h1>
+</header>
+<h1 id="en-fanfare-ou-en-catimini">EN FANFARE, OU EN CATIMINI</h1>
+<h2 id="version-4-édition-définitive">Version 4 — Édition
+Définitive</h2>
+<hr />
+<blockquote>
+<p><em>“War. War never changes.”</em></p>
+<p><em>Mais les souvenirs, eux, peuvent être volés.</em> <em>Et si
+quelqu’un te vole tes souvenirs,</em> <em>comment sais-tu encore qui tu
+es ?</em></p>
+<p><em>Comment sais-tu que tu l’as jamais su ?</em></p>
+</blockquote>
+<hr />
+<h1 id="avant-tout-ce-que-ce-scénario-va-faire-à-vos-joueurs">AVANT TOUT
+— CE QUE CE SCÉNARIO VA FAIRE À VOS JOUEURS</h1>
+<p>Ce scénario est conçu pour laisser une marque. Pas une cicatrice
+superficielle — une marque profonde, du genre qu’on raconte des années
+après en disant <em>“tu te souviens de cette session ?”</em></p>
+<p>Il va s’attaquer à quelque chose de fondamental :
+<strong>l’identité</strong>. Pas sous la forme d’une question
+philosophique abstraite. Sous la forme d’un doigt pointé sur chaque
+joueur en disant : <em>“Et toi ? Tu es sûr que t’es encore toi
+?”</em></p>
+<p>Pour que ça fonctionne, tu dois être prêt à : - <strong>Utiliser sans
+pitié</strong> les détails que les joueurs t’ont donnés pendant la fête
+d’ouverture - <strong>Laisser des questions sans réponse</strong> —
+délibérément, définitivement - <strong>Jouer le calme absolu</strong>
+pendant les scènes les plus perturbantes - <strong>Ne jamais confirmer
+ni infirmer</strong> la question centrale du scénario</p>
+<p>La question centrale est : <strong>certains PJ ont peut-être déjà été
+remplacés par des synthés.</strong></p>
+<p>Tu ne le diras jamais. Les joueurs ne le sauront jamais avec
+certitude. C’est ça le poison. C’est ça qui dure.</p>
+<hr />
+<h1 id="la-mécanique-en-un-coup-dœil">LA MÉCANIQUE EN UN COUP D’ŒIL</h1>
+<blockquote>
+<p><strong>Encart MJ — Lis ça avant de préparer quoi que ce soit
+d’autre</strong></p>
+<p>Voici comment tout fonctionne. Tu dois avoir cette carte mentale en
+tête à chaque instant.</p>
+</blockquote>
+<h2 id="la-chaîne-du-signal">La chaîne du signal</h2>
+<pre><code>G.E.C.K. (donne vie à la ville — végétation, air, énergie)
+    ↓ alimente
+GÉNÉRATEUR À FUSION FROIDE (en ville)
+    → contient un appareil émetteur installé en secret par l&#39;Institut
+    → cet appareil vole des fragments de mémoire aux habitants
+    → il envoie ces fragments via un signal vers...
+NOYAU DE DONNÉES (dans le complexe de l&#39;Institut, à distance)
+    → reçoit et stocke les mémoires volées
+    → renvoie des instructions de synchronisation à l&#39;émetteur
+      (sans ces instructions, l&#39;émetteur s&#39;éteint automatiquement)</code></pre>
+<p><strong>Ce que ça implique pour les fins du scénario :</strong> -
+<strong>Détruire le noyau</strong> → l’émetteur s’éteint (plus
+d’instructions de retour) → signal coupé → amnésies stoppées → GECK
+intact → ville sauvée - <strong>Éteindre le générateur</strong> → tout
+s’arrête → GECK mort → ville condamnée à terme - <strong>Accepter le
+marché</strong> → le scientifique démonte et repart avec l’émetteur →
+signal coupé → GECK intact → ville sauvée physiquement, mais blessée
+humainement</p>
+<h2 id="qui-sait-quoi">Qui sait quoi</h2>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Personnage</th>
+<th>Ce qu’il sait</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jesse (synthétique)</td>
+<td>Tout — il relaie les informations à l’Institut</td>
+</tr>
+<tr class="even">
+<td>Le médecin</td>
+<td>Il a découvert l’appareil dans le générateur. Il sait que le signal
+part quelque part mais pas où exactement</td>
+</tr>
+<tr class="odd">
+<td>Theresa</td>
+<td>Elle savait que quelque chose clochait avec Jesse. Elle ne savait
+pas pourquoi</td>
+</tr>
+<tr class="even">
+<td>Joseph</td>
+<td>Il ne sait plus rien. Il a tout perdu</td>
+</tr>
+<tr class="odd">
+<td>Le responsable scientifique</td>
+<td>Tout, évidemment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lidentité-des-pj">L’identité des PJ</h2>
+<p><strong>Tu ne sais pas si les PJ sont des originaux ou des copies. Tu
+ne décideras jamais.</strong> L’ambiguïté n’est pas une lacune du
+scénario. C’est son cœur.</p>
+<h2 id="carte-du-scénario">Carte du scénario</h2>
+<pre><code>FÊTE DES FONDATEURS (worldbuilding intégré)
+    ↓
+Jesse envoie les PJ à la ferme
+    ↓
+ACTE 1 — La ferme / Theresa / Joseph
+    ↓ (nuit)
+ACTE 2 — La ville / La clinique / Le twist
+    ↓ (décision 3 : éteindre le générateur maintenant ?)
+    ├── OUI → FIN 2 (générateur détruit)
+    └── NON → ACTE 3 — Le complexe de l&#39;Institut
+                    ├── Chemin des cellules (Jesse libéré → FIN 4 possible)
+                    └── Salle principale → Le marché / Le combat
+                            ├── Marché accepté → FIN 1
+                            ├── Noyau détruit → FIN 3
+                            └── Jesse libéré + Noyau détruit → FIN 4</code></pre>
+<hr />
+<h1 id="mise-en-place-rituel-pré-session">MISE EN PLACE — RITUEL
+PRÉ-SESSION</h1>
+<h2 id="le-contrat-de-table">Le contrat de table</h2>
+<p>Avant de commencer, dis à tes joueurs ceci — pas comme une règle,
+comme une promesse :</p>
+<blockquote>
+<p><em>“Ce soir, je vais essayer de vous faire ressentir quelque chose
+de vrai. Le scénario va toucher à des choses inconfortables — la
+mémoire, la confiance, l’identité. Tout ce que vous allez inventer sur
+vos personnages et sur cette ville sera utilisé. Pas contre vous. Pour
+vous. Pour que ça compte vraiment.”</em></p>
+</blockquote>
+<p>Puis pose une dernière question, à voix basse, à chaque joueur
+individuellement : <strong>“Quelle est la chose dont la perte détruirait
+ton personnage ?”</strong></p>
+<p>Note les réponses. Ne les utilise pas immédiatement. Garde-les pour
+l’Acte 3.</p>
+<hr />
+<h2 id="la-musique-guide-dutilisation">La musique — Guide
+d’utilisation</h2>
+<p>La musique Fallout n’est pas une ambiance. C’est un personnage.</p>
+<p><strong>Règle de base :</strong> La musique doit toujours sembler
+légèrement décalée par rapport à ce qui se passe. Une ballade romantique
+pendant la découverte d’un cadavre. Une chanson joyeuse pendant que la
+vérité s’effondre. Le décalage crée l’inconfort. L’inconfort crée la
+mémoire.</p>
+<p><strong>Playlist recommandée :</strong></p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 25%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Moment</th>
+<th>Titre</th>
+<th>Effet voulu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>La Fête des Fondateurs</td>
+<td><em>“I Don’t Want to Set the World on Fire”</em> — The Ink
+Spots</td>
+<td>Ironie maximale</td>
+</tr>
+<tr class="even">
+<td>Découverte de Theresa</td>
+<td>Silence total, puis <em>“Maybe”</em> — The Ink Spots très bas</td>
+<td>Malaise</td>
+</tr>
+<tr class="odd">
+<td>Enquête en ville</td>
+<td><em>“Anything Goes”</em> — Cole Porter</td>
+<td>Normalité décalée</td>
+</tr>
+<tr class="even">
+<td>La clinique</td>
+<td>Silence</td>
+<td>L’absence de musique est une musique</td>
+</tr>
+<tr class="odd">
+<td>Twist des synthés</td>
+<td><em>“It’s All Over But the Crying”</em> — The Ink Spots</td>
+<td>Signifiance rétroactive</td>
+</tr>
+<tr class="even">
+<td>Voyage vers l’Institut</td>
+<td><em>“The Wanderer”</em> — Dion</td>
+<td>Élan avant la chute</td>
+</tr>
+<tr class="odd">
+<td>Salle principale de l’Institut</td>
+<td><em>“Civilization (Bongo Bongo)”</em> — Louis Prima</td>
+<td>Surréalisme total</td>
+</tr>
+<tr class="even">
+<td>Combat contre les copies</td>
+<td>Aucune musique</td>
+<td>Pure tension</td>
+</tr>
+<tr class="odd">
+<td>Épilogue</td>
+<td><em>“Sleepwalk”</em> — Santo &amp; Johnny</td>
+<td>Mélancolie résiduelle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="la-règle-des-30-secondes">La règle des 30 secondes</h2>
+<blockquote>
+<p><strong>Principe fondamental à garder en tête tout au long de la
+session :</strong></p>
+<p>Si les joueurs n’ont pas eu l’occasion d’agir depuis 30 secondes,
+redonne-leur la main. Une description, aussi bonne soit-elle, devient
+une conférence si personne ne peut réagir.</p>
+<p>Après chaque moment fort — une découverte, une révélation, une mort —
+arrête-toi. Regarde tes joueurs. Demande : <em>“Qu’est-ce que vous
+faites ?”</em></p>
+<p>Leur réponse vaudra toujours plus que ta prochaine phrase.</p>
+</blockquote>
+<hr />
+<h1 id="couche-cachée-ce-que-le-mj-sait-seul">COUCHE CACHÉE — CE QUE LE
+MJ SAIT SEUL</h1>
+<h2 id="la-vérité-que-les-joueurs-ne-sauront-peut-être-jamais">La vérité
+que les joueurs ne sauront peut-être jamais</h2>
+<p>Voici ce qui s’est vraiment passé. Tu es le seul à le savoir.
+Distille ces informations en fragments, jamais en totalité.</p>
+<p><strong>La chronologie secrète :</strong></p>
+<p>Il y a <strong>quatre mois</strong>, avant même la fin de la première
+année de la communauté, l’Institut a commencé ses opérations. Pas d’un
+coup — progressivement, chirurgicalement.</p>
+<ul>
+<li><strong>Semaine 1 :</strong> Un habitant “disparaît” lors d’une
+exploration. L’Institut le capture, l’étudie, crée sa copie et la
+réintègre. Personne ne remarque rien.</li>
+<li><strong>Semaine 3 :</strong> Jesse Pedigrue est remplacé. Le vrai
+Jesse est vivant — dans une cellule du complexe. Il attend depuis trois
+mois.</li>
+<li><strong>Semaine 6 :</strong> L’appareil émetteur est activé dans le
+générateur. Le vol de souvenirs commence.</li>
+<li><strong>Semaine 10 :</strong> Les premières amnésies apparaissent.
+Joseph est le premier cas visible.</li>
+<li><strong>Semaine 12 :</strong> Maintenant. Le scénario commence.</li>
+</ul>
+<p><strong>Le secret le plus profond :</strong> Dans les couloirs du
+complexe, il y a des cellules. Certaines contiennent des habitants de la
+ville — les originaux dont les copies ont été intégrées. Jesse Pedigrue
+est là. Peut-être d’autres.</p>
+<p>Si les joueurs trouvent ces cellules (chemin de traverse — voir plus
+bas), ils trouvent des gens qui ont vécu trois mois en captivité, qui
+ont vu l’Institut travailler. Et peut-être — peut-être — ils trouvent
+leurs propres cellules. Vides. Ou pas.</p>
+<hr />
+<h2 id="la-graine-du-doute-comment-planter-le-ver-dans-les-cerveaux">La
+graine du doute — Comment planter le ver dans les cerveaux</h2>
+<p>Tout au long du scénario, intègre ces détails sans les souligner.
+Laisse les joueurs les trouver. Ou pas.</p>
+<p><strong>Acte 1 :</strong> - Dans la chambre de Joseph et Theresa,
+parmi les photos déchirées, un fragment survit. On y voit une silhouette
+floue — debout derrière le couple lors d’une fête. Cette silhouette
+ressemble à l’un des PJ. Mais le PJ n’a aucun souvenir de cette photo.
+<em>(Utilise le PJ dont la réponse lors de la fête était la plus précise
+— celui qui a le plus investi.)</em></p>
+<ul>
+<li>Sur le Pip-Boy de Joseph (s’ils le fouillent), ses dernières notes
+avant la psychose : <em>“10/10 — Theresa dit que je me répète. J’ai
+raconté la même histoire trois fois ce matin.<em> </em>10/14 — Je ne
+reconnais plus le chien. Notre chien. Je le connais mais je ne le
+connais plus en dedans.<em> </em>10/17 — J’ai regardé dans le miroir ce
+matin. Quelqu’un d’autre me regardait en retour.”</em></li>
+</ul>
+<p><strong>Acte 2 :</strong> - L’enfant en Salle 2 de la clinique. Si un
+PJ s’approche seul, sans les autres : <em>(Chuchote, si possible.)</em>
+L’enfant tourne lentement la tête. Ses yeux font le point. Pour la
+première fois de la scène, il regarde le PJ directement. Et il dit, avec
+la voix plate d’un enfant qui récite : <em>“Je me souviens de toi.
+Avant. Tu étais différent.”</em> Puis ses yeux reprennent leur flou. Il
+ne répond plus.</p>
+<ul>
+<li>Dans les dossiers de la clinique : un dossier par patient. Si les
+joueurs cherchent les leurs — il n’y en a pas. Ni pour eux, ni pour un
+ou deux autres habitants qu’ils connaissent. Pas de dossier. Comme s’ils
+n’avaient jamais été examinés.</li>
+</ul>
+<p><strong>Acte 3 :</strong> - Dans la salle principale de l’Institut,
+les copies synthétiques incomplètes. Parmi elles, certaines copies de PJ
+ont l’air plus complètes que les autres. Le responsable scientifique, si
+on lui pose la question, répond avec une politesse absolue :
+<em>“Naturellement. Plus le signal a eu de matière à travailler, plus la
+copie est fidèle.<em> </em>Certains d’entre vous étaient… comment dire…
+des sujets particulièrement riches.”</em> Il sourit. Il ne précise pas
+ce qu’il entend par “riches”.</p>
+<ul>
+<li>Dans le bureau du responsable scientifique (chemin de traverse) : Un
+journal de bord avec des dates d’acquisition. La plupart des habitants
+de la ville y figurent. Certains noms portent des dates récentes.
+D’autres portent des dates très anciennes. Plus anciennes que la
+fondation de la ville.</li>
+</ul>
+<hr />
+<h1 id="acte-1-un-crime-macabre">ACTE 1 — UN CRIME MACABRE</h1>
+<h2 id="ambiance-générale-de-lacte">Ambiance générale de l’acte</h2>
+<blockquote>
+<p><strong>Encart MJ — Joue ça comme du Cormac McCarthy</strong></p>
+<p>L’Acte 1 est sobre. Pas de musique forte, pas de grands gestes. C’est
+l’acte de la découverte froide. Un cadavre. Un mari fou. Une ville qui
+fête pendant que quelque chose est irréparablement brisé.</p>
+<p>Résiste à l’envie de dramatiser. Décris avec précision. Les détails
+concrets sont plus perturbants que les superlatifs. “Une houe est
+plantée dans son sternum” fait plus que “elle était terriblement
+morte”.</p>
+<p>Laisse les joueurs remplir le silence avec leur imagination. Leur
+imagination sera toujours plus cruelle que la tienne.</p>
+</blockquote>
+<hr />
+<h2 id="prologue-la-fête-des-fondateurs">PROLOGUE — La Fête des
+Fondateurs</h2>
+<p><em>Musique : “I Don’t Want to Set the World on Fire” — The Ink
+Spots. Très bas.</em> <em>Lire à voix haute, lentement :</em></p>
+<blockquote>
+<p>Ce soir, votre ville célèbre sa toute première Fête des Fondateurs.
+Un an. Un an de survie dans un monde qui ne voulait pas de vous.</p>
+<p>Les lanternes en capsules recyclées pendent entre les bâtiments.
+Quelqu’un a retrouvé un vieux pick-up et en a fait une scène. Il y a de
+la musique. Du vrai alcool — pas de l’eau-de-vie de fortune, du vrai
+whisky, sorti d’une caisse que personne n’avait voulu ouvrir depuis un
+an “pour une occasion spéciale.”</p>
+<p>C’est l’occasion spéciale.</p>
+</blockquote>
+<p><em>Laisse les joueurs s’installer dans la fête. Puis :</em></p>
+<blockquote>
+<p>Jesse Pedigrue monte sur la scène. Il attend que les conversations se
+taisent. Il a l’air de quelqu’un qui a préparé ce moment depuis
+longtemps. Il lève son verre.</p>
+<p><em>“Un an. Certains d’entre vous ont tout laissé pour être là.<em>
+</em>D’autres ont tout construit depuis rien.<em> </em>Avant qu’on
+boive, je veux qu’on se souvienne de ce qu’on a fait.<em> </em>Alors —
+qui veut commencer ? Dites-nous votre nom.<em> </em>Dites-nous ce que
+vous avez construit ici. Ce que cette ville représente pour
+vous.”</em></p>
+<p>Il t’invite du regard. La foule se retourne vers vous.</p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Le worldbuilding intégré</strong></p>
+<p>C’est ici que tu poses tes questions de worldbuilding. Dans la
+fiction, pas en dehors. Jesse ouvre, mais les habitants peuvent aussi
+poser des questions aux PJ.</p>
+<p><strong>Pour chaque PJ, fais émerger ces informations naturellement
+:</strong> - Comment s’appelle-t-il dans cette ville ? - Qu’est-ce qu’il
+a construit ou protégé ici ? - Qui dans cette ville est sa personne de
+confiance ?</p>
+<p><strong>Pour la communauté (en passant d’un PJ à l’autre) :</strong>
+- Comment s’appelle-t-elle ? Sur quoi repose sa survie ? - Quel est son
+symbole, son signe de ralliement ?</p>
+<p><strong>Plus tard dans la soirée</strong> (en conversation au bar ou
+avec le médecin qui fait sa tournée) : - Quelle est la pire mémoire du
+PJ depuis son arrivée ? - Si tu devais partir demain pour toujours,
+qu’est-ce que tu regarderais une dernière fois ?</p>
+<p><strong>Note les réponses. Visiblement. Les joueurs te voient
+écrire.</strong> C’est important. Ces souvenirs partagés ce soir sont
+exactement ceux que l’amnésie va effacer. Chaque souvenir prononcé à
+voix haute est une munition.</p>
+<p><strong>Utilisation de ces réponses :</strong> - La personne de
+confiance → son double synthétique sera présent dans la clinique - La
+chose construite → il en existe une réplique dans l’Institut - La pire
+mémoire → le responsable scientifique la mentionne (“Nous savons tout,
+vous savez”) - Ce qu’ils regarderaient → c’est exactement ce que leur
+copie regarde, dans la salle de l’Institut</p>
+</blockquote>
+<hr />
+<h2 id="jesse-pedigrue-comment-le-jouer">Jesse Pedigrue — Comment le
+jouer</h2>
+<blockquote>
+<p><strong>Encart MJ — Jouer Jesse</strong></p>
+<p>Jesse est un synthétique. Il ne le sait peut-être pas lui-même — les
+synthétiques de génération avancée ne savent pas qu’ils sont des
+copies.</p>
+<p><strong>Traits de caractère :</strong> - Trop parfait dans ses
+fonctions. Il écoute vraiment, pose les bonnes questions, dit les bons
+mots — mais avec un léger décalage, comme quelqu’un qui a appris à faire
+ça plutôt que quelqu’un qui le ressent. - Jamais de colère spontanée.
+Jamais d’humour qui part de nulle part. Il peut <em>imiter</em> ces
+états, pas les avoir. - Il prend des décisions rapidement. Pas
+d’hésitation visible. Pas le poids du doute.</p>
+<p><strong>Tic physique :</strong> Quand il réfléchit à une réponse —
+notamment face à une question inattendue — il incline légèrement la tête
+sur la gauche. Pas beaucoup. Juste assez pour que ce soit remarquable si
+on le cherche.</p>
+<p><strong>Le vrai Jesse</strong> (en cellule à l’Institut) est son
+opposé exact : brut, amer, avec un humour qui arrive au mauvais moment.
+Il ne fait pas confiance facilement. Il pleure quand il voit le faux
+parc.</p>
+</blockquote>
+<p>Quand Jesse donne le briefing aux PJ, observe-le toi-même avec un œil
+neuf. Il est parfait. Trop parfait.</p>
+<p>Il dit exactement ce qu’il faut dire. Il pose exactement les bonnes
+questions. Il exprime exactement la bonne quantité d’inquiétude.</p>
+<p>Si un PJ fait un test de PER + Discours (difficulté 3, pas annoncé —
+offre-le seulement si un joueur dit “je l’observe attentivement”) :</p>
+<blockquote>
+<p><em>Quelque chose cloche chez Jesse ce soir. Pas dans ce qu’il
+dit.</em> <em>Dans la façon dont il le dit. Comme quelqu’un qui a
+répété.</em> <em>Ses gestes sont millimétrés. Sa voix ne tremble
+jamais.</em> <em>La Fête des Fondateurs est supposée être la plus belle
+nuit de l’année.</em> <em>Jesse a l’air d’être en réunion de
+travail.</em></p>
+</blockquote>
+<p>Ne confirme pas. Ne dément pas. Passe à autre chose.</p>
+<hr />
+<h2 id="la-ferme-le-briefing-de-jesse">La ferme — Le briefing de
+Jesse</h2>
+<p>Jesse prend les PJ à part, dans l’ombre entre deux bâtiments. Il dit
+les mots “discrétion” et “ferme de goudrelles” et “cambriolage” et les
+regarde avec des yeux qui ne rient pas malgré la fête autour.</p>
+<p>Les voilà devant la petite ferme de Joseph et Theresa. Un couple que
+tout le monde aime. Qui n’ont pas pointé le nez ce soir.</p>
+<p>La porte d’entrée est fracassée. La musique de la fête leur parvient
+encore. Elle semble venir d’un autre monde. Le vent s’est levé. Une
+tempête s’annonce. L’intérieur de la ferme est noir.</p>
+<p><em>Arrête la musique. Silence complet.</em></p>
+<blockquote>
+<p><strong>Encart MJ — Theresa</strong></p>
+<p>Avant d’entrer, rappelle aux joueurs qui était Theresa. Pose la
+question : <em>“Theresa, vous la connaissiez. Qu’est-ce qu’elle était
+pour vous ?”</em></p>
+<p>Laisse un joueur répondre. Laisse les autres ajouter quelque chose.
+Puis montre-leur ce qu’il en reste.</p>
+<p><strong>Traits de caractère de Theresa :</strong> - Chaleureuse mais
+directe. Pas de fausse douceur — elle dit les choses comme elles sont. -
+Elle a survécu à la guerre, aux mutations, à tout. Ce n’est pas une
+victime. C’est quelqu’un d’épuisé par l’injustice. - Son amour pour
+Joseph est têtu, pas romantique. Elle ne l’a pas quitté quand il a
+commencé à perdre la tête. - Tic : elle finit les phrases des autres
+quand elle est impatiente.</p>
+<p><em>Ces traits ressortent dans ses lettres au médecin, dans les notes
+du Pip-Boy, et dans ce que les habitants racontent d’elle.</em></p>
+<p>C’est la différence entre un cadavre et une perte.</p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Le silence avant d’entrer</strong></p>
+<p>Après les rappels sur Theresa, ne te précipite pas. Demande à chaque
+joueur : <em>“Qu’est-ce que ton personnage ressent à cet instant précis
+?”</em></p>
+<p>Chaque fois qu’un joueur décrit de la peur, de la paranoïa, du
+malaise : +2 PA. Mais ne le dis pas à voix haute. Note-le
+discrètement.</p>
+<p>Si personne n’hésite à entrer : une branche sèche craque à
+l’intérieur. Puis silence. +2 PA.</p>
+</blockquote>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Avant d’entrer dans la ferme, arrête-toi. Regarde tes joueurs.
+<em>“Qu’est-ce que vous faites ?”</em></p>
+<p>Ils voudront probablement sécuriser le périmètre, chercher une entrée
+secondaire, ou entrer directement. Laisse-les choisir. Ne les guide pas
+vers la porte.</p>
+</blockquote>
+<hr />
+<h2 id="la-scène-du-crime-script-intégral">LA SCÈNE DU CRIME — Script
+intégral</h2>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>L’intérieur sent la poudre noire, la ferraille, et quelque chose de
+doux et de sucré qui n’a rien à faire là. Du sang qui a séché.</p>
+<p>Dans le salon, le mobilier a été renversé. Pas dans le désordre d’un
+cambriolage. Dans le désordre d’une lutte. Quelqu’un a résisté ici.
+Longtemps.</p>
+<p>Les cadres sont brisés. Les photos ont disparu. Pas les cadres —
+juste les photos. Comme si quelqu’un les avait arrachées une par
+une.</p>
+<p>L’égouttement vous attire vers la cuisine. Lent. Régulier. Presque
+apaisant, si ce n’était pas du sang.</p>
+<p>Contre le mur du fond, vêtue d’une chemise de nuit gorgée de rouge
+sombre, une vieille goule est clouée au mur par une houe plantée dans
+son sternum.</p>
+<p>Vous reconnaissez Theresa. Ses yeux sont écarquillés par une peur qui
+s’est figée au moment exact où elle a compris que c’était fini. Son
+menton repose sur sa poitrine. Elle ne respire pas.</p>
+<p>La porte de derrière est grande ouverte. Le vent fait entrer des
+feuilles mortes qui tourbillonnent sur les traces de pas ensanglantés.
+Pieds nus. Qui partent vers la grange.</p>
+</blockquote>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Après cette description, tais-toi. Laisse le silence s’installer.
+Puis : <em>“Qu’est-ce que vous faites ?”</em></p>
+<p>Les joueurs voudront probablement examiner la scène, chercher Joseph,
+ou sécuriser les lieux. Chaque pièce est décrite ci-dessous — laisse-les
+choisir l’ordre.</p>
+</blockquote>
+<hr />
+<h2 id="investigation-guide-des-indices">INVESTIGATION — Guide des
+indices</h2>
+<p><em>Test : PER + Médecine / Science / Survie, difficulté 0. Une pièce
+par personnage.</em> <em>Encourage chaque joueur à expliquer COMMENT il
+utilise sa compétence.</em></p>
+<h3 id="le-salon">Le Salon</h3>
+<p><strong>Indices de surface :</strong> - Lutte acharnée. Blessures
+défensives sur les bras et le visage de Theresa. Elle a combattu
+quelqu’un qu’elle aimait. Elle n’a pas voulu le blesser en retour. -
+Toutes les photos arrachées. Proprement, délibérément. Pas dans la
+panique. - Sous le fauteuil renversé : un bouton de chemise. La couleur
+de la chemise de Joseph.</p>
+<p><strong>Indice caché (PA + Obtenir des informations) :</strong> - Sur
+le plancher, dans la poussière derrière le canapé retourné, griffonné à
+la craie : <em>“JESSE NE SE SOUVIENT PAS DE MOI NON PLUS”</em> Écriture
+de Theresa. Elle l’a écrit en se cachant, avant que Joseph ne la
+trouve.</p>
+<blockquote>
+<p><strong>Encart MJ — La phrase de Theresa</strong></p>
+<p>Ne la souligne pas. Ne la relis pas. Laisse-la là. Si les joueurs
+passent à côté — tant mieux. Elle sera encore là à l’Acte 2 quand ils
+reviendront fouiller après avoir parlé à Jesse.</p>
+<p>Quand ils la trouveront, le sens aura changé.</p>
+</blockquote>
+<hr />
+<h3 id="la-cuisine">La Cuisine</h3>
+<p><strong>Indices de surface :</strong> - Traces de pas pieds nus,
+ensanglantées, vers la grange. Un pas hésitant, l’autre décidé. -
+Râtelier vide. Un fusil à double canon a été pris. - Un tiroir de
+couverts renversé au sol. Les couteaux soigneusement éloignés des traces
+de pas. <em>(Joseph a essayé de ne pas se blesser davantage. Ou de ne
+pas avoir l’occasion de faire pire.)</em></p>
+<p><strong>Indice caché (PA + Obtenir des informations) :</strong> -
+Sous l’évier, derrière un seau rouillé : une boîte en métal. À
+l’intérieur, une liasse de lettres. Correspondance entre Theresa et le
+médecin de la ville, sur les trois dernières semaines. Theresa décrivait
+la dégradation de Joseph. La dernière lettre date de deux jours. Elle
+écrit : <em>“Il ne me reconnaît plus le matin. L’après-midi, il revient
+parfois. Hier soir,<em> </em>il m’a regardée et il a dit ‘tu lui
+ressembles’. Je lui ai demandé à qui.<em> </em>Il a dit : ‘à ma femme’.
+Je ne sais pas quoi faire de ça.”</em></p>
+<hr />
+<h3 id="la-chambre">La Chambre</h3>
+<p><strong>Indices de surface :</strong> - Sur un oreiller, un pendentif
+en cœur. Dans un rabat : photo de Joseph souriant, jeune, avant les
+mutations. Dans l’autre rabat : déchiqueté. On ne saura jamais ce qu’il
+représentait. - Sur le lit, des éclats de miroir. Le miroir au-dessus de
+la commode a été fracassé.</p>
+<p><strong>Indice caché (PA + Obtenir des informations) :</strong> -
+Parmi les débris du miroir, un fragment de photo coincé dans le cadre.
+Un groupe de personnes lors d’une fête — clairement ancienne, d’avant la
+guerre ou peu après. Joseph et Theresa, jeunes, au centre. Et derrière
+eux, floue mais reconnaissable : une silhouette. <em>(Choisis le PJ le
+plus investi lors de la Fête des Fondateurs. Sa silhouette est là.)</em>
+<em>(Ne le dis pas tout de suite. Décris “une silhouette, floue”. Laisse
+un joueur demander.)</em></p>
+<blockquote>
+<p><strong>Encart MJ — La photo</strong></p>
+<p>Si le joueur dont la silhouette ressemble au PJ demande “est-ce que
+c’est moi ?” : <em>“La qualité est mauvaise. La ressemblance est…
+troublante. Mais la photo a l’air vieille. Vraiment vieille. Bien avant
+que vous arriviez dans cette ville.”</em></p>
+<p>Ne confirme pas. Ne dément pas. Passe à la grange.</p>
+</blockquote>
+<hr />
+<h2 id="la-grange-script-intégral">LA GRANGE — Script intégral</h2>
+<p><em>Lire à voix haute quand un PJ approche la porte :</em></p>
+<blockquote>
+<p>La grange est silencieuse, mais le genre de silence qui respire.
+Quelqu’un est là. Vous l’entendez.</p>
+<p>Une respiration courte. Haletante. Et un bruit que vous identifiez
+mal au début — puis que vous reconnaissez : quelqu’un pleure, tout
+doucement, comme s’il essayait de s’en empêcher.</p>
+</blockquote>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Avant d’ouvrir la porte : <em>“Qu’est-ce que vous faites ?”</em>
+Certains voudront parler à travers la porte. D’autres entreront
+directement. D’autres encore contourneront par derrière. Laisse-les
+décider.</p>
+</blockquote>
+<p><em>Quand un PJ ouvre la porte :</em></p>
+<blockquote>
+<p>La porte coulisse dans un craquement. Une détonation. L’odeur de
+poudre. Le vieux Joseph dans le clair de lune.</p>
+<p>Il porte ses vêtements en couches superposées — cinq épaisseurs au
+moins, comme si s’habiller plusieurs fois pouvait l’aider à se souvenir
+qui il était.</p>
+<p>Ses yeux vous cherchent. Ils ne trouvent rien qu’ils
+reconnaissent.</p>
+</blockquote>
+<p><em>Résoudre l’attaque — puis lire :</em></p>
+<blockquote>
+<p><em>“Je ne la connais pas. Je ne la connais plus. Je—”</em></p>
+<p>Il s’arrête. Son regard parcourt son propre corps. Ses mains. Il les
+regarde comme si elles lui appartenaient à peine.</p>
+<p><em>“…j’ai fait quelque chose. J’ai fait quelque chose de terrible et
+je ne sais plus pourquoi.<em> </em>Je ne sais plus qui je suis. Je ne
+sais plus qui vous êtes.<em> </em>Vous êtes qui ? Vous êtes qui
+?”</em></p>
+<p>Il lève le fusil. Sa main tremble.</p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Ne laissez pas cette scène devenir du
+combat</strong></p>
+<p>Joseph EST du combat si les joueurs attaquent. Mais l’intention est
+d’abord le dialogue. Il est armé ET il pleure. C’est important que les
+deux coexistent.</p>
+<p>Si un joueur essaie de lui parler, donne-leur un test : CHR +
+Discours ou Survie, difficulté 2. En cas de réussite : Joseph baisse
+légèrement le fusil. Il dit une seule chose avant de recharger ou de
+s’effondrer : <em>“Theresa. Je cherchais Theresa. Elle est où ? Je ne
+sais plus où elle est.”</em></p>
+<p>Joue ça lentement. Douloureusement.</p>
+</blockquote>
+<hr />
+<h3 id="décision-1-joseph">⚠ DÉCISION 1 — Joseph</h3>
+<p><strong>La situation :</strong> Joseph est une victime. Il est aussi
+une menace réelle. Il ne comprend pas ce qui lui arrive. Et s’il
+comprend — si quelqu’un lui dit que Theresa est morte — il va
+s’effondrer d’une façon qui pourrait être irréversible.</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 37%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Ce qui se passe</th>
+<th>Conséquence cachée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Le tuer</strong></td>
+<td>Fin rapide. Moralement simple.</td>
+<td>Le médecin perd son seul “cas avancé” vivant. À l’Acte 2, il le
+mentionne avec regret. Les joueurs comprennent qu’ils ont fermé une
+porte.</td>
+</tr>
+<tr class="even">
+<td><strong>Le maîtriser et le ramener</strong></td>
+<td>Difficile. 2 PA si ça tourne mal. Dommages possibles.</td>
+<td>Joseph peut être présenté au médecin. Dans la nuit, avant l’Acte 2,
+il a un moment de lucidité. Il dit une chose : <em>“Jesse. Jesse savait.
+Il est venu ici la semaine dernière. Il savait ce que j’avais.”</em> Il
+meurt dans son sommeil. Mais cette phrase reste.</td>
+</tr>
+<tr class="odd">
+<td><strong>Le laisser partir dans la nuit</strong></td>
+<td>Il disparaît.</td>
+<td>Il réapparaît en Acte 2 — mort dans une ruelle, les mains encore
+ouvertes. Avec, dans son poing fermé, une des photos manquantes. La
+photo montre Jesse Pedigrue. Au dos, en écriture de Theresa :
+<em>“Pourquoi il ne nous reconnaît plus ?”</em></td>
+</tr>
+<tr class="even">
+<td><strong>Lui dire que Theresa est morte</strong></td>
+<td>Il s’effondre. Littéralement. Il glisse au sol.</td>
+<td>Après quelques secondes, il regarde les PJ avec une clarté
+terrifiante et dit : <em>“Tuez-moi. S’il vous plaît. Je ne veux pas
+oublier qu’elle était réelle.”</em> C’est le choix le plus dur. +3 PA si
+les joueurs doivent décider.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="chemins-de-traverse-acte-1">CHEMINS DE TRAVERSE — ACTE 1</h2>
+<h3 id="la-voisine-qui-observait">La voisine qui observait</h3>
+<p>Si les joueurs examinent les alentours de la ferme avant d’entrer :
+PER + Survie, difficulté 1. Succès : une lumière s’éteint dans la ferme
+voisine.</p>
+<p>Si les joueurs frappent à sa porte : une vieille femme, Margot, 70
+ans, humaine. Elle a vu des choses. Elle a peur. Il faut la convaincre
+(CHR + Discours, difficulté 2).</p>
+<p>Ce qu’elle dit, si on la convainc : - <em>“Il y a trois semaines,
+j’ai vu des gens emmener Joseph. De nuit. Deux types en
+combinaisons.<em> </em>Je pensais que c’étaient des médecins. Il avait
+l’air… mou. Comme endormi.<em> </em>Ils l’ont ramené au matin. Je
+pensais que j’avais rêvé.”</em> - <em>“Jesse était là. Il regardait. Il
+n’a rien dit.”</em></p>
+<blockquote>
+<p><strong>Encart MJ — Margot</strong></p>
+<p>Margot peut sembler être juste une voisine. Elle l’est. Mais elle a
+vu quelque chose d’important et elle ne sait pas ce qu’elle a vu.</p>
+<p>À l’Acte 2, si les joueurs reviennent la voir : sa porte est fermée à
+double tour. Elle ne répond plus. Sous la porte : une note. <em>“Partez.
+Ils savent que je vous ai parlé.”</em></p>
+<p>Elle est vivante. Pour l’instant.</p>
+</blockquote>
+<hr />
+<h3 id="le-pip-boy-de-joseph">Le Pip-Boy de Joseph</h3>
+<p>Si les joueurs fouillent la maison (pas la grange — la maison) : Dans
+un tiroir de la chambre, sous des couvertures, le vieux Pip-Boy de
+Joseph. Batterie presque morte. Quelques entrées de journal.</p>
+<p><em>10/10 — Theresa dit que je me répète. J’ai raconté la même
+histoire trois fois ce matin sans m’en rendre compte.</em> <em>10/14 —
+Je ne reconnais plus notre chien. Ses yeux. Je sais que c’est notre
+chien mais je ne le sais plus en dedans.</em> <em>10/17 — J’ai regardé
+dans le miroir ce matin. Quelqu’un d’autre me regardait.</em> <em>10/19
+— Jesse est venu. Il avait l’air préoccupé. Ou il faisait semblant. Je
+ne sais plus faire la différence.</em> <em>10/21 — Je ne sais plus
+pourquoi j’écris ça. Je ne sais plus pour qui.</em></p>
+<p>La dernière entrée, datée d’hier : <em>“THERESA AIDE MOI JE NE SAIS
+PLUS QUI TU ES”</em></p>
+<hr />
+<h2 id="transition-acte-1-vers-acte-2">TRANSITION — Acte 1 vers Acte
+2</h2>
+<p><em>Lire à voix haute après la résolution de la grange :</em></p>
+<blockquote>
+<p>La fête est finie.</p>
+<p>Vous retournez vers les lumières de la ville — ce qu’il en reste. Les
+lanternes se sont éteintes une par une. Il n’y a plus de musique. Il
+reste des bouteilles renversées, une chaise oubliée, le silence de
+quelque chose qui s’est arrêté trop tôt.</p>
+<p>La nuit est froide. Elle a la texture des nuits où l’on n’arrive pas
+à dormir.</p>
+<p>Vous avez trouvé un cadavre. Un mari fou. Et sur un plancher,
+quelques mots griffonnés à la craie par une femme qui avait peur.</p>
+<p>La ville dort autour de vous. Ou elle fait semblant.</p>
+</blockquote>
+<p><em>Laisse les joueurs décider ce qu’ils font cette nuit-là. Certains
+voudront parler à Jesse maintenant. Laisse-les — mais Jesse, cette nuit,
+est “indisponible”. Il réapparaît au matin, reposé.</em></p>
+<hr />
+<h1 id="acte-2-lenquête-se-corse">ACTE 2 — L’ENQUÊTE SE CORSE</h1>
+<h2 id="ambiance-générale-de-lacte-1">Ambiance générale de l’acte</h2>
+<blockquote>
+<p><strong>Encart MJ — L’acte de la contamination</strong></p>
+<p>L’Acte 2 ressemble à une enquête normale. Ce n’en est pas une. C’est
+l’acte où les joueurs comprennent progressivement que le problème est
+partout — pas localisé, pas contenu, mais systémique.</p>
+<p>Joue cet acte comme une journée banale qui se dégrade
+imperceptiblement. Le café au bar est bon. Les gens sont polis. Et
+quelque chose ne va pas. Quelque chose ne va pas avec tout le monde.</p>
+<p>La musique recommence ici — douce, légère, totalement inadaptée.</p>
+<p><strong>La progression émotionnelle de cet acte :</strong> - Parc :
+quelques cas isolés - Comptoir : quelqu’un d’actif dans la communauté
+est touché - Bar : c’est partout, ça dure depuis plus longtemps qu’ils
+ne le croient - Clinique : c’est déjà trop tard pour certains</p>
+</blockquote>
+<hr />
+<h2 id="script-lendemain-matin">Script — Lendemain matin</h2>
+<p><em>Musique : “Anything Goes” — Cole Porter, très bas.</em> <em>Lire
+à voix haute :</em></p>
+<blockquote>
+<p>Le lendemain de la Fête des Fondateurs a la gueule de bois des fêtes
+finies trop tôt.</p>
+<p>Les lanternes d’hier pendent, mortes. Il reste des bouteilles vides
+sur les tables. Quelqu’un a oublié un chapeau de fête sur le sol. Il
+s’est mis à pleuvoir cette nuit. Le chapeau est maintenant une bouillie
+de carton coloré.</p>
+<p>La ville ne se déplace pas comme d’habitude. Les gens marchent plus
+vite que nécessaire ou s’arrêtent trop longtemps. Les conversations
+s’interrompent quand vous approchez. Les rumeurs se répandent déjà, mais
+personne ne sait encore ce qu’elles contiennent.</p>
+<p>Jesse vous attend au coin de la rue principale. Il a l’air reposé.
+Étrangement reposé pour un homme qui a appris un meurtre hier soir.</p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Jesse ce matin</strong></p>
+<p>Jouez Jesse avec une précision dérangeante. Il a préparé ce qu’il va
+dire. Il vous demande un “rapport complet” avec la neutralité d’un
+bureaucrate. Il dit “c’est terrible” exactement une fois, au bon moment,
+avec le bon ton.</p>
+<p>Si les joueurs testent son attitude (PER + Médecine ou Science,
+difficulté 3, non annoncé) : <em>“Ses pupilles ne bougent pas quand il
+parle de Theresa.<em> </em>Les pupilles se dilatent lors d’une réponse
+émotionnelle authentique.<em> </em>Les siennes restent stables, comme
+régulées.”</em></p>
+<p>Ne confirme pas. Ce détail existe. Laisse-le flotter.</p>
+</blockquote>
+<hr />
+<h3 id="décision-2-que-dire-à-jesse">⚠ DÉCISION 2 — Que dire à Jesse
+?</h3>
+<p><strong>La situation :</strong> Jesse veut un rapport complet. Les
+joueurs savent des choses — la phrase de Theresa sur le sol, la
+conversation avec Margot, le Pip-Boy de Joseph. Que lui disent-ils ?</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 46%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Réaction de Jesse</th>
+<th>Conséquence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Rapport complet et honnête</strong></td>
+<td>Il remercie. Prend des notes méthodiquement. Demande le
+Pip-Boy.</td>
+<td>Il transmet tout à l’Institut. Les gardes du complexe seront en
+alerte rouge à l’Acte 3. +2 PA permanents.</td>
+</tr>
+<tr class="even">
+<td><strong>Rapport partiel — certaines choses gardées</strong></td>
+<td>Il accepte sans poser de questions.</td>
+<td>L’Institut a moins d’informations. Les gardes sont en alerte
+normale.</td>
+</tr>
+<tr class="odd">
+<td><strong>Mentir sur certains éléments</strong></td>
+<td>CHR + Discours diff.2. En cas d’échec : Jesse sait, mais ne le
+montre pas.</td>
+<td>Si succès : les joueurs gardent un avantage. Si échec : +2 PA et
+Jesse ordonne une “surveillance discrète” des PJ.</td>
+</tr>
+<tr class="even">
+<td><strong>Confronter Jesse sur son comportement</strong></td>
+<td>Il se fige 0,3 secondes. Puis sourit. <em>“Je ne comprends pas ce
+que tu veux dire.”</em></td>
+<td>+1 PA. Mais Jesse sait maintenant que les joueurs le suspectent. Il
+accélère le calendrier de l’Institut.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="le-parc-script-et-indices">LE PARC — Script et indices</h2>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Le parc est moins fréquenté qu’à l’accoutumée. La fontaine de marbre
+est encore là, mais personne ne s’y attarde. Les quelques habitants
+présents vous observent avec des yeux qui semblent faire un calcul.</p>
+<p>Vous reconnaissez des visages. Des gens que vous connaissez. Certains
+vous saluent normalement. D’autres détournent le regard. L’un d’eux
+commence à s’approcher de vous, s’arrête, repart dans l’autre sens.</p>
+</blockquote>
+<p><strong>Ce que les habitants disent :</strong> CHR + Discours,
+diff.1</p>
+<ul>
+<li>Joseph absent du marché depuis trois semaines — Theresa venait
+seule</li>
+<li>Le médecin a été aperçu à la ferme il y a quelques jours, de
+nuit</li>
+<li><em>“Il paraît que des gens ont oublié des trucs. Comme une grippe,
+tu vois. Un truc qui dure.”</em></li>
+<li><em>“Ma voisine m’a dit que son mari l’avait appelée par le prénom
+de sa première femme. Deux fois. Il est veuf depuis dix ans.”</em></li>
+</ul>
+<p><strong>Indice caché :</strong> Un vieux habitant, seul sur un banc,
+qui regarde la fontaine depuis un moment. Si un PJ lui parle sans les
+autres : il dit, sans regarder, d’une voix absente :</p>
+<blockquote>
+<p><em>“J’ai passé ce matin à essayer de me souvenir du prénom de ma
+fille.<em> </em>J’ai mis vingt minutes. Vingt minutes pour me souvenir
+du prénom de ma fille.<em> </em>Elle s’appelle Anna. Je me souviens
+maintenant. Mais ce matin…<em> </em>Ce matin j’avais peur de l’avoir
+perdu pour toujours.”</em></p>
+</blockquote>
+<p>Il se lève et part sans dire autre chose.</p>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Après chaque conversation dans le parc, laisse un moment.
+<em>“Qu’est-ce que vous faites ensuite ?”</em> Ne les guide pas vers le
+comptoir ou le bar. Laisse-les choisir leur prochaine destination.</p>
+</blockquote>
+<hr />
+<h2 id="le-comptoir-commercial-script-et-incident">LE COMPTOIR
+COMMERCIAL — Script et incident</h2>
+<p><em>Lire à voix haute à l’arrivée :</em></p>
+<blockquote>
+<p>Le comptoir commercial est plus vide que d’habitude. Deux personnes
+présentes : l’intendant que vous connaissez, et un récupérateur en tenue
+de cuir qui gesticule avec une énergie qui suggère un désaccord
+avancé.</p>
+<p>Quand vous entrez, ils s’arrêtent tous les deux. L’intendant vous
+regarde. Quelque chose dans ses yeux accroche. Comme s’il essayait de
+mettre un nom sur votre visage et que ça lui prenait un instant de
+trop.</p>
+</blockquote>
+<p><strong>La dispute :</strong> Le récupérateur réclame un paiement.
+L’intendant nie devoir quoi que ce soit. Le récupérateur a un reçu.
+L’intendant ne se souvient pas de la transaction. <em>(L’intendant ne
+ment pas. Il ne s’en souvient vraiment pas.)</em></p>
+<p><strong>Désamorcer :</strong> CHR + Troc ou Discours, diff.2. Ou AGI
++ Athlétisme diff.3 pour désarmer.</p>
+<p><strong>Ce que l’interrogatoire révèle :</strong> - L’intendant ne se
+souvient pas de Joseph et Theresa — alors qu’il les voyait chaque
+semaine - INT + Médecine diff.2 : l’intendant présente des signes
+cliniques d’amnésie partielle - Le récupérateur : <em>“La dernière fois
+que j’ai vu Joseph, il m’avait pas reconnu.<em> </em>J’ai cru qu’il
+faisait semblant. Maintenant je suis pas sûr.”</em></p>
+<p><strong>Indice caché (fouille du comptoir, PER + Science diff.2)
+:</strong> Un carnet de commandes. Certaines commandes récentes sont
+passées sous le nom de Jesse Pedigrue. Des fournitures inhabituelles :
+composants électroniques, câblage de haute précision, alliages spéciaux.
+Rien qui corresponde à une activité normale de la communauté.</p>
+<blockquote>
+<p><strong>Encart MJ — Nommer les victimes</strong></p>
+<p>L’intendant, utilise son nom — celui que les joueurs lui ont donné
+lors de la fête. Ce n’est plus un PNJ générique. C’est lui. Et il
+oublie.</p>
+</blockquote>
+<hr />
+<h2 id="le-bar-script-et-jeu-à-boire">LE BAR — Script et jeu à
+boire</h2>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>L’intérieur du bar est exactement comme vous vous en souvenez — les
+ampoules pendues à leur fil, les vieux panneaux routiers, les juke-boxes
+hors service avec leurs promesses de chansons qu’ils ne joueront plus
+jamais.</p>
+<p>La radio joue quelque chose de doux et de vaguement mélancolique.
+Trois habitués sont accoudés au comptoir. Ils ont l’air d’avoir commencé
+tôt. Derrière le bar, le serveur vous voit entrer et lève le menton en
+guise de salut.</p>
+<p>Il a la tête de quelqu’un qui sait des choses et qui attend qu’on lui
+pose la question.</p>
+</blockquote>
+<p><strong>Le jeu à boire :</strong> Le serveur partage ses informations
+— mais seulement si les PJ jouent le jeu. Chaque question : descendre un
+verre d’eau-de-vie, puis tenter END + Discours diff.1 (+1 diff.
+cumulatif par verre). Trois capsules le verre. Pourboire apprécié.</p>
+<p><strong>Ce que le serveur raconte (par verre réussi) :</strong> 1.
+<em>“Theresa venait ici presque tous les soirs ces dernières semaines.
+Elle buvait trop. Elle regardait la porte.”</em> 2. <em>“Joseph est
+passé il y a trois nuits. Il a regardé autour de lui comme si l’endroit
+lui était inconnu. Il m’a demandé mon nom. Il vient ici depuis qu’on a
+ouvert.”</em> 3. <em>“Il a attaqué le médecin. Sans raison visible.
+Presque tué. Il a arrêté de lui-même et il s’est enfui en hurlant. Comme
+s’il avait eu peur de lui-même.”</em> 4. <em>“Le truc, c’est que c’est
+pas que Joseph. Il y a deux semaines, une femme de l’atelier de tissage
+s’est mise à appeler son gamin par le nom d’un autre enfant. Un enfant
+mort il y a six mois dans une sortie de récupération. Elle savait que
+l’enfant était mort. Elle l’avait enterré. Elle continuait quand
+même.”</em> 5. <em>(Verre de trop — le serveur lui-même, un peu ivre) :
+“Des fois je… des fois j’ai un trou. Comme si j’avais sauté une heure.
+Je suis là, et puis je suis là mais j’étais ailleurs. Je me souviens pas
+d’avoir bougé.”</em></p>
+<blockquote>
+<p><strong>Encart MJ — Le serveur et le jeu</strong></p>
+<p>Ce jeu à boire est le moment de légèreté de l’Acte 2. Jouez-le
+vraiment. Mimez les effets de l’alcool. Faites rire les joueurs.</p>
+<p>Puis, quand le serveur dit la dernière chose — l’heure sautée —
+laissez le silence s’installer.</p>
+<p>Le serveur lui-même est peut-être touché. Ou peut-être pas.
+L’important c’est que les joueurs se demandent : “Comment tu sais que
+toi t’as pas de trous ?”</p>
+</blockquote>
+<hr />
+<h2 id="la-clinique-script-intégral-et-scènes-étendues">LA CLINIQUE —
+Script intégral et scènes étendues</h2>
+<blockquote>
+<p><strong>Encart MJ — La mécanique avant d’entrer</strong></p>
+<p>Avant la clinique, rappelle-toi de la chaîne : <strong>Générateur (en
+ville) → émet le signal → Noyau (dans l’Institut) → reçoit les
+mémoires</strong></p>
+<p>Le médecin a découvert l’appareil dans le générateur. Il ne sait pas
+encore qu’il y a un noyau distant. C’est lui qui donnera aux joueurs les
+coordonnées du complexe — via les données de direction du signal. La
+distinction entre les deux est cruciale pour que les joueurs comprennent
+leurs options.</p>
+</blockquote>
+<p><em>Arrêter la musique à l’entrée de la clinique. Silence complet
+pour toute la scène.</em> <em>Lire à voix haute :</em></p>
+<blockquote>
+<p>La salle d’attente de la clinique est stérile et silencieuse. La
+lumière au néon vibre très légèrement — un bourdonnement à la limite de
+l’audible qui s’installe dans les dents.</p>
+<p>Personne derrière le comptoir de la réception. Des dossiers
+éparpillés. Et du fond du couloir, derrière les rideaux blancs des
+salles : de très faibles pleurs. Quelqu’un qui essaie de ne pas être
+entendu et qui n’y arrive pas.</p>
+</blockquote>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Arrête-toi ici. <em>“Qu’est-ce que vous faites ?”</em> Certains
+voudront aller directement vers les pleurs. D’autres fouiller la
+réception d’abord. Laisse-les choisir.</p>
+</blockquote>
+<hr />
+<h3 id="salle-1-vide-récemment-nettoyée">Salle 1 — Vide, récemment
+nettoyée</h3>
+<blockquote>
+<p>La salle est impeccable. Lit refait. Instruments rangés. Mais il y a
+une tache sur le mur, à hauteur d’épaule, que le nettoyage n’a pas
+complètement effacée. Et l’odeur de désinfectant est trop forte pour la
+taille de la pièce. Quelqu’un a nettoyé quelque chose de difficile à
+nettoyer.</p>
+</blockquote>
+<hr />
+<h3 id="salle-2-lenfant">Salle 2 — L’enfant</h3>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Sur le lit blanc, un garçon de sept ans. Vous le reconnaissez — c’est
+le fils du menuisier. Il regarde le plafond. Ses yeux sont grands
+ouverts, brillants, dans le vague. Il ne bouge pas quand vous
+entrez.</p>
+<p>Si vous lui parlez, il tourne lentement la tête vers vous. Ses yeux
+font le point. Puis ils reprennent leur flou. Il dit un seul mot.</p>
+<p><strong>“Qui ?”</strong></p>
+</blockquote>
+<p><em>Si un PJ s’approche seul, sans les autres, et s’accroupit à
+hauteur de l’enfant :</em></p>
+<p><em>Chuchote la suite. Véritablement. Baisse la voix. Incline-toi
+vers le joueur seul si possible.</em></p>
+<blockquote>
+<p><em>L’enfant tourne la tête vers toi. Cette fois ses yeux font le
+point et restent en place.</em> <em>Il te regarde vraiment. Et il dit,
+avec la voix plate d’un enfant qui récite une leçon :</em></p>
+<p><strong>“Je me souviens de toi. Avant. Tu étais
+différent.”</strong></p>
+<p><em>Puis ses yeux repartent dans le vague. Il ne répond
+plus.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Ce que ça veut dire</strong></p>
+<p>Tu ne le sais pas. Personne ne le sait. Peut-être que l’enfant capte
+des fragments du signal de vol de mémoire et les restitue au hasard.
+Peut-être qu’il a perçu quelque chose de réel sur le PJ. Peut-être qu’il
+confond des souvenirs.</p>
+<p>L’important : ne donne JAMAIS d’explication. Jamais. Cette phrase
+doit rester dans la tête du joueur pour le reste de la session. Et
+après.</p>
+</blockquote>
+<hr />
+<h3 id="salle-3-les-draps-tachés">Salle 3 — Les draps tachés</h3>
+<blockquote>
+<p>La salle est vide. Les draps du lit sont tachés de sang, secs,
+brunâtres. Sur la tablette d’instruments : deux Stimpaks et une seringue
+utilisée. Sur le sol, à côté du lit, un morceau de tissu arraché — un
+coin de vêtement.</p>
+<p>Si un PJ teste PER + Médecine, difficulté 1 : <em>Les taches
+correspondent à des blessures auto-infligées. Quelqu’un s’est blessé
+ici, pas en luttant contre quelqu’un d’autre. Méthodiquement. Comme des
+marques.</em></p>
+</blockquote>
+<hr />
+<h3 id="salle-4-le-médecin">Salle 4 — Le médecin</h3>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Le médecin est assis dans le coin de la salle, genoux remontés contre
+la poitrine. Il serre un porte-bloc comme si c’était ce qui l’ancrait à
+la pièce. Ses yeux sont rouges. Il n’a pas dormi. Son uniforme est
+froissé.</p>
+<p>Quand vous entrez, il vous regarde et dit, d’une voix qui n’a plus la
+force de résister : <em>“Laissez-moi tranquille.”</em></p>
+</blockquote>
+<p><em>Test pour le convaincre : CHR ou INT + Discours, diff.0. Puis
+dépenser des PA.</em></p>
+<p><strong>Ce qu’il révèle, par ordre d’importance :</strong></p>
+<ol type="1">
+<li><p><em>“Joseph est le premier. Mais c’est le premier que j’ai VU. Il
+y en avait déjà d’autres avant. Je ne comprenais pas ce que je
+regardais.”</em></p></li>
+<li><p><em>“En dix jours : douze cas documentés. Psychoses, fugues,
+violences sans mobile, états catatoniques. Deux suicides. La courbe
+accélère.”</em></p></li>
+<li><p><em>“Ce n’est pas une maladie. Ce n’est pas un virus. C’est une
+machine. Quelqu’un a installé un appareil à l’intérieur du générateur à
+fusion froide — le nôtre, celui qui alimente le G.E.C.K. Cet appareil
+émet un signal. Le signal prend quelque chose. Des mémoires. Des
+fragments de qui vous êtes.”</em></p></li>
+<li><p><em>“Le signal est dirigé. Il part vers des coordonnées précises.
+Quelqu’un reçoit ce signal. Quelqu’un l’utilise — un récepteur distant,
+quelque part dans le Commonwealth. Et j’ai une autre mauvaise nouvelle :
+ce récepteur envoie des instructions en retour. L’appareil dans le
+générateur n’est pas autonome. Il obéit à quelque chose.”</em></p></li>
+<li><p><em>“Pour arrêter ça, vous avez deux options. Éteindre le
+générateur — mais le G.E.C.K. s’éteint aussi. En trois semaines, la
+végétation meurt. En six semaines, la ville n’est plus viable. Ou vous
+trouvez le récepteur distant, et vous le détruisez. Sans le récepteur,
+l’émetteur dans le générateur s’éteint automatiquement. La ville reste
+vivante.”</em></p></li>
+</ol>
+<blockquote>
+<p><strong>Encart MJ — Ce que le médecin NE sait pas</strong></p>
+<p>Il sait qu’un signal part et arrive quelque part. Il ne sait pas que
+c’est l’Institut. Il a les coordonnées approximatives — c’est comment
+les joueurs trouveront le complexe. Il ne sait pas qu’il y a des
+synthétiques dans la ville. Il ne sait pas que Jesse est remplacé.</p>
+</blockquote>
+<p><em>À la fin de la conversation, le médecin s’arrête. Il regarde ses
+mains.</em></p>
+<blockquote>
+<p><em>Il dit, d’une voix qui cherche ses mots :</em> <em>“Mince. Mince,
+mince. Qu’est-ce que je… j’étais en train de…”</em></p>
+<p><em>Il vous regarde. Son expression est celle de quelqu’un qui ne
+comprend pas pourquoi il est assis là.</em></p>
+<p><em>“…Qui êtes-vous ?”</em></p>
+</blockquote>
+<p><em>Silence. Long. Compte jusqu’à cinq dans ta tête avant de
+continuer.</em></p>
+<blockquote>
+<p><em>Puis, lentement, sa mémoire reprend :</em></p>
+<p><em>“Ah. Oui. Pardon. Ça arrive de plus en plus souvent. Je…
+tenez.”</em></p>
+<p><em>Il tend son porte-bloc d’une main qui tremble
+légèrement.</em></p>
+<p><em>“Je ne suis probablement plus en état de vous aider
+longtemps.<em> </em>Si vous pouvez faire quelque chose, faites-le
+vite.<em> </em>Je voudrais encore me souvenir de mon propre nom quand
+vous reviendrez.”</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Ce moment</strong></p>
+<p>La perte de mémoire en direct, devant les joueurs, d’un homme qui
+était votre interlocuteur.</p>
+<p>Si les joueurs tentent de l’aider ou de le rassurer : c’est bon.
+Laisse-les. Ce moment de connexion humaine rendra la fusillade qui suit
+encore plus brutale.</p>
+</blockquote>
+<hr />
+<h3 id="dossiers-de-la-clinique-indice-clé">Dossiers de la clinique —
+Indice clé</h3>
+<p>Dans les dossiers sur le bureau de la réception : La liste des
+patients traités au cours des deux dernières semaines.</p>
+<p>Si les joueurs cherchent leurs propres noms : leurs dossiers
+n’existent pas. Ni le leur, ni celui d’un ou deux habitants qu’ils ont
+mentionnés lors de la fête.</p>
+<p>Si quelqu’un pose la question au médecin avant qu’il perde le fil :
+<em>“Ça arrive parfois. Des gens qui ne viennent jamais. Ou qui sont
+déjà suivis ailleurs.<em> </em>Je supposais que… je sais pas ce que je
+supposais.”</em></p>
+<hr />
+<h3 id="décision-3-éteindre-le-générateur-maintenant">⚠ DÉCISION 3 —
+Éteindre le générateur maintenant ?</h3>
+<p><em>Cette décision se pose naturellement après avoir parlé au
+médecin.</em></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 56%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Résultat immédiat</th>
+<th>Coût</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Éteindre le générateur</strong></td>
+<td>Signal arrêté. Les amnésies cessent.</td>
+<td>Fin 2. La végétation dépérit. La ville meurt doucement. Les PJ ont
+sauvé les esprits et condamné le corps de la communauté. Passe à la
+Conclusion.</td>
+</tr>
+<tr class="even">
+<td><strong>Aller aux coordonnées</strong></td>
+<td>Acte 3 complet. Possibilité de tout sauver.</td>
+<td>Risque maximal. Mais aussi : possibilité de trouver les vraies
+réponses. Et les prisonniers.</td>
+</tr>
+<tr class="odd">
+<td><strong>Les deux — sabotage partiel du générateur pour ralentir le
+signal</strong></td>
+<td>INT + Science diff.3</td>
+<td>Si réussi : le signal est réduit de moitié. Temps gagné. Mais
+l’Institut détecte l’interférence. +3 PA permanents.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="le-twist-script-de-la-fusillade">LE TWIST — Script de la
+fusillade</h2>
+<p><em>Arrêter toute musique. Silence total.</em> <em>Lire à voix haute,
+lentement :</em></p>
+<blockquote>
+<p>Quand vous sortez de la Salle 4, il y a quelqu’un dans la salle
+d’attente.</p>
+<p>Plusieurs personnes. Que vous connaissez.</p>
+<p><em>(Cite les noms — les noms que les joueurs ont donnés lors de la
+fête. Cite la personne de confiance mentionnée par chaque PJ. Elle est
+là.)</em></p>
+<p>Ils vous regardent sortir du couloir avec des yeux qui ne vous
+reconnaissent pas. Ce ne sont pas des yeux hostiles. Ce sont des yeux
+vides. Des yeux qui font leur travail. Des armes à la main, pointées
+vers le bas, pour l’instant.</p>
+<p>Jesse Pedigrue est parmi eux. Il s’avance. Sa tête se penche
+légèrement sur la gauche. Il y a quelque chose dans sa façon de se
+mouvoir qui ne ressemble pas à Jesse. Comme Jesse, mais sans les
+aspérités. Sans les hésitations. Sans le poids.</p>
+<p>Il dit, avec une voix que vous n’avez jamais entendue :</p>
+<p><strong>“Une petite danse ?”</strong></p>
+<p>À l’unisson, ils lèvent leurs armes.</p>
+</blockquote>
+<p><em>Laisse un battement de silence. Trois secondes. Puis :</em></p>
+<p><em>(Musique : “It’s All Over But the Crying” — The Ink Spots. Volume
+maximal.)</em> <em>Le premier coup de feu part.</em></p>
+<blockquote>
+<p><strong>Encart MJ — La fusillade comme cinéma</strong></p>
+<p>Décris chaque round comme une scène de film d’action. Pas “le synthé
+tire sur Joueur A pour X dégâts”. “Le synthé qui ressemble à [nom PNJ]
+pivote et tire. La balle traverse l’étagère de médicaments. Des flacons
+explosent. L’odeur d’antiseptique se mélange à la poudre.”</p>
+<p>Le médecin se précipite dans la Salle 2 au premier round. On l’entend
+dire quelque chose à l’enfant à travers le rideau. Puis silence de ce
+côté-là. Ne décris pas ce qui se passe dans cette salle. Jamais.</p>
+<p>Quand un synthé est détruit : explosion de métal et d’étincelles. Et
+pendant une fraction de seconde, le visage du PNJ qu’il imitait, avant
+de n’être que des pièces mécaniques sur le sol.</p>
+</blockquote>
+<hr />
+<h2 id="chemins-de-traverse-acte-2">CHEMINS DE TRAVERSE — ACTE 2</h2>
+<h3 id="retourner-voir-margot-après-le-twist">Retourner voir Margot
+après le twist</h3>
+<p>Si les joueurs y pensent — après la clinique, avant ou après le
+combat — et vont chez Margot :</p>
+<p>Sa porte est grande ouverte. La maison est vide. Sur la table de
+cuisine : un bol de soupe renversé qui fume encore. Elle est partie il y
+a moins de cinq minutes. Par la fenêtre arrière : des traces de pas dans
+la boue. Vers la sortie de la ville.</p>
+<p>Elle a su que le twist allait arriver. Elle est peut-être encore
+vivante. <em>(À toi de décider si les joueurs peuvent la retrouver. Sa
+survie possible est une graine pour une suite de campagne.)</em></p>
+<hr />
+<h3 id="le-vrai-jesse-pedigrue-premier-indice">Le vrai Jesse Pedigrue —
+Premier indice</h3>
+<p>Si les joueurs détruisent le synthé Jesse et fouillent ses restes :
+INT + Science, difficulté 2. Succès : dans les circuits du synthé, un
+composant inhabituel. Pas un composant de l’Institut standard. Un
+émetteur qui envoie vers une fréquence interne au complexe.</p>
+<p><em>“Ce composant ne sert pas à recevoir des ordres.<em> </em>Il
+envoie. Régulièrement. Comme un signal de check-in.<em> </em>Comme si
+quelque chose — ou quelqu’un — attendait la confirmation que le synthé
+était encore en place.”</em></p>
+<p>Si le signal cesse (le synthé est détruit) : quelque chose dans le
+complexe va changer. <em>(À l’Acte 3 : une cellule spécifique se
+déverrouille automatiquement. Le vrai Jesse.)</em></p>
+<hr />
+<h2 id="transition-acte-2-vers-acte-3">TRANSITION — Acte 2 vers Acte
+3</h2>
+<p><em>Lire à voix haute après le combat dans la clinique :</em></p>
+<blockquote>
+<p>Vous avez les coordonnées. Un point sur une carte mentale. Une
+demi-journée de marche vers l’ouest.</p>
+<p>La ville est derrière vous quand vous franchissez ses limites. Vous
+la regardez une dernière fois avant que les arbres la cachent.</p>
+<p>Elle a l’air normale de loin. Les toits. La fontaine qu’on devine. La
+fumée des foyers. Tout ce que vous avez construit, ce que vous avez
+nommé lors de la fête, ce que vous avez dit tenir à la prunelle de vos
+yeux.</p>
+<p>Ça tient encore debout. Pour l’instant.</p>
+<p>Le ciel est bas et blanc. Le vent vient de l’ouest. Dans la direction
+où vous allez.</p>
+</blockquote>
+<hr />
+<h1 id="acte-3-linstitut">ACTE 3 — L’INSTITUT</h1>
+<h2 id="ambiance-générale-de-lacte-2">Ambiance générale de l’acte</h2>
+<blockquote>
+<p><strong>Encart MJ — L’acte de la révélation et du choix</strong></p>
+<p>L’Acte 3 est celui où tout ce que tu as planté revient. La photo. La
+phrase de l’enfant. Les dossiers manquants. La graine du doute.</p>
+<p>Joue le responsable scientifique avec une courtoisie absolue et
+désarmante. Il n’est pas un méchant. Il est quelqu’un qui croit à
+quelque chose et qui a fait des choses terribles pour y croire.</p>
+<p>Son calme est plus perturbant que la colère. Sa politesse face à des
+gens qui viennent peut-être de tuer ses “créations” est dérangeante.</p>
+<p>Il a préparé cette conversation depuis qu’il a su qu’ils
+venaient.</p>
+</blockquote>
+<hr />
+<h2 id="le-responsable-scientifique-comment-le-jouer">Le responsable
+scientifique — Comment le jouer</h2>
+<blockquote>
+<p><strong>Encart MJ — Jouer le scientifique</strong></p>
+<p><strong>Traits de caractère :</strong> - Petit, fragile physiquement,
+mais avec une autorité tranquille qui ne s’explique pas par sa taille. -
+Il traite ses interlocuteurs comme des sujets fascinants — pas par
+mépris, par curiosité sincère. Il est genuinement intéressé par ce
+qu’ils pensent. - Il ne ment presque jamais. Ce qu’il dit est
+généralement vrai. C’est <em>ce qu’il omet</em> qui est monstrueux. -
+Une légère fierté d’artiste quand il parle de son travail. Pas de la
+vanité — quelque chose de plus proche de l’amour.</p>
+<p><strong>Tic :</strong> Au milieu d’une conversation, il note quelque
+chose sur son mini-ordinateur sans explication. Il ne dit pas pourquoi.
+Il ne s’en excuse pas.</p>
+<p><strong>Comment il répond aux questions difficiles :</strong></p>
+<p>“Vous avez volé leurs souvenirs.” <em>“Emprunté. Et dans une copie,
+ils vivent encore. L’original perd quelques fragments. La copie les a
+intacts. Qui a vraiment perdu ?”</em></p>
+<p>“Vous les avez tués.” <em>“Certains, oui. Ceux qui ne pouvaient pas
+coopérer. Je ne m’en réjouis pas. Je les regarde comme des pertes
+militaires. Regrettables et comptabilisées.”</em></p>
+<p>“Vous êtes un monstre.” <em>“C’est possible. Mais mes monstres durent
+éternellement. Combien de vos amis peuvent en dire autant ?”</em></p>
+</blockquote>
+<hr />
+<h2 id="script-arrivée-au-complexe">Script — Arrivée au complexe</h2>
+<p><em>Musique : “The Wanderer” — Dion. Coupe-la dès qu’ils voient le
+complexe.</em> <em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Après une demi-journée de marche dans le vent froid, vous arrivez en
+vue d’une construction qui n’a pas sa place ici.</p>
+<p>Des fortifications pour un bâtiment de taille modeste. Des murs en
+acier traité. Pas de fenêtres. Une seule porte. Des “gardes” qui se
+réchauffent près de braseros — ils ressemblent à des pillards
+ordinaires. Ils ne sont pas des pillards.</p>
+<p>L’herbe haute ondule dans le vent. Le ciel est bas et blanc. À
+l’horizon, la silhouette lointaine de votre ville. Vous pouvez presque
+voir les toits.</p>
+</blockquote>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Arrête-toi ici. Laisse les joueurs observer. Puis : <em>“Qu’est-ce
+que vous faites ?”</em></p>
+<p>Ils voudront probablement observer les gardes, chercher une entrée
+alternative, ou décider d’une approche. Laisse-les élaborer leur plan
+avant de décrire les options.</p>
+</blockquote>
+<hr />
+<h2 id="options-dentrée-guide-complet">Options d’entrée — Guide
+complet</h2>
+<h3 id="option-1-assaut-frontal">Option 1 — Assaut frontal</h3>
+<p>Les “pillards” sont des synthés marcheurs. Ils laissent approcher
+jusqu’à portée courte. Puis ils ouvrent le feu simultanément, sans
+avertissement préalable. <em>(Ils ont reçu l’ordre : laisser entrer pour
+analyser, ou détruire si trop nombreux.)</em></p>
+<h3 id="option-2-infiltration-furtive">Option 2 — Infiltration
+furtive</h3>
+<p>AGI + Discrétion diff.1 par PJ pour s’approcher. Succès :
+attaque-surprise sur les gardes. Échec d’un seul PJ : les gardes
+“remarquent” mais réagissent avec un délai étrange — comme s’ils
+recevaient des instructions. Combat normal, mais les joueurs ont perdu
+l’avantage.</p>
+<h3 id="option-3-parler-aux-gardes">Option 3 — Parler aux gardes</h3>
+<p>Les synthés se comportent comme des mercenaires normaux. Ils laissent
+approcher. Ils semblent presque amicaux. CHR + Discours diff.3 pour
+passer sans combat. Si réussi : ils “escortent” les PJ jusqu’à la porte.
+Puis se retournent et ouvrent le feu dès qu’ils sont dans la zone de
+tir. <em>(L’Institut ne fait pas confiance. Il teste.)</em></p>
+<h3 id="option-4-la-bouche-daération">Option 4 — La bouche
+d’aération</h3>
+<p>PER + Réparation diff.2 pour la trouver (angle nord-est du bâtiment).
+Assez grande pour un super-mutant. Silencieuse — l’air ne circule pas.
+AGI + Discrétion diff.2 pour s’y engager sans déclencher les capteurs.
+Si tous réussissent : arrivée directe dans le couloir de la Scène 2. Si
+un seul échoue : alarme silencieuse. Les copies de la salle principale
+commencent à s’activer.</p>
+<blockquote>
+<p><strong>Encart MJ — Le chemin de traverse des cellules</strong></p>
+<p>La bouche d’aération débouche dans un couloir secondaire. Si les
+joueurs explorent au lieu d’aller directement vers la salle principale,
+ils trouvent une porte métallique avec une serrure électronique.</p>
+<p>PER + Crochetage diff.3. Ou INT + Science diff.2 si un PJ regarde le
+panneau électronique.</p>
+<p>Derrière la porte : voir “Chemin de traverse — Les cellules” plus
+bas.</p>
+</blockquote>
+<hr />
+<h2
+id="stats-des-gardes-synthétiques-marcheurs-niv.7-normale-52-pe">Stats
+des Gardes Synthétiques Marcheurs (Niv.7, Normale, 52 PE)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 12%" />
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Corps</th>
+<th>Esprit</th>
+<th>CàC</th>
+<th>Distance</th>
+<th>PV</th>
+<th>Init</th>
+<th>Déf</th>
+<th>RD Bal</th>
+<th>RD Énerg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>4</td>
+<td>13</td>
+<td>12</td>
+<td>1</td>
+<td>3 (toutes)</td>
+<td>3 (toutes)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Laser Institut (SR10) : 6 dés énerg. Brutaux, En rafale, portée
+M</li>
+<li>Matraque électrique (SR10) : 5 dés énerg.</li>
+<li><strong>Se lâcher</strong> (1×/combat) : total 9 dés</li>
+<li>Immunisés : Radiations / Poison / Peur / Maladies</li>
+<li><strong>Détruits : explosion de métal et d’étincelles</strong></li>
+<li>Nombre = moitié des PJ (arrondi supérieur)</li>
+<li>Alarme silencieuse au début du combat : le responsable scientifique
+est averti</li>
+</ul>
+<hr />
+<h2 id="chemin-de-traverse-les-cellules">CHEMIN DE TRAVERSE — Les
+cellules</h2>
+<p><em>Ce chemin est possible uniquement via la bouche d’aération ou via
+le traceur de Jesse.</em></p>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Le couloir secondaire est identique au reste du bâtiment — acier,
+lumière artificielle, silence. Mais il y a des portes ici. Des portes
+avec des serrures. Et derrière ces portes : des bruits.</p>
+<p>Très faibles. Mais présents. Des respirations. Un mouvement de temps
+en temps. Quelqu’un est là. Plusieurs quelqu’uns.</p>
+</blockquote>
+<p><strong>Ce que les cellules contiennent :</strong></p>
+<p><strong>Cellule 1 :</strong> Jesse Pedigrue. Le vrai. Trois mois de
+captivité. Amaigri, barbu, les yeux brillants d’une personne qui n’a pas
+abandonné mais qui a failli. Il reconnaît les PJ immédiatement. Il
+attrape les barreaux.</p>
+<blockquote>
+<p><em>“Vous êtes là. Vous êtes vrais. Vous êtes—”</em> <em>Il s’arrête.
+Il vous regarde tous, un par un, lentement.</em> <em>“…vous êtes vrais
+?”</em></p>
+</blockquote>
+<p>Il a été trompé plusieurs fois par l’Institut — des “secours” qui
+étaient en réalité des copies envoyées pour le tester. Il ne fait plus
+confiance immédiatement. <em>(CHR + Discours diff.2 pour le convaincre.
+Ou lui montrer quelque chose que sa copie synthétique ne pourrait pas
+savoir — quelque chose de personnel, de spécifique.)</em></p>
+<p>Ce qu’il sait : - L’Institut a remplacé au moins sept habitants de la
+ville. Il a vu les “vraies” personnes être amenées. - <em>“Ils ont amené
+quelqu’un d’autre il y a deux semaines. Je les ai entendus. Je les ai
+entendus pleurer.”</em> - Il y a d’autres cellules. Certaines sont
+vides. Certaines ne le sont pas.</p>
+<p><strong>Cellule 2 :</strong> Vide. Mais propre. Récemment utilisée.
+Sur le mur, griffonné : <em>“Si tu lis ça c’est que tu es moi et que tu
+sais ce que je voulais dire ici mais je me souviens plus quoi.”</em></p>
+<p><strong>Cellule 3-5 :</strong> Autres habitants capturés. Leur nombre
+et identité dépendent de combien l’Institut a eu le temps de travailler.
+Si les joueurs ont mentionné des PNJ précis lors de la fête : l’un
+d’entre eux est peut-être là.</p>
+<p><strong>Cellule 6 :</strong> Fermée, lumière allumée, mais aucun
+bruit. Si les joueurs l’ouvrent : une cellule avec deux lits. L’un est
+fait avec soin. L’autre n’a jamais été utilisé. Sur le lit fait, une
+liste — des noms. Ceux des habitants de la ville. Certains noms ont une
+date à côté. Les noms des PJ n’ont pas de date.</p>
+<blockquote>
+<p><strong>Encart MJ — Cellule 6</strong></p>
+<p>Les noms des PJ sans date peuvent signifier deux choses : A) Les PJ
+n’ont pas encore été remplacés — ils sont sur la liste d’attente B) Les
+PJ ont été remplacés mais leurs cellules sont ailleurs — ou vides</p>
+<p>Tu ne le sais pas toi-même. C’est délibéré. Ne le sache pas. Laisse
+l’ambiguïté être absolue.</p>
+<p>Quand un joueur demande “qu’est-ce que ça veut dire ?” : <em>“Le
+responsable scientifique pourrait peut-être répondre à ça.”</em></p>
+</blockquote>
+<hr />
+<h2 id="la-salle-principale-script-intégral">LA SALLE PRINCIPALE —
+Script intégral</h2>
+<p><em>Musique : “Civilization (Bongo Bongo)” — Louis Prima. Volume
+maximal pendant 5 secondes à l’entrée. Puis couper.</em></p>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Vous ne vous attendiez pas à ça.</p>
+<p>Un plafond qui brille d’une lumière artificielle qui imite le soleil
+— la même lumière qu’une belle journée d’été, mais ici, dans ce bâtiment
+en acier, elle rend tout légèrement irréel.</p>
+<p>Au centre de la pièce, une machine hélicoïdale. Lumières
+clignotantes. Bourdonnement mécanique constant. Elle ressemble à quelque
+chose qui pulse. Comme un cœur.</p>
+<p>Et autour d’elle : votre ville.</p>
+<p>Votre parc. Votre fontaine. L’arbre avec les noms gravés dans
+l’écorce — <em>(cite ici les noms que les joueurs ont mis dans cet
+arbre, s’ils en ont parlé.)</em> Votre banc préféré. La plaque
+commémorative. Tout. Reproduit à la perfection.</p>
+<p>Et dans ce parc faux, des gens. Des gens que vous connaissez. Qui
+vaquent à leurs occupations. Qui discutent. Qui rient doucement. Qui ont
+l’air de ne pas savoir qu’ils sont dans un bunker en acier.</p>
+<p>Ils vous regardent quand vous entrez, avec des yeux légèrement flous.
+Pas étranges. Juste… pas tout à fait là.</p>
+<p>Puis une voix, derrière vous. Calme. Nasale. Satisfaite.</p>
+<p><strong>“Je constate que vous avez découvert mon petit miracle. Ah,
+merveilleux.”</strong></p>
+<p>Le petit vieux qui s’avance vers vous semble fragile. Une blouse
+propre. Un mini-ordinateur tenu comme un carnet précieux. Il tousse deux
+fois — le genre de toux d’un homme qui a passé trop de temps à
+l’intérieur à regarder des écrans plutôt que le soleil.</p>
+<p><strong>“Je suis l’un des responsables scientifiques de l’Institut.
+Suivez-moi, mes amis.<strong> </strong>Laissez-moi vous faire visiter.
+Je pense que vous trouverez mon travail…<strong> </strong>absolument
+fascinant.”</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>Avant de commencer la visite, laisse les joueurs réagir à ce qu’ils
+voient. Ils voudront peut-être fouiller la pièce, approcher les copies,
+ou questionner le scientifique. Ne les force pas vers la visite guidée.
+Laisse-les venir à elle.</p>
+</blockquote>
+<hr />
+<h2 id="la-visite-script-détaillé-et-dialogues">LA VISITE — Script
+détaillé et dialogues</h2>
+<p><em>Le responsable scientifique guide les joueurs à travers la salle.
+Trois étapes.</em></p>
+<h3 id="étape-1-le-parc">Étape 1 — Le parc</h3>
+<blockquote>
+<p><em>“Nous avons commencé par l’espace. Un environnement familier
+améliore l’intégration des souvenirs.<em> </em>Votre ville est…
+remarquablement vivante, pour un endroit si récent.<em> </em>Les gens y
+ont mis quelque chose d’eux-mêmes très vite. C’est rare.<em> </em>Ça
+facilite notre travail. Énormément.”</em></p>
+</blockquote>
+<p>Il s’arrête devant l’arbre.</p>
+<blockquote>
+<p><em>“Regardez. Chaque nom. Chaque date. Même les initiales gravées
+maladroitement par un enfant.<em> </em>Nous avons eu beaucoup de mal
+avec les détails émotionnels au début.<em> </em>La mémoire factuelle est
+simple à transférer. La mémoire affective… c’est une autre affaire.<em>
+</em>Mais nous progressons.”</em></p>
+</blockquote>
+<h3 id="étape-2-les-copies-incomplètes">Étape 2 — Les copies
+incomplètes</h3>
+<blockquote>
+<p><em>“Et maintenant, le travail en cours.”</em></p>
+</blockquote>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Il vous conduit vers un coin de la salle où la lumière est plus
+froide.</p>
+<p>Des silhouettes. Alignées. Qui ressemblent à des gens de votre ville.
+Qui ressemblent à vos voisins. À vos amis.</p>
+<p>Elles marchent sans direction, comme des somnambules. Leurs yeux sont
+ouverts. Leurs bouches bougent parfois sur des mots qu’on n’entend
+pas.</p>
+<p>Et puis l’une d’elles tourne la tête vers vous.</p>
+<p>C’est votre visage. Votre propre visage. Qui vous regarde sans vous
+reconnaître.</p>
+<p><em>(Une copie incomplète pour chaque PJ. Décris-les précisément en
+utilisant les descriptions données lors de la fête.)</em></p>
+<p>Votre copie prend soudain un air troublé. Pas de la peur. Quelque
+chose de plus profond. Comme si elle reconnaissait quelque chose qu’elle
+ne devrait pas reconnaître. Elle détourne les yeux. Elle reprend sa
+marche sans direction.</p>
+</blockquote>
+<blockquote>
+<p><strong>Encart MJ — Le silence ici</strong></p>
+<p>Ne précipite rien. Laisse les joueurs regarder leurs copies.
+Laisse-les réagir. Certains voudront parler à leur copie.</p>
+<p>Si un PJ parle à sa copie : La copie s’arrête. Tourne la tête. Ses
+lèvres bougent — elle répond, mais dans un murmure trop bas pour être
+entendu. Puis elle reprend sa marche.</p>
+<p>Si un PJ touche sa copie : La copie se fige complètement. Pendant
+trois secondes. Puis elle recule d’un pas, lentement, comme si la
+distance était nécessaire. Le responsable scientifique note quelque
+chose sur son mini-ordinateur.</p>
+<p>Si un PJ frappe sa copie ou tente de la détruire : La copie ne se
+défend pas. Elle absorbe le coup. Elle tombe. Elle regarde le plafond.
+Le responsable scientifique dit, sans s’émouvoir : <em>“Fascinant. Le
+modèle attaque sa propre image. Notez ça.”</em></p>
+</blockquote>
+<h3 id="étape-3-le-discours">Étape 3 — Le discours</h3>
+<p><em>Le responsable scientifique retourne vers le centre de la salle.
+Il leur fait face.</em></p>
+<blockquote>
+<p><em>“Voici ce que je vais vous dire, et je vais vous le dire
+franchement,</em> <em>parce que vous méritez la franchise et parce que
+ça ne change rien.</em></p>
+<p><em>L’humanité biologique est en train de mourir. Pas rapidement. Pas
+en drame.</em> <em>Lentement. Comme une bougie qu’on ne recharge
+pas.</em> <em>Les radiations accumulent les mutations. Chaque génération
+est moins stable.</em> <em>Dans deux cents ans, il ne restera plus rien
+de ce qu’on appelle ‘humain’.</em></p>
+<p><em>Moi et mes collègues, nous avons trouvé une solution.</em>
+<em>Une façon de préserver ce qui compte. Ce qui fait que vous êtes
+vous.</em> <em>Pas le corps — le corps est de la viande — mais les
+souvenirs.</em> <em>Les amours. Les deuils. Les habitudes ridicules. Les
+petites fiertés.</em> <em>Tout ce qui constitue une personne.</em></p>
+<p><em>Dans cent ans, des versions de vos concitoyens vivront
+encore.</em> <em>Ils se souviendront de cette ville. De cette fête. De
+cette première année.</em> <em>Ils se souviendront les uns des
+autres.</em></p>
+<p><em>Pas leur corps. Leur essence.</em></p>
+<p><em>Dites-moi, franchement : est-ce que c’est une si mauvaise chose
+?“</em></p>
+</blockquote>
+<p><em>Il attend une réponse. Vraiment. Laisse les joueurs
+répondre.</em></p>
+<blockquote>
+<p><strong>DONNEZ LA MAIN</strong></p>
+<p>C’est un vrai débat. Laisse-le avoir lieu. Le scientifique répond à
+chaque argument avec une politesse absolue. Il ne cède pas. Il ne
+s’énerve pas. Il écoute, puis répond. Ne l’interromps pas pour faire
+avancer l’histoire — le débat EST l’histoire ici.</p>
+</blockquote>
+<hr />
+<h2 id="le-marché-et-la-question-qui-change-tout">LE MARCHÉ — Et la
+question qui change tout</h2>
+<p>Le scientifique propose un accord : il repart avec son équipement —
+notamment l’appareil émetteur qu’il a installé dans le générateur de la
+ville. Sans cet appareil, le signal s’arrête. Le G.E.C.K. reste intact.
+La ville survit. C’est la promesse d’un homme qui n’a pas besoin de
+mentir.</p>
+<p><strong>Puis il dit :</strong></p>
+<blockquote>
+<p><em>“Avant que vous décidiez — il y a quelque chose que vous devriez
+peut-être savoir.</em> <em>Et je vous le dis parce que vous avez le
+droit de prendre une décision éclairée.</em></p>
+<p><em>Plusieurs d’entre vous sont venus ici aujourd’hui.</em> <em>Le
+signal de capture fonctionne à l’échelle de la ville.</em> <em>Il a eu
+des mois pour travailler.</em></p>
+<p><em>Certains d’entre vous ont des dossiers très complets dans notre
+système.</em> <em>D’autres… moins.”</em></p>
+<p><em>Il vous regarde, l’un après l’autre.</em></p>
+<p><strong>“Je vous offre quelque chose que je n’offre jamais. Un test
+de vérification.<strong> </strong>Pour savoir si vous êtes les
+originaux. Ou les copies.<strong> </strong>Le résultat sera définitif.
+Et privé — vous serez les seuls à savoir.”</strong></p>
+<p><em>Il tient une seringue. Simple. Propre.</em></p>
+<p><em>“Une petite prise de sang. Mon équipement dit la vérité en trente
+secondes.<em> </em>À prendre ou à laisser.”</em></p>
+</blockquote>
+<hr />
+<h3 id="décision-4-le-test">⚠ DÉCISION 4 — Le test</h3>
+<p><em>C’est le moment central du scénario. Joue-le sans te
+presser.</em></p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 34%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Ce qui se passe</th>
+<th>L’effet psychologique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Accepter le test</strong></td>
+<td>Le scientifique prend le sang. Regarde son écran. Lève les yeux vers
+le joueur. <em>Et ne dit rien pendant cinq secondes.</em> Puis parle —
+voir ci-dessous.</td>
+<td>La réponse ne sera jamais certaine</td>
+</tr>
+<tr class="even">
+<td><strong>Refuser le test</strong></td>
+<td>Il hoche la tête. <em>“Je comprends. Certaines vérités sont
+difficiles à chercher.”</em></td>
+<td>La question reste ouverte. Pour toujours.</td>
+</tr>
+<tr class="odd">
+<td><strong>Demander à ce que tous soient testés</strong></td>
+<td>Il teste tous ceux qui acceptent, un par un.</td>
+<td>Les réactions du scientifique peuvent diverger entre les
+joueurs.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comment formuler le résultat du test — règle absolue
+:</strong></p>
+<p>Quelle que soit l’option choisie, <strong>ne donne jamais de réponse
+certaine.</strong> Voici comment formuler :</p>
+<p><em>Le scientifique regarde son écran. Son expression change
+légèrement. Il dit :</em></p>
+<ul>
+<li><em>“C’est… intéressant. Vraiment très intéressant.”</em> <em>(note
+quelque chose)</em></li>
+<li><em>“Le résultat est… non concluant. Ce qui est en soi
+remarquable.”</em></li>
+<li><em>“Je vois quelque chose que je ne m’attendais pas à voir. Je ne
+voudrais pas influencer votre décision avec des données que je ne
+comprends pas entièrement moi-même.”</em></li>
+<li><em>“Vous êtes… [pause de deux secondes] …exactement ce à quoi je
+m’attendais.”</em> <em>(sans préciser quoi)</em></li>
+</ul>
+<blockquote>
+<p><strong>Encart MJ — La règle la plus importante du guide</strong></p>
+<p>Ne décide pas si les PJ sont des originaux ou des copies. Ne le sache
+pas toi-même. Si tu le sais, tu le trahiras.</p>
+<p>Les joueurs vont chercher une certitude dans tes yeux, dans ta voix,
+dans ton hésitation. Donne-leur exactement autant de certitude que le
+personnage du scientifique aurait à offrir : des fragments. Des
+“peut-être”. Des sourires qui ne confirment rien.</p>
+<p>Ne prépare pas de réponse sur l’identité des PJ. Si tu la prépares,
+tu la trahiras.</p>
+<p>Un joueur qui quitte la table sans savoir s’il jouait l’original ou
+la copie est un joueur qui pensera à ce scénario pendant des années.</p>
+</blockquote>
+<hr />
+<h2 id="rencontre-3-b-à-notre-image">RENCONTRE 3-B — À notre image</h2>
+<p><em>Si les joueurs refusent le marché, attaquent, ou détruisent le
+noyau.</em></p>
+<p><em>Lire à voix haute :</em></p>
+<blockquote>
+<p>Le responsable scientifique soupire. Pas de colère. Juste de la
+résignation. <em>“C’est vraiment dommage.”</em></p>
+<p>Il lève la main. Et les copies se réveillent.</p>
+</blockquote>
+<p><strong>Copies synthétiques incomplètes (Niv.2, Normale, 31
+PE)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Corps</th>
+<th>Esprit</th>
+<th>CàC</th>
+<th>Distance</th>
+<th>PV</th>
+<th>Init</th>
+<th>Déf</th>
+<th>RD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>8</td>
+<td>9</td>
+<td>1</td>
+<td>0/0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Mains nues uniquement sauf copies des PJ</li>
+<li><strong>Copies des PJ :</strong> même armement que leur modèle / +1
+Déf contre leur modèle</li>
+<li>Nombre = double des PJ présents</li>
+<li>Récupération sur les restes : 2 composants peu fréquents
+chacune</li>
+</ul>
+<p><strong>Le responsable scientifique (Niv.2, Notable, 34
+PE)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>S</th>
+<th>P</th>
+<th>E</th>
+<th>C</th>
+<th>I</th>
+<th>A</th>
+<th>L</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>PV 14 / Init 14 / Déf 1 / Pas de RD</li>
+<li>Pistolet Institut (SR9) : 3 dés énerg. En rafale / Mains nues (SR5)
+: 2 dés</li>
+<li><strong>Se lâcher</strong> (1×/combat) : 6 dés totaux</li>
+<li><strong>Protégez-moi !</strong> : 1 Pt Chance → +2 Déf si synthé
+dans la zone</li>
+<li><strong>Fuite au tour 1 vers la sortie arrière. Si non bloqué avant
+le tour 3 : il s’échappe.</strong></li>
+<li>S’il s’échappe : il reviendra. Avec des ressources. Dans une
+prochaine session.</li>
+</ul>
+<p><strong>Le noyau de données — cible centrale</strong> - Déf 2 / PV 15
+- Détruit : explosion 5 dés énerg. dans la zone + les synthés deviennent
+imprévisibles (1 PA par attaque) - Détruire le noyau coupe le signal.
+Fin de l’amnésie. Mais les dommages déjà causés sont permanents.</p>
+<blockquote>
+<p><strong>Encart MJ — Décrire ce combat</strong></p>
+<p>Insiste sur le fait que les PJ combattent leurs propres copies. Leurs
+propres visages. Leurs propres mains.</p>
+<p>Si une copie touche son modèle : <em>“Pour un instant — une fraction
+— vous voyez quelque chose dans ses yeux. Pas de la reconnaissance.
+Quelque chose d’antérieur à la reconnaissance. Comme le souvenir d’un
+souvenir que tu n’as jamais eu.”</em></p>
+<p>Si un modèle tue sa copie : silence. Puis les autres copies
+continuent. La copie morte ressemble encore à quelqu’un. Elle
+ressemblera toujours à quelqu’un.</p>
+</blockquote>
+<hr />
+<h3 id="décision-5-les-copies-figées">⚠ DÉCISION 5 — Les copies
+figées</h3>
+<p><em>Quand le noyau est détruit, les synthés se figent dans leur
+dernière position.</em></p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Conséquence narrative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Laisser les copies figées</strong></td>
+<td>Elles meurent avec le complexe. Y compris les copies de gens que les
+PJ aimaient. Certaines copies ont les souvenirs complets d’habitants
+morts ou disparus. Ces souvenirs disparaissent.</td>
+</tr>
+<tr class="even">
+<td><strong>Ramener des copies en ville</strong></td>
+<td>Chaos identitaire complet. Qui est le vrai ? La ville peut-elle
+fonctionner avec des doubles ? C’est une bombe à retardement pour toute
+la suite de campagne.</td>
+</tr>
+<tr class="odd">
+<td><strong>Chercher si les prisonniers peuvent “fusionner” avec leurs
+copies</strong></td>
+<td>C’est impossible technologiquement — mais le responsable
+scientifique, si capturé, prétend le contraire. Pour gagner du temps. Ou
+peut-être pas.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="chemins-de-traverse-acte-3">CHEMINS DE TRAVERSE — ACTE 3</h2>
+<h3 id="le-bureau-du-responsable-scientifique">Le bureau du responsable
+scientifique</h3>
+<p>Si les joueurs explorent le bâtiment avant ou après la confrontation
+: Un bureau latéral. Fermé. INT + Science diff.2 pour le
+déverrouiller.</p>
+<p>À l’intérieur : son journal de bord.</p>
+<p><em>Quelques extraits :</em></p>
+<p><em>“Semaine 1 : Activation réussie. Sujet A intégré sans résistance.
+Performance nominale.<em> </em>Semaine 4 : Le chef de la communauté a
+été remplacé. La phase de surveillance commence.<em> </em>Semaine 7 : Le
+signal de capture fonctionne au-delà des prévisions.<em> </em>Le seuil
+de tolérance des sujets varie. Certains résistent plus longtemps que
+prévu.<em> </em>Semaine 9 : Premier effondrement visible (sujet Joseph
+M.).<em> </em>La marge de temps est plus courte que calculé.
+Accélération nécessaire.<em> </em>Semaine 11 : Des sujets [liste de noms
+— dont peut-être des PNJ nommés par les joueurs lors de la fête]
+montraient des signes précoces de résistance au signal. Mesures
+préventives prises.”</em></p>
+<p><em>Puis, sur la dernière page, une entrée récente :</em></p>
+<p><em>“Note personnelle : parmi les sujets collectés, quatre présentent
+des anomalies.<em> </em>Leurs données mémorielles sont fragmentées d’une
+façon que nos modèles n’expliquent pas.<em> </em>Comme si une partie de
+leur mémoire n’était pas… là. Ou avait déjà été collectée.<em> </em>Je
+n’ai pas d’hypothèse satisfaisante pour le moment.<em> </em>La liste de
+ces sujets anomaliques est jointe en annexe.”</em></p>
+<p><em>L’annexe n’est pas là. Arrachée. Récemment.</em></p>
+<blockquote>
+<p><strong>Encart MJ — L’annexe manquante</strong></p>
+<p>Tu ne sais pas ce qu’elle contient. Vraiment. Peut-être des noms de
+PJ. Peut-être des noms d’autres personnes. Peut-être une
+coïncidence.</p>
+<p>Si les joueurs cherchent l’annexe : elle n’est nulle part dans le
+complexe. Le responsable scientifique l’a sur lui — pas dans son
+inventaire listé. Dans une poche intérieure. Si les joueurs le fouillent
+après l’avoir capturé ou tué.</p>
+<p>Et si tu décides qu’elle contient les noms des PJ : Elle ne contient
+que ça. Quatre noms. Les leurs. Avec la note manuscrite :
+<em>“Collection antérieure ? Vérifier.”</em></p>
+</blockquote>
+<hr />
+<h3 id="le-vrai-jesse-pedigrue-suite">Le vrai Jesse Pedigrue —
+Suite</h3>
+<p>Si Jesse a été libéré des cellules et qu’il suit les joueurs :</p>
+<p>Pendant la confrontation avec le scientifique, si le vrai Jesse est
+présent : Le responsable scientifique le voit. Et dit, avec une
+curiosité clinique :</p>
+<blockquote>
+<p><em>“Tiens. Le modèle original. Je ne m’attendais pas à ça.<em>
+</em>Fascinant. Vous pouvez les comparer maintenant, si vous voulez.<em>
+</em>Le modèle et la copie. Je ne l’avais jamais vu de mes propres yeux
+non plus.”</em></p>
+</blockquote>
+<p><em>(Le synthé Jesse est mort depuis l’Acte 2. Mais l’effet est
+là.)</em></p>
+<p>Jesse regarde le faux parc. Son parc, reproduit à la perfection. Et
+dit, doucement :</p>
+<blockquote>
+<p><em>“C’est chez moi. C’est exactement chez moi.<em> </em>Et ça me
+donne envie de le brûler.”</em></p>
+</blockquote>
+<hr />
+<h1 id="conclusions-les-fins">CONCLUSIONS — LES FINS</h1>
+<h2 id="fin-1-le-marché-accepté">Fin 1 — Le marché accepté</h2>
+<blockquote>
+<p><strong>“Nous avons sauvé tout le monde. En ne sauvant pas ce qu’ils
+étaient.”</strong></p>
+</blockquote>
+<p>Le scientifique repart avec son équipement — l’appareil émetteur,
+démonté du générateur. Sans lui, le signal s’arrête. Le G.E.C.K.
+continue de tourner. La ville survit, physiquement.</p>
+<p>Mais les dommages sont permanents. Les souvenirs perdus ne reviennent
+pas. Et quelque chose s’est brisé dans la confiance entre les habitants
+— une fissure invisible que personne ne sait nommer.</p>
+<p>Certains habitants décident de partir. Pas parce qu’ils y sont
+obligés — parce qu’ils ne peuvent plus regarder leurs voisins sans se
+demander. Ils font leurs valises en silence.</p>
+<p>D’autres refusent, absolument : <em>“C’est chez nous. On est arrivés
+avec rien. On ne repart pas avec rien.”</em></p>
+<p><em>Script d’épilogue :</em></p>
+<blockquote>
+<p>Trois semaines après votre retour, une partie de la ville a plié
+bagage. Les caravanes sont parties au lever du soleil — certains ont
+regardé en arrière. D’autres non. Ceux qui sont restés vous ont regardés
+partir en silence.</p>
+<p>La végétation tient. Le générateur tourne. La ville est sauvée.</p>
+<p>Mais certains de ceux qui sont restés ont des trous dans leur mémoire
+— des trous qui ne se remplissent pas. Des noms qu’ils n’arrivent plus à
+retrouver. Des visages qui n’ont plus de contexte. Ce n’est plus le
+signal. C’est juste… ce qui reste.</p>
+<p>Jesse — le vrai Jesse, si vous l’avez sauvé — est assis sur les
+marches de ce qui était sa mairie. Il regarde la ville qu’il a fondée se
+vider, puis se remplir d’autre chose. Il ne dit rien.</p>
+<p>Quelque part dans le Commonwealth, le responsable scientifique
+cherche un nouvel endroit. Un endroit avec de l’espoir. Un endroit où
+les gens ont mis quelque chose d’eux-mêmes.</p>
+<p>Un endroit qui lui facilitera le travail.</p>
+</blockquote>
+<hr />
+<h2 id="fin-2-le-générateur-détruit">Fin 2 — Le générateur détruit</h2>
+<blockquote>
+<p><strong>“Nous avons sauvé qui ils sont. En les condamnant à
+partir.”</strong></p>
+</blockquote>
+<p>Le signal s’arrête. Les amnésies cessent. Les habitants retrouvent
+progressivement leurs souvenirs. La végétation commence à mourir au bout
+d’une semaine. Les copies synthétiques restantes — celles qui étaient
+encore dans la ville — deviennent erratiques, sans instructions.</p>
+<p><em>Script d’épilogue :</em></p>
+<blockquote>
+<p>La ville a tenu trois semaines avant que la première maison soit
+abandonnée.</p>
+<p>Ce n’est pas le siège qui l’a tuée. C’est le froid qui est entré
+quand les murs du G.E.C.K. ont commencé à se défaire.</p>
+<p>Vous avez tenu. Vous avez perdu ce pour quoi vous vous battiez.</p>
+<p>Mais les gens se souviennent. Ils se souviennent de tout. Des voisins
+perdus. Des maisons construites de leurs mains. De la première Fête des
+Fondateurs, avant que tout ça commence.</p>
+<p>C’est peut-être tout ce qui leur reste. C’est peut-être assez.</p>
+<p><em>(Peut-être.)</em></p>
+</blockquote>
+<hr />
+<h2 id="fin-3-le-noyau-détruit">Fin 3 — Le noyau détruit</h2>
+<blockquote>
+<p><strong>“Nous avons gagné. Et maintenant il faut vivre
+avec.”</strong></p>
+</blockquote>
+<p>Le signal s’arrête. Les synthés se figent. L’Institut est affaibli —
+ici, maintenant. La ville est sauvée. Les habitants récupèrent
+progressivement leurs souvenirs.</p>
+<p>Mais quelque chose a changé.</p>
+<p><em>Script d’épilogue :</em></p>
+<blockquote>
+<p>La première chose que vous remarquez en rentrant : les gens se
+regardent différemment.</p>
+<p>Pas avec hostilité. Avec une question. La question qu’on ne pose pas
+à voix haute parce que si tu la poses, tu admets que tu y penses.</p>
+<p>Est-ce que tu es encore toi ? Est-ce que je suis encore moi ?</p>
+<p>Le marchand du comptoir vous vend vos provisions avec son sourire
+habituel. Mais ses yeux s’attardent une seconde de trop sur vos
+visages.</p>
+<p>L’enfant de la clinique est sorti de son état. Il parle à nouveau. Il
+ne parle plus de “avant”. Mais il ne vous regarde plus directement non
+plus.</p>
+<p>Jesse — le vrai Jesse, ou celui que vous avez ramené — siège à la
+mairie. Il prend des décisions. Il gère la ville. Il est exactement
+Jesse Pedigrue.</p>
+<p>Vous regardez ses mains. Vous cherchez quelque chose que vous ne
+saurez pas nommer. Vous ne trouvez rien.</p>
+<p>Vous ne trouverez jamais rien.</p>
+<p><em>“War. War never changes.”</em> <em>Mais les questions, elles,
+restent.</em></p>
+</blockquote>
+<hr />
+<h2
+id="fin-4-la-fin-secrète-si-le-vrai-jesse-est-vivant-et-le-noyau-est-détruit">Fin
+4 — La fin secrète (si le vrai Jesse EST vivant ET le noyau EST
+détruit)</h2>
+<blockquote>
+<p><strong>“Nous avons tout sauvé. Nous ne savons pas ce que ça veut
+dire.”</strong></p>
+</blockquote>
+<p>Cette fin n’est accessible que si les joueurs ont emprunté le chemin
+des cellules, libéré Jesse, détruit le noyau, et ramené Jesse en
+ville.</p>
+<p><em>Ce qui se passe :</em></p>
+<p>Jesse retrouve la ville. Il retrouve ses habitants. Il retrouve sa
+mairie. Sa chaise. Son bureau. Tout est à sa place.</p>
+<p>Et lors du premier conseil de ville, alors que Jesse parle aux
+habitants — l’un d’eux l’arrête.</p>
+<p>Et demande, doucement, sans accusation :</p>
+<p><em>“Jesse. Tu te souviens de la conversation qu’on a eue le jour de
+ton élection ? Juste toi et moi. Quand tu m’as dit ce que tu voulais
+vraiment pour cette ville. Tu t’en souviens ?”</em></p>
+<p>Jesse le regarde. Longuement. Puis il dit :</p>
+<p><em>“Rappelle-moi les détails. Ça fait trois mois que j’ai pas dormi
+dans un vrai lit.”</em></p>
+<p>La personne hoche la tête. Elle sourit. Elle accepte la réponse.</p>
+<p>Mais les joueurs, eux, ont entendu la non-réponse.</p>
+<p>Et ils ne sauront jamais.</p>
+<blockquote>
+<p><strong>Encart MJ — Après la session</strong></p>
+<p>Après la fin — quelle qu’elle soit — pose une dernière question à
+chaque joueur :</p>
+<p><em>“Si ton personnage apprenait demain, de façon certaine et
+irréfutable, qu’il est une copie synthétique — est-ce que ça changerait
+quelque chose ? Est-ce qu’il serait encore lui ?”</em></p>
+<p>Ne réponds pas à leur place. Écoute juste.</p>
+<p>C’est ça, le scénario. Pas l’histoire. La question.</p>
+</blockquote>
+<hr />
+<h1 id="annexes">ANNEXES</h1>
+<h2 id="récapitulatif-des-décisions-et-conséquences">Récapitulatif des
+Décisions et Conséquences</h2>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Scène</th>
+<th>Question</th>
+<th>Conséquence à long terme</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Grange</td>
+<td>Que faire de Joseph ?</td>
+<td>Info médicale / moment de dignité / indice manquant</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Jesse le matin</td>
+<td>Que lui dire ?</td>
+<td>Niveau d’alerte à l’Institut / méfiance réciproque</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Après la clinique</td>
+<td>Éteindre le générateur ?</td>
+<td>Fin 2 ou Acte 3 complet</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Institut — Marché</td>
+<td>Accepter ? Tester ?</td>
+<td>Fin 1, 2, 3 ou 4 / la graine du doute</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Noyau détruit</td>
+<td>Que faire des copies ?</td>
+<td>Paranoïa future / retour possible du scientifique</td>
+</tr>
+<tr class="even">
+<td>Caché</td>
+<td>Cellules</td>
+<td>Libérer les prisonniers ?</td>
+<td>Fin 4 accessible / vrai Jesse / journal du scientifique</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="stats-de-référence-complète">Stats de Référence Complète</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ennemi</th>
+<th>Niv</th>
+<th>PE</th>
+<th>PV</th>
+<th>Init</th>
+<th>Déf</th>
+<th>RD Bal</th>
+<th>RD Énerg</th>
+<th>Attaque principale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Joseph (goule)</td>
+<td>2</td>
+<td>34</td>
+<td>14</td>
+<td>16</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Fusil double canon (SR10) 5 dés Brutaux</td>
+</tr>
+<tr class="even">
+<td>Copie synth. clinique</td>
+<td>4</td>
+<td>31</td>
+<td>10</td>
+<td>11</td>
+<td>1</td>
+<td>2/1</td>
+<td>3/2</td>
+<td>Laser Institut (SR8) 4 dés Brutaux</td>
+</tr>
+<tr class="odd">
+<td>Jesse synthétique</td>
+<td>4</td>
+<td>62</td>
+<td>16</td>
+<td>16</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Pistolet Institut (SR10) 3 dés / Matraque 6 dés Étourd.</td>
+</tr>
+<tr class="even">
+<td>Garde marcheur</td>
+<td>7</td>
+<td>52</td>
+<td>13</td>
+<td>12</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>Laser Institut (SR10) 6 dés Brutaux</td>
+</tr>
+<tr class="odd">
+<td>Synthé incomplet</td>
+<td>2</td>
+<td>31</td>
+<td>8</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>Mains nues (SR7) 2 dés</td>
+</tr>
+<tr class="even">
+<td>Resp. scientifique</td>
+<td>2</td>
+<td>34</td>
+<td>14</td>
+<td>14</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>Pistolet Institut (SR9) 3 dés En rafale</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Immunités communes : Radiations / Poison / Peur /
+Maladies</strong> <strong>Destruction : Tous les synthés explosent en
+gerbe de métal et d’étincelles</strong> <strong>Copies des PJ : même
+armement / +1 Déf contre leur modèle</strong></p>
+<hr />
+<h2 id="checklist-de-préparation">Checklist de Préparation</h2>
+<p><strong>Avant la session :</strong> - [ ] Playlist musicale prête
+(voir guide musique) - [ ] Papier et stylo prêts pour noter le
+worldbuilding de la fête (les joueurs te verront écrire) - [ ] Décidé
+quel PJ a la silhouette dans la photo de Joseph - [ ] Décidé quels PNJ
+nommés par les joueurs sont dans les cellules - [ ] Décidé si l’annexe
+arrachée contient les noms des PJ (ou pas) - [ ] Intégré le discours du
+responsable scientifique - [ ] <strong>NE PAS</strong> décider si les PJ
+sont des originaux ou des copies</p>
+<p><strong>Pendant la session :</strong> - [ ] Musique décalée dans les
+bons moments - [ ] Silence intentionnel après les révélations majeures -
+[ ] Utiliser les noms et détails du worldbuilding de la fête à chaque
+opportunité - [ ] Appliquer la règle des 30 secondes — redonner la main
+aux joueurs régulièrement - [ ] Ne jamais confirmer si les PJ sont
+originaux ou copies - [ ] Jouer le responsable scientifique avec
+courtoisie absolue</p>
+<p><strong>La règle absolue :</strong> Ne sache jamais si les PJ sont
+des copies. Jamais. L’ambiguïté n’est pas une lacune du scénario. C’est
+son cœur.</p>
+<hr />
+<blockquote>
+<p><em>“Je me souviens de toi. Avant. Tu étais différent.”</em></p>
+<p><em>— Un enfant de sept ans, Salle 2, Clinique</em> <em>— Et
+peut-être : quelque chose de plus grand que lui</em></p>
+</blockquote>
+<hr />
+<p><em>Guide MJ v4 — Fallout : Le Jeu de Rôle Officiel, Chapitre 11</em>
+<em>“Serving all of humanity, one Vault at a time.”</em> <em>“Please
+stand by.”</em></p>
+</body>
+</html>

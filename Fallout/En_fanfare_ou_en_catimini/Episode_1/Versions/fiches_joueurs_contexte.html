@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Fiches joueurs — Tu Étais Différent</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 10.5pt;
+    background: #f5ede0;
+    color: #1a1a1a;
+    padding: 0;
+  }
+
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .fiche {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2cm 2.2cm;
+    min-height: 14.85cm; /* A5 */
+    background: #fdf6ec;
+    border: none;
+    position: relative;
+  }
+
+  /* Filigrane Vault-Tec en arrière-plan */
+  .fiche::before {
+    content: "VAULT-TEC";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    font-size: 72pt;
+    font-family: 'Special Elite', monospace;
+    color: rgba(122, 59, 30, 0.04);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .fiche > * { position: relative; z-index: 1; }
+
+  /* En-tête */
+  .header {
+    border-bottom: 3px solid #7a3b1e;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+
+  .scenario-title {
+    font-size: 7.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #7a3b1e;
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+
+  .perso-name {
+    font-family: 'Special Elite', monospace;
+    font-size: 20pt;
+    color: #3a1206;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+
+  .perso-origin {
+    font-size: 9pt;
+    color: #7a3b1e;
+    font-style: italic;
+    margin-top: 3px;
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 13px;
+  }
+
+  .section-label {
+    font-size: 7pt;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7a3b1e;
+    font-weight: bold;
+    border-bottom: 1px solid #c8956a;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  .section-text {
+    font-size: 10pt;
+    line-height: 1.55;
+    color: #1a1a1a;
+  }
+
+  /* Encart secret */
+  .secret {
+    background: #fff8ee;
+    border: 1.5px solid #7a3b1e;
+    border-radius: 3px;
+    padding: 10px 14px;
+    margin-top: 14px;
+  }
+
+  .secret-label {
+    font-size: 7pt;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7a3b1e;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .secret-text {
+    font-size: 10pt;
+    line-height: 1.55;
+    font-style: italic;
+    color: #2a1a0a;
+  }
+
+  /* Image personnage */
+  .perso-img {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 3px;
+    margin-top: 16px;
+    border: 1.5px solid #c8956a;
+  }
+
+  /* Pied de page */
+  .footer {
+    margin-top: 16px;
+    padding-top: 8px;
+    border-top: 1px solid #c8956a;
+    font-size: 7.5pt;
+    color: #999;
+    font-style: italic;
+    text-align: right;
+  }
+
+  @page {
+    size: A4;
+    margin: 1.5cm 1.5cm;
+  }
+
+  @media print {
+    body { background: white; }
+    .fiche { background: white; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ AUGUSTA BYRON ═══ -->
+<div class="fiche page-break">
+  <div class="header">
+    <div class="scenario-title">Tu Étais Différent &nbsp;·&nbsp; Fiche joueur</div>
+    <div class="perso-name">Augusta Byron</div>
+    <div class="perso-origin">Habitante d'Abri &nbsp;·&nbsp; Niveau 1</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Pourquoi tu es là</div>
+    <div class="section-text">
+      Tu as rejoint la communauté il y a huit mois — deux semaines après les premiers fondateurs.
+      Tu avais repéré une anomalie électromagnétique dans la zone : un signal bas, périodique,
+      d'une fréquence que tu n'avais jamais vue. Tu voulais rester le temps de l'identifier.
+      Tu es restée parce que, pour la première fois depuis l'Abri 75,
+      des gens ne te regardaient pas comme un outil.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ce que tu as construit ici</div>
+    <div class="section-text">
+      Tu as câblé le générateur à fusion froide et mis en place tout le réseau d'éclairage de la ville.
+      Sans toi, les nuits seraient noires. Tu ne le dis jamais.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ta personne de confiance</div>
+    <div class="section-text">
+      Le médecin de la clinique. Il est l'un des seuls à te poser des questions sur tes recherches
+      sans en avoir peur.
+    </div>
+  </div>
+
+  <div class="secret">
+    <div class="secret-label">Ce que tu sais — et personne d'autre</div>
+    <div class="secret-text">
+      Ce signal que tu avais repéré à ton arrivée ? Tu ne l'as jamais identifié.
+      Tes notes de terrain en font mention. Tu n'as pas eu le temps d'approfondir.
+      Ce soir, pendant la fête, il te semble... plus fort qu'avant.
+    </div>
+  </div>
+
+  <img class="perso-img" src="img/ChatGPT Image Mar 27, 2026, 03_08_54 PM.png" alt="Augusta Byron">
+
+  <div class="footer">Pour tes yeux seulement</div>
+</div>
+
+<!-- ════════════════════════════════════════════ TOMMY DOYLE ═══ -->
+<div class="fiche page-break">
+  <div class="header">
+    <div class="scenario-title">Tu Étais Différent &nbsp;·&nbsp; Fiche joueur</div>
+    <div class="perso-name">"Joyeux" Tommy Doyle</div>
+    <div class="perso-origin">Survivant &nbsp;·&nbsp; Niveau 1</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Pourquoi tu es là</div>
+    <div class="section-text">
+      Tu as quitté Diamond City en catastrophe après une partie de cartes truquée
+      contre des gens de Goodneighbor qui ne plaisantent pas avec leurs créances.
+      Tu cherchais un endroit où personne ne penserait à te chercher.
+      Tu es arrivé avec trois capsules et une arme de fortune.
+      Tu as gagné ton premier repas lors d'une partie de dés avec des gosses.
+      Tu as triché. Tu les as laissés gagner. Tu n'as jamais su pourquoi tu avais fait ça.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ce que tu as construit ici</div>
+    <div class="section-text">
+      Tu tiens un comptoir informel d'échange au pied de la scène improvisée —
+      pas vraiment un bar, pas vraiment un marché, quelque chose entre les deux.
+      Un endroit où les gens se retrouvent. Personne d'autre ne voulait s'en occuper.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ta personne de confiance</div>
+    <div class="section-text">
+      Bailey Tout Sourire. Vous vous êtes reconnus — deux indésirables qui ont appris à faire avec.
+    </div>
+  </div>
+
+  <div class="secret">
+    <div class="secret-label">Ce que tu sais — et personne d'autre</div>
+    <div class="secret-text">
+      Il y a deux mois, quelqu'un t'a approché. Un inconnu avec un Pip-Boy d'un modèle inhabituel —
+      différent de ceux de la ville. Il t'a proposé de l'argent pour "garder un œil
+      sur les allées et venues." Tu as refusé. Ça ne correspondait pas à ton code.
+      Mais tu n'en as parlé à personne. Il n'est jamais revenu. Pour l'instant.
+    </div>
+  </div>
+
+  <img class="perso-img" src="img/ChatGPT Image Mar 27, 2026, 03_10_00 PM.png" alt="Tommy Doyle">
+
+  <div class="footer">Pour tes yeux seulement</div>
+</div>
+
+<!-- ══════════════════════════════════════ BAILEY TOUT SOURIRE ═══ -->
+<div class="fiche page-break">
+  <div class="header">
+    <div class="scenario-title">Tu Étais Différent &nbsp;·&nbsp; Fiche joueur</div>
+    <div class="perso-name">Bailey Tout Sourire</div>
+    <div class="perso-origin">Goule &nbsp;·&nbsp; Niveau 1</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Pourquoi tu es là</div>
+    <div class="section-text">
+      Après l'incendie de Goodneighbor et la disparition de ton père, tu as erré.
+      Cette ville est la première où personne n'a demandé à ce que tu partes.
+      Quelqu'un a simplement dit "on a besoin de bras."
+      Tu devais rester une semaine. C'était il y a sept mois.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ce que tu as construit ici</div>
+    <div class="section-text">
+      Tu gères les stocks médicaux de la clinique — l'inventaire, la réparation du matériel,
+      les provisions. Tu sais où tout est. Tu es la mémoire logistique de la clinique.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ta personne de confiance</div>
+    <div class="section-text">
+      Theresa. Une vieille goule, femme de Joseph, qui t'a parlé dès le premier jour
+      comme à une égale — pas comme à une goule qu'on tolère par exception.
+      Elle n'est pas venue à la fête ce soir. Ce n'est pas son genre de manquer ça.
+    </div>
+  </div>
+
+  <div class="secret">
+    <div class="secret-label">Ce que tu sais — et personne d'autre</div>
+    <div class="secret-text">
+      Depuis quelques semaines, tu as du mal à retrouver certains souvenirs récents —
+      des petites choses, des conversations, l'ordre des journées.
+      Tu mets ça sur le compte du stress. Tu n'en as parlé à personne.
+      Tu ne veux pas qu'on se demande si tu commences à sombrer.
+    </div>
+  </div>
+
+  <img class="perso-img" src="img/7e94ade6-c76a-4d50-870c-54d636e89867.png" alt="Bailey Tout Sourire">
+
+  <div class="footer">Pour tes yeux seulement</div>
+</div>
+
+<!-- ════════════════════════════════════════ VIEUX COLOSSE ═══ -->
+<div class="fiche page-break">
+  <div class="header">
+    <div class="scenario-title">Tu Étais Différent &nbsp;·&nbsp; Fiche joueur</div>
+    <div class="perso-name">Vieux Colosse</div>
+    <div class="perso-origin">Super Mutant &nbsp;·&nbsp; Niveau 1</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Pourquoi tu es là</div>
+    <div class="section-text">
+      Tu cherchais "ce qui manque." Tu as trouvé cette ville par hasard — ou par destin,
+      selon l'humeur. Ce qui t'a retenu : pour la première fois depuis longtemps,
+      personne ne te regardait comme une menace ou comme un dieu.
+      Juste quelqu'un qui pouvait porter des caisses et qui lisait beaucoup.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ce que tu as construit ici</div>
+    <div class="section-text">
+      La muraille nord. De tes mains, en trois semaines. La ville n'avait pas demandé.
+      Tu avais besoin d'avoir quelque chose à faire pendant que tu réfléchissais.
+      Le résultat est indestructible.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ta personne de confiance</div>
+    <div class="section-text">
+      Augusta Byron. Vous parlez de philosophie. Elle ne comprend pas tout.
+      Toi non plus. C'est pour ça que ça marche.
+    </div>
+  </div>
+
+  <div class="secret">
+    <div class="secret-label">Ce que tu sais — et personne d'autre</div>
+    <div class="secret-text">
+      Depuis deux mois, certains de tes souvenirs récents ont des trous.
+      Tu as mis ça sur le compte du temps — des siècles passent, les détails s'effacent,
+      c'est normal. Mais ces trous-là sont différents. Ils ne ressemblent pas à de l'oubli.
+      Ils ressemblent à quelque chose qui a été retiré.
+    </div>
+  </div>
+
+  <img class="perso-img" src="img/ChatGPT Image Mar 27, 2026, 03_11_53 PM.png" alt="Vieux Colosse">
+
+  <div class="footer">Pour tes yeux seulement</div>
+</div>
+
+<!-- ══════════════════════════════════════ HAZEL JOHNSON ═══ -->
+<div class="fiche page-break">
+  <div class="header">
+    <div class="scenario-title">Tu Étais Différent &nbsp;·&nbsp; Fiche joueur</div>
+    <div class="perso-name">Hazel Johnson</div>
+    <div class="perso-origin">Initiée de la Confrérie de l'Acier &nbsp;·&nbsp; Niveau 2</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Pourquoi tu es là</div>
+    <div class="section-text">
+      La Confrérie t'a chargée de reconnaître les environs de l'Abri 95 et d'identifier
+      les technologies récupérables. Tu as utilisé cette communauté comme base d'opérations.
+      Tu devais repartir au bout d'une semaine. Tu es encore là, deux mois plus tard.
+      Une gamine de huit ans soignée après une attaque de radscorpions t'a dit :
+      "t'inquiète pas, t'es plus forte que les monstres."
+      Tu n'as pas su quoi répondre.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ce que tu as construit ici</div>
+    <div class="section-text">
+      Tu as restructuré la clinique avec le médecin — inventaire, procédures de triage,
+      formations de premiers secours pour trois habitants.
+      Le médecin ne voulait pas d'aide. Il a changé d'avis.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Ta personne de confiance</div>
+    <div class="section-text">
+      Le médecin. Vous avez passé des nuits à réorganiser la clinique en silence.
+      Vous ne parlez pas beaucoup. Vous n'en avez pas besoin.
+    </div>
+  </div>
+
+  <div class="secret">
+    <div class="secret-label">Ce que tu sais — et personne d'autre</div>
+    <div class="secret-text">
+      Tu as détecté des lectures technologiques inhabituelles dans la zone —
+      des fréquences qui ne correspondent à aucun équipement local.
+      Tu n'as pas encore fait de rapport à la Confrérie.
+      Tu ne sais pas exactement pourquoi tu attends.
+    </div>
+  </div>
+
+  <img class="perso-img" src="img/ChatGPT Image Mar 27, 2026, 03_17_03 PM.png" alt="Hazel Johnson">
+
+  <div class="footer">Pour tes yeux seulement</div>
+</div>
+
+
+</body>
+</html>
