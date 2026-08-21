@@ -8,7 +8,7 @@ Le dépôt contient plusieurs jeux et scénarios indépendants. Toujours commenc
 - Pour `En_fanfare_ou_en_catimini`, distinguer explicitement `Episode_1` et `Episode_2`.
 - Le dossier `Final` contient le kit de table qui fait autorité.
 - Les anciennes variantes restent dans `Versions` ou `Archives` et ne doivent pas être modifiées comme source canonique.
-- Ne jamais réintroduire CroustyRank ni une configuration GitHub Pages.
+- Ne pas ajouter de projet web sans dossier autonome ni réactiver une configuration GitHub Pages.
 - Ne pas versionner `.env`, `.claude`, `__pycache__`, les fichiers audio tiers ou les exports régénérables avec musique embarquée.
 
 ## Travail sur un scénario
