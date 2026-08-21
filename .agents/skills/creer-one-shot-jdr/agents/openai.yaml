@@ -1,0 +1,7 @@
+interface:
+  display_name: "Créer un one-shot JDR"
+  short_description: "Concevoir, auditer et débriefer un one-shot"
+  default_prompt: "Utilise $creer-one-shot-jdr pour transformer mon idée en scénario jouable et anti-blocage."
+
+policy:
+  allow_implicit_invocation: true
