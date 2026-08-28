@@ -1,6 +1,8 @@
 # LA GUERRE DE L’ÉTOILE — PACK V3
 ## Ce qu’il faut vraiment avoir pendant la partie
 
+**Statut :** joué · débrief consigné dans `11_DEBRIEF_SESSION.md`
+
 Cette V3 est autonome. Elle remplace les versions précédentes et fixe les explications qui avaient changé pendant la préparation.
 
 ## À imprimer absolument

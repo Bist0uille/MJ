@@ -8,8 +8,12 @@ Scénario suivi en deux épisodes :
 - `Episode_2/Final/` — suite préparée mais jamais jouée.
 - `Contexte_partage/` — personnages, lieux, état du monde, règles internes et outils communs.
 
-## Ombres murmurées
+## Cinq sur cinq
 
-One-shot autonome jamais joué. Utiliser `Ombres_murmurees/Final/` ; les anciennes sources sont conservées dans `Versions/`.
+One-shot autonome joué le 25 août 2026. Il remplace *Ombres murmurées* comme scénario Fallout autonome de référence. Utiliser `Cinq_sur_cinq/Final/` ; le retour de table se trouve dans `Cinq_sur_cinq/Final/DEBRIEF_SESSION_2026-08-25.md`.
+
+## Ombres murmurées — archive
+
+Ancienne proposition jamais jouée, conservée pour mémoire. Elle n’est plus le kit recommandé.
 
 Le manuel officiel Fallout de 142 Mo reste local : il dépasse la limite GitHub et n’est pas un fichier original du projet.

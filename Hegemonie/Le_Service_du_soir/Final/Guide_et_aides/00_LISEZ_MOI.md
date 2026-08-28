@@ -3,7 +3,7 @@
 
 **Joueurs :** Phenokyo · Globou · Motmot
 **Durée :** 3 h 30
-**Statut :** structure validée, à jouer
+**Statut :** joué
 
 ---
 

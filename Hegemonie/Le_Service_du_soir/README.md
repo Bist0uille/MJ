@@ -2,6 +2,8 @@
 
 One-shot Hégémonie dans une baleine astrale.
 
+**Statut : joué.**
+
 ## Pour mener la partie
 
 - `Final/Guide_et_aides/00_LISEZ_MOI.pdf` — point d’entrée.
