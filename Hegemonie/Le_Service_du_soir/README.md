@@ -1,5 +1,7 @@
 # Le Service du soir
 
+![Navire et baleines astrales](Final/Storyboard/visuels/03_la_baleine_astrale.png)
+
 One-shot Hégémonie dans une baleine astrale.
 
 **Statut : joué.**

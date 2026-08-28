@@ -1,5 +1,7 @@
 # Cinq sur cinq
 
+![Affiche de Cinq sur cinq](Final/images/00_AFFICHE_TEASER_5_SUR_5_V2_CLEAN.png)
+
 One-shot Fallout joué le 25 août 2026. Cette version remplace *Ombres murmurées* comme one-shot Fallout autonome de référence.
 
 ## Version active

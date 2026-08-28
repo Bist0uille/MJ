@@ -1,5 +1,7 @@
 # La Guerre de l’étoile
 
+![La Guerre de l’étoile](Final/images/00_intro_guerre_etoile.png)
+
 One-shot Sunshine joué et débriefé.
 
 - `V1/` — première version complète.
